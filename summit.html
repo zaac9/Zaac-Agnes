@@ -8,6 +8,7 @@
 
     	<!-- Main Style Sheet -->
 	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/overlay.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +22,14 @@
     <div class="cursor rounded"></div>
 	<div class="cursor pointed"></div>
 
+    <div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+		  <p class="about-me">Hi there, I'm Zaac</p>
+		  <p class="about-me">I'm a UX/UI designer living out of rainy Vancouver, BC. Currently in my fifth year studying at the School of Interactive Arts and Technology at Simon Fraser University. The world is full of irritating products and techonology, let's make something that meaningfully impacts peoples lives together. Feel free to check out my <a class="about-link" href="resume.html">resume</a> or <a class="about-link" href="mailto:zaacagnes9@gmail.com">shoot me a message</a>, I'm always free to chat.</p>
+		</div>
+	</div>
+
     <header>
 		<nav class="topnav">
 			<ul class="navbar">
@@ -31,7 +40,9 @@
 					<a href="index.html">Projects</a>
 				</li>
 				<li class="navlink">
-					<a href="#">Info</a>
+					<span onclick="openNav()">
+						<a href="#">Info</a>
+					</span>
 				</li>
 			</ul>
 		</nav>
@@ -131,6 +142,7 @@
 
 
     <script src="script/cursor.js"></script>
+    <script src="script/about.js"></script>
 
 </body>
 </html>
