@@ -65,6 +65,15 @@ header a:hover{
 	color: #006BB9;
 }
 
+.hover-this{
+	transition: all 0.3 ease;
+}
+
+.hover-this ~ .pointed {
+	transform: scale(8);
+}
+
+
 /* PROJECT SHOWCASE - HOME */
 /* DIV - PROJECT CONTAINER */
 div.project-container{
@@ -83,6 +92,7 @@ div.project-showcase{
 	/* ALIGN TEXT AND IMAGE TO CENTER OF FLEXBOX */
 	text-align: center;
 }
+
 /* ORDER OF PROJECTS ON HOMEPAGE */
 #labatie {
 	order: 1;
@@ -130,7 +140,7 @@ img.project-showcase-img{
 	filter: grayscale(100%);
 	/* transition: all 0.3s ease-in; */
 }
-a.project-link:hover .project-showcase-img{
+a.project-link:hover .project-showcase-img, a.project-link:focus .project-showcase-img{
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
@@ -330,7 +340,6 @@ div.cursors div span {
 	color:  #f54029;
 }
 
-
 /*.inner-cursor{
 	position: fixed;
 	left:  10px;
@@ -359,4 +368,21 @@ div.cursors div span {
 
 
 
+
+/* _______________________________________________________________________ */
+/*********** MEDIA QUERIES ***********/
+
+
+@media screen and (max-width: 600px) {
+	div.project-showcase{
+		flex-basis: 100%;
+	}
+	a.project-link .project-showcase-img{
+		-webkit-filter: grayscale(0);
+		filter: grayscale(0);
+	}
+	div.project-container{
+		margin: 0 8%;
+	}
+  }
 
