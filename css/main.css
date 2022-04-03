@@ -367,6 +367,12 @@ div.cursors div span {
 	margin-left: 20%;
 }
 
+p.photo-caption{
+	color:#555;
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+
 p.coded-by-me{
 	text-align: center;
 	font-size: 0.7rem;
