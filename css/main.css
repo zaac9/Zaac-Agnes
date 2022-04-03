@@ -3,7 +3,7 @@
 	padding:  0;
 	box-sizing:  border-box;
 	cursor:  none;
-	font-family: 'Open Sans', 'Geneva', sans-serif;
+	font-family: 'proxima-nova', 'Open Sans', 'Geneva', sans-serif;
 	/* -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; */
 }
@@ -124,13 +124,13 @@ p.project-showcase-title{
 	font-size: 3rem;
 	font-weight: 500;
 	padding-top: 3%;
-	font-family: 'Cormorant', 'Garamond', serif;
+	font-family: 'Garamond', 'Cormorant', serif;
 }
 p.project-showcase-subtitle{
 	text-align: center;
 	font-size: 1.5rem;
 	font-weight: 400;
-	font-family: 'Cormorant', 'Garamond', serif;
+	font-family: 'Garamond', 'Cormorant', serif;
 }
 
 img.project-showcase-img{
@@ -160,6 +160,7 @@ div.project-container{
 /* ADJUSTMENT FOR HOME PADE TO SPAN ACROSS ENTIRE WIDTH */
 #project-container-home{
 	margin: 0;
+	padding-bottom: 0;
 }
 div.project-content{
 	width: 100%;
@@ -192,11 +193,11 @@ h1.project-title{
 	padding-top: 20%;
 	font-size: 4rem;
 	font-weight: 400;
-	font-family: 'Cormorant', 'Garamond', serif;
+	font-family: 'Garamond', 'Cormorant', serif;
 }
 h2.project-subtitle{
 	color:rgb(70, 70, 70);
-	font-family: 'Cormorant', 'Garamond', serif;
+	font-family: 'Garamond', 'Cormorant', serif;
 	margin-bottom: 2rem;
 }
 .project-content h3 {
@@ -211,7 +212,7 @@ h2.project-subtitle{
 	font-weight: 600;
 	padding-top: 2rem;
 	color:rgb(70, 70, 70);
-	font-family: 'Cormorant', 'Garamond', serif;
+	font-family: 'Garamond', 'Cormorant', serif;
 }
 .project-content h4.first {
 	padding-top: 0.5rem;
@@ -253,6 +254,7 @@ ol li{
 .project-content .project-img-adjustment {
 	border: none;
 }
+
 
 .project-video {
 	padding: 56.25% 0 0 0;
