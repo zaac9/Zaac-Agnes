@@ -209,7 +209,7 @@ h2.project-subtitle{
 }
 .project-content h4 {
 	font-size: 1.8rem;
-	font-weight: 600;
+	font-weight: 400;
 	padding-top: 2rem;
 	color:rgb(70, 70, 70);
 	font-family: 'Garamond', 'Cormorant', serif;
@@ -367,6 +367,14 @@ div.cursors div span {
 	margin-left: 20%;
 }
 
+p.coded-by-me{
+	text-align: center;
+	font-size: 0.7rem;
+	font-weight: 300;
+	padding-top: 3%;
+	padding-bottom: 1%;
+	text-transform: uppercase;
+}
 
 ::selection {
 	background: rgb(255, 233, 35);
