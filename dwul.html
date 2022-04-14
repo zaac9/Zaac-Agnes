@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="/img/favicons/favicon-dwul.ico">
 
     	<!-- Main Style Sheet -->
+    <link rel="stylesheet" href="css/slideshow.css">
+
 	<link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/overlay.css">
 
@@ -53,7 +55,7 @@
         <div class="project-content">
             <h1 class="project-title">Do What U Luv Charity Organization</h1>
             <!-- <h2 class="project-subtitle">Festival De Genève, La Cabaret</h2> -->
-            <p class="project-text">Working closely with Do What U Luv (DWUL), a charity organization in the Lower Mainland, to streamline the program registration process on their website to alleviate stress from families and allow the DWUL team to focus on expanding across Canada. This is an academic project for a senior interaction design class with the purpose of learning and applying various design methods</p>
+            <p class="project-text">Working closely with Do What U Luv (DWUL), a charity organization in the Lower Mainland, to streamline the program registration process on their website to alleviate stress from families and allow the DWUL team to focus on expanding across Canada. This is an academic project for a senior interaction design class with the purpose of learning and applying various design methods.</p>
         </div>
 
         <div class="project-content">
@@ -142,19 +144,34 @@
             <p class="project-text">
                 The parent or legal guardian of the child is involved in the registration process, involving handling the finances or receiving support aid if required. This particular persona was valuable in understanding the needs a family may have and how they receive support from DWUL.
             </p>
-            <img class="project-img" src="img/dwul/persona-elaha.png" alt="Persona of a legal guardian looking to sign their child up for a Do What U Luv program">
+            <!-- <img class="project-img" src="img/dwul/persona-elaha.png" alt="Persona of a legal guardian looking to sign their child up for a Do What U Luv program"> -->
 
             <h4>Program Provider</h4>
             <p class="project-text">
                 The program providers post program listings on the DWUL website for families to explore and are subsequently responsible for facilitating these programs and activities in-person and online during Covid-19. We considered them when implementing design changes because they frequently interact with DWUL's website and often don't get to speak with families until the program begins.
             </p>
-            <img class="project-img" src="img/dwul/persona-william.png" alt="Persona of a program provider who is looking to get registration numbers up in his music program.">
+            <!-- <img class="project-img" src="img/dwul/persona-william.png" alt="Persona of a program provider who is looking to get registration numbers up in his music program."> -->
 
             <h4>Children</h4>
             <p class="project-text">
                 Because the child is physically participating in the programs, they were critical to consider when making design changes as the results would ultimately be reflected on their experience. Having this persona in view helped us as designers to reflect DWUL's mission of providing creative opportunities to as many children and youth as possible. However, we do acknowledge that children are not the target market of DWUL. 
             </p>
-            <img class="project-img" src="img/dwul/persona-adriana.png" alt="Persona of a child who will participate in Do What U Luv's programs.">
+            <!-- <img class="project-img" src="img/dwul/persona-adriana.png" alt="Persona of a child who will participate in Do What U Luv's programs."> -->
+
+            <div class="slideshow-container">
+                <div class="mySlides1">
+                    <img class="project-img" src="img/dwul/persona-elaha.png" alt="Persona of a legal guardian looking to sign their child up for a Do What U Luv program">
+                </div>
+                <div class="mySlides1">
+                    <img class="project-img" src="img/dwul/persona-william.png" alt="Persona of a program provider who is looking to get registration numbers up in his music program.">
+                </div>
+                <div class="mySlides1">
+                    <img class="project-img" src="img/dwul/persona-adriana.png" alt="Persona of a child who will participate in Do What U Luv's programs.">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
         </div>
 
         <div class="project-content">
@@ -170,8 +187,19 @@
             <p class="project-text">
                 The journey maps are separated into two of the main concerns families have with the DWUL organization: recieving financial aid and a parent registering for a program with her child. 
             </p>
-            <img class="project-img" src="img/dwul/journey-map-parent.png" alt="Journey map of a parent seeking financial support to participate in a Do What U Luv program.">
-            <img class="project-img" src="img/dwul/journey-map-child.png" alt="Jounrey map of a child looking for a program to sign up for on the Do What U Luv website.">
+            <!-- <img class="project-img" src="img/dwul/journey-map-parent.png" alt="Journey map of a parent seeking financial support to participate in a Do What U Luv program."> -->
+            <!-- <img class="project-img" src="img/dwul/journey-map-child.png" alt="Jounrey map of a child looking for a program to sign up for on the Do What U Luv website."> -->
+            <div class="slideshow-container">
+                <div class="mySlides2">
+                    <img class="project-img" src="img/dwul/journey-map-parent.png" alt="Journey map of a parent seeking financial support to participate in a Do What U Luv program.">
+                </div>
+                <div class="mySlides2">
+                    <img class="project-img" src="img/dwul/journey-map-child.png" alt="Jounrey map of a child looking for a program to sign up for on the Do What U Luv website.">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
 
 
         </div>
@@ -234,6 +262,7 @@
 
 
     <script src="script/cursor.js"></script>
+    <script src="script/slideshow.js"></script>
     <script src="script/about.js"></script>
 
 </body>
