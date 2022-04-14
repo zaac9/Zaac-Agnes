@@ -37,7 +37,6 @@ ul.navbar {
 	margin-left: auto;
 	padding: 1% 0;
 	border-bottom: .3px solid rgb(70, 70, 70);
-	/* border-bottom: .3px solid rgb(240, 240, 240); */
 	z-index: 10;
 }
 header li.navLink {
@@ -54,7 +53,7 @@ header a {
 	text-decoration: none;
 	color:  rgb(70, 70, 70);
 	/* color:  rgb(240, 240, 240); */
-	/* padding:  5% 10%; */ /*PADDING CAUSING LINE BREAK */
+	padding: 10% 0;
 	/*transition:  all 0.2s ease 0s;*/
 	/*border:  1px solid black ;*/
 }
@@ -309,7 +308,7 @@ p.roles-text{
   background-color: white;
   border-radius: 50%;
   z-index: 10000;
-  mix-blend-mode:  difference;
+  mix-blend-mode: difference;
   /*transform:  translate(-50%, -50%);*/
 }
 /* CURSOR TRAIL */
@@ -319,8 +318,6 @@ div.cursors div {
 	/* left: 300px; */
 	width: 2.5rem;
 	height: 2.5rem;
-	/* background-color: rgb(32, 136, 101); */
-	/* background-color: #f54029; */
 	opacity: 50%;
 	border-radius: 50%;
 	border: 1px solid rgb(255, 255, 255);
@@ -405,6 +402,9 @@ p.coded-by-me{
 	.overlay p {
 		font-size: 1.4rem;
 		line-height: 2.2rem;
+	}
+	header a {
+		padding: 4% 0;
 	}
   }
 
