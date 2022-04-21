@@ -41,7 +41,7 @@
   }
 
   a.about-link:hover, a.about-link:focus {
-    color: #80caff;
+    font-style: italic;
 }
   
   .overlay .closebtn {
@@ -51,9 +51,10 @@
     font-size: 3rem;
     font-style: none;
     /* color: rgb(40, 40, 40); */
-    color: #ea6228;
+    color: #F54029;
     text-decoration: none;
   }
+
   
   @media screen and (max-height: 450px) {
     .overlay p {font-size: 20px}
