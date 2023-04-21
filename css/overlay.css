@@ -1,0 +1,119 @@
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    /* background-color: rgba(225, 225, 225, 0.95); */
+    background-color: #e8e8e8;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  :root{
+    --light: "#f1f1f1";
+  }
+
+  /* .overlay .about-background {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.15;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+  } */
+
+  .about-bg{
+    position: fixed;
+    top:-50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 18%;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 10%;
+  }
+
+
+  
+  p.about-me-text {
+    padding: 0.5rem;
+    padding-top: 1rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    /* color: rgb(240, 240, 240); */
+    color: rgb(70, 70, 70);
+    display: block;
+    transition: 0.3s;
+  }
+
+  .about-me-title{
+    color: rgb(70, 70, 70);
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    max-width: 43.2rem;
+    margin-left: 0.5rem;
+  }
+  .about-me-name{
+    /* color: #FFACAC; */
+    color: var(--main-color);
+  }
+    
+
+  /* .overlay-img {
+    background-image: url("img/ski-bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  } */
+
+
+  /* .overlay p:hover, .overlay p:focus {
+    color: #f1f1f1;
+  } */
+
+  a.about-link {
+      color: var(--main-color);
+      text-decoration: none;
+      font-weight: 500;
+  }
+
+  a.about-link:hover, a.about-link:focus {
+    font-style: italic;
+}
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    font-size: 3rem;
+    font-style: none;
+    /* color: rgb(40, 40, 40); */
+    color: var(--main-color);
+    text-decoration: none;
+  }
+
+  
+  @media screen and (max-height: 450px) {
+    /* p.about-me-text {
+      font-size: 2.2;
+    } */
+    .overlay .closebtn {
+    font-size: 2.2rem;
+    top: 1rem;
+    right: 2rem;
+    }
+    .about-me-title{
+      font-size: 4.4rem;
+      line-height: 4.4rem;
+    }
+  }
