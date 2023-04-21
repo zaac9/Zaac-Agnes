@@ -1,13 +1,17 @@
-
+/* VARIABLES */
 :root{
+	/* COLORS */
 	--title-color: rgb(70,70,70);
 	--text-color: rgb(90,90,90);
 	--light-text-color: rgb(120,120,120);
 	--background-color: rgb(240,240,240);
 	--main-color: #F8A70A;
 	--highlight-color: #16E6F7;
-}
 
+	/* TYPEFACES */
+	--my-serifs: 'Cormorant Garamond', 'Cormorant', serif;
+	--my-sans: 'proxima-nova', 'Open Sans', 'Geneva', sans-serif;
+}
 div.about-container{
 	display: flex;
 	/* flex-flow: row wrap; */
@@ -37,14 +41,15 @@ div.about-container{
 	font-size: 2.5rem;
 	font-weight: 600;
 	margin-left: 33%;
-	font-family: 'Garamond', 'Cormorant', serif;
+	font-family: var(--my-serifs);
+	/* font-family: 'Garamond', 'Cormorant', serif; */
 	color: var(--title-color)
 }
 
 .about-subtitle{
     font-size: 2.5rem;
 	color: var(--title-color);
-	font-family: 'Garamond', 'Cormorant', serif;
+	font-family: var(--my-serifs);
 	/* margin-bottom: .5rem; */
     font-weight: 500;
     color: var(--main-color);
@@ -52,7 +57,8 @@ div.about-container{
 
 .about-description{
     color: var(--text-color);
-    font-family: 'proxima-nova', 'Open Sans', 'Geneva', sans-serif;
+    /* font-family: 'proxima-nova', 'Open Sans', 'Geneva', sans-serif; */
+	font-family: var(--my-sans);
     font-size: 1.2rem;
     padding-top: 0.5rem;
 }

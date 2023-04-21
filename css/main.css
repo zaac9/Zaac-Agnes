@@ -1,10 +1,16 @@
+/* VARIABLES */
 :root{
+	/* COLORS */
 	--title-color: rgb(70,70,70);
 	--text-color: rgb(90,90,90);
 	--light-text-color: rgb(120,120,120);
 	--background-color: rgb(240,240,240);
 	--main-color: #F8A70A;
 	--highlight-color: #16E6F7;
+
+	/* TYPEFACES */
+	--my-serifs: 'Cormorant Garamond', 'Cormorant', serif;
+	--my-sans: 'proxima-nova', 'Open Sans', 'Geneva', sans-serif;
 }
 
 /* ALTERNATE "A" FOR PROXIMA-NOVA TYPEFACE */
@@ -18,7 +24,8 @@
 	padding:  0;
 	box-sizing:  border-box;
 	cursor:  none;
-	font-family: 'proxima-nova', 'Open Sans', 'Geneva', sans-serif;
+	/* font-family: 'proxima-nova', 'Open Sans', 'Geneva', sans-serif; */
+	font-family: var(--my-sans);
 	/* -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; */
 	font-variant-alternates: styleset(alt-a);
@@ -95,15 +102,17 @@ header a:hover{
 .zaac-intro{
 	font-size: 2.5rem;
 	color:rgb(255, 255, 255);
-	/* font-family: 'Garamond', 'Cormorant', serif; */
-	font-family: 'proxima-nova', 'Open Sans', 'Geneva', sans-serif;
+	/* font-family: 'proxima-nova', 'Open Sans', 'Geneva', sans-serif; */
+	font-family: var(--my-sans);
 	font-weight: 500;
 	/* SWITCHED FROM MARGIN TO PADDING */
 	padding: 5% 10% 10% 10%;
-	/* margin: 5rem 6rem 6rem 6rem; */
-	/* margin: 5% 10%; */
 	line-height: 125%;
 }
+/* .intro-emphasis{
+	font-family: var(--my-serifs);
+	font-style: italic;
+} */
 
 /* PROJECT SHOWCASE - HOME */
 h1.home-title {
