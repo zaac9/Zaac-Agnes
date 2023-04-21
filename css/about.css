@@ -19,6 +19,13 @@ div.about-container{
     border-top: .3px solid rgb(70, 70, 70);
     padding: 3% 0;
 }
+.about-content {
+    /* flex-grow: 4; */
+    flex-basis: 70%;
+}
+.about-heading{
+    flex-basis: 30%;
+}
 
 .about-subcontainer{
 	/* border-bottom: .3px solid rgb(70, 70, 70); */
@@ -74,14 +81,6 @@ div.about-container{
     flex-basis: 50%;
 } */
 
-.about-content {
-    /* flex-grow: 4; */
-    flex-basis: 70%;
-}
-
-.about-heading{
-    flex-basis: 30%;
-}
 
 
 

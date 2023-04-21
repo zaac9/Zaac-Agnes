@@ -114,15 +114,7 @@ header a:hover{
 	font-style: italic;
 } */
 
-/* PROJECT SHOWCASE - HOME */
-h1.home-title {
-	font-size: 2.5rem;
-	font-weight: 600;
-	margin-left: 10%;
-	margin-top: 5%;
-	font-family: 'Garamond', 'Cormorant', serif;
-	color: var(--title-color)
-}
+
 
 /* DIV - PROJECT CONTAINER */
 div.project-container{
@@ -130,15 +122,32 @@ div.project-container{
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: stretch;
+	/* flex-flow: row; */
+}
+
+.home-heading{
+	flex-basis: 40%;
+}
+.project-showcase{
+	flex-basis: 60%;
 }
 
 /* INDIVIDUAL PROJECTS */
-div.project-showcase{
+div.project-screen{
 	/* border-top: .3px solid rgb(70, 70, 70); */
-	margin-left: 45%;
+	/* margin-left: 45%; */
     margin-right: 10%;
-    margin-bottom: 3%;
-    /* text-align: center; */
+    margin-top: 4%;
+}
+/* PROJECT SHOWCASE - HOME */
+h1.home-title {
+	/* flex-basis: 30%; */
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-top: 5%;
+	margin-left: 10%;
+	font-family: 'Garamond', 'Cormorant', serif;
+	color: var(--title-color);
 }
 
 /* ORDER OF PROJECTS ON HOMEPAGE */
@@ -481,22 +490,19 @@ p.photo-caption{
 	.right-align{
 		text-align: right;
 	}
-}
 
-@media screen and (max-width: 900px) {
 	h1.home-title{
 		font-size: 2rem;
 	}
+}
+
+@media screen and (max-width: 900px) {
 	.zaac-intro{
 		font-size: 2rem;
 	}
 }
 
 @media screen and (max-width: 750px) {
-	h1.home-title{
-		margin-bottom: 5%;
-	}
-
 	div.project-showcase {
 		margin-left: 10%;
 	}
@@ -506,6 +512,19 @@ p.photo-caption{
 	}
 	.footer-flex{
 		padding: 0.5rem 0;
+	}
+
+	/* PROJECT SHOWCASE */
+	.home-heading {
+		flex-basis: 100%;
+		/* margin-left: 10%; */
+	}
+	h1.home-title{
+		margin-bottom: 2%;
+	}
+
+	.project-showcase {
+		flex-basis: 100%;
 	}
 }
 
