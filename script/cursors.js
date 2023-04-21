@@ -10,7 +10,7 @@ balls.forEach((ball, index) => {
 	let currentX = 0;
 	let currentY = 0;
 
-	let speed = 0.2 - index * 0.010;
+	let speed = 0.2 - index * 0.012;
 
 	const animate = function () {
 		//animate between current position and targetted position

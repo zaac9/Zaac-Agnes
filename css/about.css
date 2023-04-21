@@ -1,0 +1,121 @@
+
+:root{
+	--title-color: rgb(70,70,70);
+	--text-color: rgb(90,90,90);
+	--light-text-color: rgb(120,120,120);
+	--background-color: rgb(240,240,240);
+	--main-color: #F8A70A;
+	--highlight-color: #16E6F7;
+}
+
+div.about-container{
+	display: flex;
+	/* flex-flow: row wrap; */
+    flex-flow: row;
+    border-top: .3px solid rgb(70, 70, 70);
+    padding: 3% 0;
+}
+
+.about-subcontainer{
+	/* border-bottom: .3px solid rgb(70, 70, 70); */
+	margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    /* text-align: center; */
+}
+
+/* .about-col-1-of-2{
+
+} */
+
+#about-container-home{
+	margin: 0;
+	padding-bottom: 0;
+}
+
+.about-title {
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-left: 33%;
+	font-family: 'Garamond', 'Cormorant', serif;
+	color: var(--title-color)
+}
+
+.about-subtitle{
+    font-size: 2.5rem;
+	color: var(--title-color);
+	font-family: 'Garamond', 'Cormorant', serif;
+	/* margin-bottom: .5rem; */
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.about-description{
+    color: var(--text-color);
+    font-family: 'proxima-nova', 'Open Sans', 'Geneva', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.about-img{
+	max-width: 100%;
+	/* display: block; */
+	padding-left: 10%;
+    padding-top: 15%;
+}
+
+/* .about-flex{
+    flex-basis: 50%;
+} */
+
+.about-content {
+    /* flex-grow: 4; */
+    flex-basis: 70%;
+}
+
+.about-heading{
+    flex-basis: 30%;
+}
+
+
+
+/* _______________________________________________________________________ */
+/*********** MEDIA QUERIES ***********/
+@media screen and (max-width: 900px) {
+	.about-title{
+		font-size: 2rem;
+	}
+	.about-subtitle{
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	div.about-container{
+		display: block;
+	}
+	.about-title{
+		margin-bottom: 1.5rem;
+		margin-left: 10%;
+	}
+	.about-img{
+		max-width: 100%;
+		padding: 10%;
+		padding-bottom: 0;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.about-title{
+		font-size: 1.5rem;
+	}
+	.about-subtitle{
+		font-size: 1.5rem;
+	}
+	.about-description{
+		font-size: 1rem;
+	}
+}
+
+

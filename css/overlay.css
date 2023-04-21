@@ -7,9 +7,13 @@
     left: 0;
 
     /* background-color: rgba(225, 225, 225, 0.95); */
-    background-color: #EFEBEA;
+    background-color: #e8e8e8;
     overflow-x: hidden;
     transition: 0.5s;
+  }
+
+  :root{
+    --light: "#f1f1f1";
   }
 
   /* .overlay .about-background {
@@ -61,7 +65,7 @@
   }
   .about-me-name{
     /* color: #FFACAC; */
-    color: #F54029;
+    color: var(--main-color);
   }
     
 
@@ -78,7 +82,7 @@
   } */
 
   a.about-link {
-      color: #F54029;
+      color: var(--main-color);
       text-decoration: none;
       font-weight: 500;
   }
@@ -94,7 +98,7 @@
     font-size: 3rem;
     font-style: none;
     /* color: rgb(40, 40, 40); */
-    color: #F54029;
+    color: var(--main-color);
     text-decoration: none;
   }
 
