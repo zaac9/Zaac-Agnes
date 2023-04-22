@@ -252,15 +252,62 @@ p.footer-content{
 
 /* __________________________________________________________________________________________________ */
 /* STYLING PROJECT PAGES */
+/* COLOURED BANNER ON PROJECT PAGES */
+div.project-roles{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	justify-content: center;
+	margin-top: 2rem;
+}
+div.project-roles-content{
+	flex-basis: 33%;
+	/* border: .3px solid rgb(70, 70, 70); */
+}
+p.roles-title{
+	font-weight: 600;
+	color: var(--title-color);
+}
+p.roles-text{
+	/* width: 0;
+	overflow: visible; */
+	display: block;
+	padding-top: 0.2rem;
+	font-weight: 300;
+	color: var(--text-color);
+}
+span.it-bold {
+	font-style: italic;
+	font-weight: 500;
+}
+.caption{
+	font-style: italic;
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: var(--light-text-color);
+}
+/* TOP COLOURED BANNER */
+.color-banner{
+	background-color: var(--main-color);
+	/* padding: 0;
+	padding-top: 10%; */
+	/* margin-top: 5%; */
+	padding: 0 20%;
+	padding-bottom: 5%;
+}
+/* ________________________________________________________________________________________ */
+
+
 div.project-page-container{
 	margin: 0 20%;
 	padding-bottom: 7rem;
 }
 
-.specific{
+/* .specific{
 	margin: 0;
 	padding: 0;
-}
+} */
 
 /* ADJUSTMENT FOR HOME PADE TO SPAN ACROSS ENTIRE WIDTH */
 #project-container-home{
@@ -271,27 +318,14 @@ div.project-content{
 	width: 100%;
 	/* margin-top: 4rem; */
 }
-/* div.project-container{
+
+/* .project-content-2col {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: stretch;
-	justify-content: center;
-	min-height: 100vh;
-}
-div.project-showcase{
-	flex-basis: 50%;
-	border: .3px solid rgb(70, 70, 70);
-	text-align: center;
-} */
-.project-content-2col {
-	display: flex;
-	/* flex-flow: wrap; */
 	flex-wrap: nowrap;
 }
 .project-content-2col-type {
 	flex-basis: 50%;
-}
+} */
 
 h1.project-title{
 	color:var(--title-color);
@@ -377,42 +411,6 @@ ol li{
 
 
 
-div.project-roles{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: stretch;
-	justify-content: center;
-	margin-top: 2rem;
-}
-div.project-roles-content{
-	flex-basis: 33%;
-	/* border: .3px solid rgb(70, 70, 70); */
-}
-p.roles-title{
-	font-weight: 600;
-	color: var(--title-color);
-}
-p.roles-text{
-	/* width: 0;
-	overflow: visible; */
-	display: block;
-	padding-top: 0.2rem;
-	font-weight: 300;
-	color: var(--text-color);
-}
-span.it-bold {
-	font-style: italic;
-	font-weight: 500;
-}
-.caption{
-	font-style: italic;
-	font-size: 0.9rem;
-	font-weight: 300;
-	color: var(--light-text-color);
-}
-
-
 /* CURSOR */
 .pointer{
   position: fixed;
@@ -430,30 +428,16 @@ span.it-bold {
 /* CURSOR TRAIL */
 div.cursors div {
 	position:  absolute;
-	/* top: 300px; */
-	/* left: 300px; */
 	width: 2.5rem;
 	height: 2.5rem;
 	opacity: 50%;
 	border-radius: 50%;
-	border: 1px solid rgb(255, 255, 255);
-	/* border: none; */
+	border: .5px solid rgb(255, 255, 255);
 	z-index: 1000;
-	pointer-events:  none;
+	pointer-events: none;
 	transform: translate(-50%, -50%);
 	mix-blend-mode: difference;
 }
-/* div.cursors div span {
-	position:  absolute;
-	top: 0;
-	left:  40px;
-	width:  300px;
-	font-size:  1rem;
-	font-weight:  700;
-	line-height:  1rem;
-	color:  var(--main-color);
-} */
-
 
 p.photo-caption{
 	color:#555;
@@ -558,10 +542,10 @@ p.photo-caption{
 		order: 1;
 	}
 	#footer-location {
-		order: 3;
+		order: 2;
 	}
 	#footer-copyright {
-		order: 2;
+		order: 3;
 	}
 
 	/* CURSOR */
