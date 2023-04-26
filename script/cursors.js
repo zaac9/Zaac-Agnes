@@ -1,12 +1,12 @@
 
 
 const cursorTag = document.querySelector("div.cursors");
-const balls = cursorTag.querySelectorAll("div");
+const slingy = cursorTag.querySelectorAll("div");
 
 let aimX = 0;
 let aimY = 0;
 
-balls.forEach((ball, index) => {
+slingy.forEach((ball, index) => {
 	let currentX = 0;
 	let currentY = 0;
 
@@ -40,6 +40,8 @@ document.addEventListener("mousemove", function (event) {
 	// Where we are trying to aim towards:
 	aimX = event.pageX;
 	aimY = event.pageY;
+	// aimX = event.clientX;
+	// aimY = event.clientY;
 
 
 });

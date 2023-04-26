@@ -39,7 +39,8 @@ img {
 
 /* On hover, add a grey background color */
 .prev:hover, .next:hover {
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
+  background-color: var(--main-color);
   opacity: 100%;
   color: black;
   cursor: none;

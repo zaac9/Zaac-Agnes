@@ -4,7 +4,8 @@
 	--title-color: rgb(70,70,70);
 	--text-color: rgb(90,90,90);
 	--light-text-color: rgb(120,120,120);
-	--background-color: rgb(240,240,240);
+	--background-color: rgb(245,245,245);
+	/* --background-color: rgb(240,240,240); */
 	--main-color: #F8A70A;
 	--highlight-color: #16E6F7;
 
@@ -24,7 +25,6 @@
 	padding:  0;
 	box-sizing:  border-box;
 	cursor:  none;
-	/* font-family: 'proxima-nova', 'Open Sans', 'Geneva', sans-serif; */
 	font-family: var(--my-sans);
 	/* -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; */
@@ -38,7 +38,6 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	/* background-color:  rgb(253, 247, 235); */
 	background-color: var(--background-color);
 }
 
@@ -83,6 +82,9 @@ header a {
 	padding: 0.7rem 1.5rem;
 	font-size: 1.1rem;
     font-weight: 400;
+}
+.navText{
+	margin-left: 3rem;
 }
 header a:hover{
 	font-style: italic;
@@ -169,10 +171,11 @@ a.project-link{
 	/* color:var(--title-color); */
 	-webkit-filter: sepia(0);
 	filter: sepia(0);
+	color: var(--title-color);
 }
 a.project-link:hover{
 	font-style: italic;
-	/* color: var(--text-color); */
+	color: var(--main-color);
 }
 
 
@@ -182,7 +185,7 @@ p.project-showcase-title{
 	font-weight: 500;
 	/* padding-top: 3%; */
 	font-family: 'Garamond', 'Cormorant', serif;
-	color: var(--title-color);
+	/* color: var(--title-color); */
 }
 p.project-showcase-subtitle{
 	text-align: left;
@@ -190,7 +193,7 @@ p.project-showcase-subtitle{
 	font-weight: 400;
 	font-family: 'Garamond', 'Cormorant', serif;
 	padding-bottom: 0.3rem;
-	color: var(--text-color);
+	/* color: var(--text-color); */
 }
 
 img.project-showcase-img{
@@ -252,7 +255,6 @@ p.footer-content{
 
 /* __________________________________________________________________________________________________ */
 /* STYLING PROJECT PAGES */
-/* COLOURED BANNER ON PROJECT PAGES */
 div.project-roles{
 	display: flex;
 	flex-flow: row wrap;
@@ -290,26 +292,30 @@ span.it-bold {
 	text-align: center;
 }
 /* TOP COLOURED BANNER */
-.color-banner{
+/* .color-banner{
 	background-color: var(--main-color);
-	/* padding: 0;
-	padding-top: 10%; */
-	/* margin-top: 5%; */
 	padding: 0 20%;
 	padding-bottom: 5%;
+} */
+
+/* LINK TO PROJECT SLIDES */
+#slides-link-div{
+	margin-top: 2rem;
+}
+.slides-link{
+	color: var(--light-text-color);
+	font-size: 1.2rem;
+}
+.slides-link:hover, .slides-linkk:focus{
+	color: var(--main-color);
+	font-style: italic;
 }
 /* ________________________________________________________________________________________ */
 
 
 div.project-page-container{
 	margin: 0 20%;
-	padding-bottom: 7rem;
 }
-
-/* .specific{
-	margin: 0;
-	padding: 0;
-} */
 
 /* ADJUSTMENT FOR HOME PADE TO SPAN ACROSS ENTIRE WIDTH */
 #project-container-home{
@@ -319,16 +325,8 @@ div.project-page-container{
 }
 div.project-content{
 	width: 100%;
-	/* margin-top: 4rem; */
 }
 
-/* .project-content-2col {
-	display: flex;
-	flex-wrap: nowrap;
-}
-.project-content-2col-type {
-	flex-basis: 50%;
-} */
 
 h1.project-title{
 	color:var(--title-color);
@@ -344,15 +342,16 @@ h2.project-subtitle{
 }
 .project-content h3 {
 	text-transform: uppercase;
-	font-size: 1rem;
-	font-weight: 400;
-	padding-top: 3.5rem;
-	color: var(--title-color);
+	font-size: 1.2rem;
+	font-weight: 500;
+	padding-top: 5rem;
+	/* color: var(--title-color); */
+	color: var(--main-color)
 }
 .project-content h4 {
 	font-size: 1.8rem;
 	font-weight: 400;
-	padding-top: 2rem;
+	padding-top: 1.5rem;
 	color: var(--title-color);
 	font-family: 'Garamond', 'Cormorant', serif;
 }
@@ -371,7 +370,7 @@ p.project-text{
 	line-height: 190%; 
 	font-size: 1.2rem;
 }
-.project-text .bold{
+.bold{
 	font-style: normal;
 	font-weight: 500;
 }
@@ -392,7 +391,7 @@ ol li{
 	max-width: 100%;
 	border: 0.3px solid var(--text-color);
 	margin-top: 0.5rem;
-	/* margin-bottom: 1rem; */
+	margin-bottom: 1rem;
 }
 .project-content .project-img-adjustment {
 	border: none;
@@ -415,7 +414,7 @@ ol li{
 
 /* NEXT PROJECT BUTTONS */
 .next-project{
-	padding-top: 10%;
+	padding: 10% 0;
 	margin-top: 5%;
 	display: flex;
 	border-top: 0.5px solid var(--title-color);
@@ -450,10 +449,6 @@ ol li{
 	filter: grayscale(100%);
 	padding-top: .5rem;
 }
-a.next-project-link:hover .next-project-img, a.next-project-link:focus .next-project-img{
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-}
 
 .col-2{
 	flex-basis: 50%;
@@ -462,59 +457,36 @@ a.next-project-link:hover .next-project-img, a.next-project-link:focus .next-pro
 	padding: 0 1rem;
 }
 
-/* ___________________________ */
-/* p.project-showcase-title{
-	text-align: left;
-	font-size: 2rem;
-	font-weight: 500;
-	font-family: 'Garamond', 'Cormorant', serif;
-	color: var(--title-color);
-}
-p.project-showcase-subtitle{
-	text-align: left;
-	font-size: 1.2rem;
-	font-weight: 400;
-	font-family: 'Garamond', 'Cormorant', serif;
-	padding-bottom: 0.3rem;
-	color: var(--text-color);
-}
-
-img.project-showcase-img{
-	max-width: 100%;
-	display: block;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-}
-a.project-link:hover .project-showcase-img, a.project-link:focus .project-showcase-img{
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-} */
-/* _________________________ */
-
-
-
 /* CURSOR */
 .pointer{
   position: fixed;
-  width: 1rem;
-  height: 1rem;
-  background-color: white;
+  width: 16px;
+  height: 16px;
+  /* background-color: white; */
+  background-color: red;
   border-radius: 50%;
   z-index: 10000;
   mix-blend-mode: difference;
-  /* transform: translate(-50%, -50%); */
+  transition: transform .2s ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
   pointer-events: none;
+  cursor: none;
 }
 
+.scale-pointer{
+	transition: transform .15s ease-in-out;
+	transform: translate(-50%, -50%) scale(2);
+} 
 
 /* CURSOR TRAIL */
 div.cursors div {
 	position:  absolute;
-	width: 2.5rem;
-	height: 2.5rem;
+	width: 32px;
+	height: 32px;
 	opacity: 50%;
 	border-radius: 50%;
-	border: .5px solid rgb(255, 255, 255);
+	/* border: .5px solid rgb(255, 255, 255); */
+	border: .5px solid red;
 	z-index: 1000;
 	pointer-events: none;
 	transform: translate(-50%, -50%);
@@ -527,8 +499,8 @@ p.photo-caption{
 	font-weight: 300;
 }
 
+/* COLOR FOR SELECTING TEXT/ELEMENTS */
 ::selection {
-	/* background: rgb(255, 233, 35); */
 	background: var(--highlight-color);
   }
 
@@ -641,8 +613,11 @@ p.photo-caption{
   
   /* CURSOR TRAIL */
   div.cursors div {
-	  width: 0;
-	  height: 0;
+	width: 0;
+	height: 0;
   }
+  .navText{
+	margin-left: 0;
+	}
   }
 
