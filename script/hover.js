@@ -1,5 +1,3 @@
-
-
 $('a').hover(function(){
     $('.pointer').addClass('scale-pointer');
   }, function(){
