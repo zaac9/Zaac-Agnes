@@ -52,7 +52,7 @@ ul.navbar {
     list-style-type: none;
     width: 100%;
     justify-content: space-around;
-    padding: 1% 0;
+    padding: .9rem 0;
     border-bottom: 0.3px solid var(--title-color);
     background: var(--main-color);
     position: fixed;
@@ -612,15 +612,21 @@ p.photo-caption{
 		width: 0;
 		height: 0;
 	}
-	.navText{
+	.navLink a {
+		font-size: 1rem;
 		margin-left: 0;
-		}
+		padding: 0.7rem 0.5rem;
+	}
+
 	}
 
 	@media screen and (max-width: 400px) {
 		div.project-roles-content {
 			flex-basis: 100%;
 			padding-top: 1rem;
+		}
+		.zaac-intro {
+			font-size: 1rem;
 		}
 		
 	}
