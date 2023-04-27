@@ -272,10 +272,9 @@ p.roles-title{
 	color: var(--title-color);
 }
 p.roles-text{
-	/* width: 0;
-	overflow: visible; */
 	display: block;
 	padding-top: 0.2rem;
+	padding-right: 1rem;
 	font-weight: 300;
 	color: var(--text-color);
 }
@@ -463,8 +462,9 @@ ol li{
   width: 16px;
   height: 16px;
   /* background-color: white; */
-  background-color: red;
+  background-color: #0126f7;
   border-radius: 50%;
+  border: 0.3px solid black;
   z-index: 10000;
   mix-blend-mode: difference;
   transition: transform .2s ease-in-out;
@@ -479,19 +479,18 @@ ol li{
 } 
 
 /* CURSOR TRAIL */
-div.cursors div {
+/* div.cursors div {
 	position:  absolute;
 	width: 32px;
 	height: 32px;
 	opacity: 50%;
 	border-radius: 50%;
-	/* border: .5px solid rgb(255, 255, 255); */
-	border: .5px solid red;
+	border: .5px solid rgb(255, 255, 255);
 	z-index: 1000;
 	pointer-events: none;
 	transform: translate(-50%, -50%);
 	mix-blend-mode: difference;
-}
+} */
 
 p.photo-caption{
 	color:#555;
@@ -603,21 +602,26 @@ p.photo-caption{
 	#footer-copyright {
 		order: 3;
 	}
-
-	/* CURSOR */
-.pointer{
-	width: 0;
-	height: 0;
-  }
-  
-  
-  /* CURSOR TRAIL */
-  div.cursors div {
-	width: 0;
-	height: 0;
-  }
-  .navText{
-	margin-left: 0;
+	/* REMOVECURSOR */
+	.pointer{
+		width: 0;
+		height: 0;
 	}
-  }
+	/* CURSOR TRAIL */
+	div.cursors div {
+		width: 0;
+		height: 0;
+	}
+	.navText{
+		margin-left: 0;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		div.project-roles-content {
+			flex-basis: 100%;
+			padding-top: 1rem;
+		}
+		
+	}
 
