@@ -628,6 +628,8 @@ p.photo-caption{
 		.zaac-intro {
 			font-size: 1rem;
 		}
+		.pointer{
+			display: none;
+		}
 		
 	}
-
