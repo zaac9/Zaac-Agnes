@@ -603,33 +603,30 @@ p.photo-caption{
 		order: 3;
 	}
 	/* REMOVECURSOR */
-	.pointer{
+	/* .pointer{
 		width: 0;
 		height: 0;
-	}
+	} */
 	/* CURSOR TRAIL */
-	div.cursors div {
+	/* div.cursors div {
 		width: 0;
 		height: 0;
-	}
+	} */
 	.navLink a {
 		font-size: 1rem;
 		margin-left: 0;
 		padding: 0.7rem 0.5rem;
 	}
 
-	}
+}
 
-	@media screen and (max-width: 400px) {
-		div.project-roles-content {
-			flex-basis: 100%;
-			padding-top: 1rem;
-		}
-		.zaac-intro {
-			font-size: 1rem;
-		}
-		.pointer{
-			display: none;
-		}
-		
+@media screen and (max-width: 400px) {
+	div.project-roles-content {
+		flex-basis: 100%;
+		padding-top: 1rem;
 	}
+	.zaac-intro {
+		font-size: 1rem;
+	}
+	
+}
