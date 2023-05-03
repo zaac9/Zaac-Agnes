@@ -6,8 +6,8 @@
 	--light-text-color: rgb(120,120,120);
 	--background-color: rgb(245,245,245);
 	/* --background-color: rgb(240,240,240); */
-	/* --main-color: #F8A70A; */
-	--main-color: #24880e;
+	--main-color: #F8A70A;
+	/* --main-color: #24880e; */
 	--highlight-color: #16E6F7;
 
 	/* TYPEFACES */
@@ -90,7 +90,6 @@ header a {
 header a:hover{
 	font-style: italic;
 	color: var(--text-color);
-	/* color: var(--main-color); */
 }
 
 /*  HOMEPAGE INTRO INFO*/
@@ -169,7 +168,6 @@ h1.home-title {
 
 a.project-link{
 	text-decoration: none;
-	/* color:var(--title-color); */
 	-webkit-filter: sepia(0);
 	filter: sepia(0);
 	color: var(--title-color);
@@ -184,9 +182,7 @@ p.project-showcase-title{
 	text-align: left;
 	font-size: 2rem;
 	font-weight: 500;
-	/* padding-top: 3%; */
 	font-family: 'Garamond', 'Cormorant', serif;
-	/* color: var(--title-color); */
 }
 p.project-showcase-subtitle{
 	text-align: left;
