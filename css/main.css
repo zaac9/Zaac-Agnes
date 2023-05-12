@@ -95,7 +95,8 @@ header a:hover{
 /*  HOMEPAGE INTRO INFO*/
 /* TOP BANNER WITH COLOUR*/
 #top-banner{
-	background-color: var(--main-color);
+	/* background-color: var(--main-color); */
+	border-bottom: 1px solid var(--main-color);
 	padding: 0;
 	padding-top: 10%;
 	/* margin-top: 5%; */
@@ -103,13 +104,17 @@ header a:hover{
 /* HOMEPAGE TITLE */
 .zaac-intro{
 	font-size: 2.5rem;
-	color:rgb(255, 255, 255);
+	/* color:rgb(255, 255, 255); */
+	color:var(--title-color);
 	/* font-family: 'proxima-nova', 'Open Sans', 'Geneva', sans-serif; */
 	font-family: var(--my-sans);
 	font-weight: 500;
 	/* SWITCHED FROM MARGIN TO PADDING */
-	padding: 5% 10% 10% 10%;
+	padding: 5% 10% 5% 10%;
 	line-height: 125%;
+}
+.zaac-intro-highlight{
+	color: var(--main-color);
 }
 /* .intro-emphasis{
 	font-family: var(--my-serifs);
@@ -317,7 +322,7 @@ div.project-page-container{
 #project-container-home{
 	margin: 0;
 	padding-bottom: 0;
-	padding-top: 5%;
+	padding-top: 2%;
 }
 div.project-content{
 	width: 100%;
@@ -375,6 +380,16 @@ ol{
 	padding-left: 2rem;
 }
 ol li{
+	color: var(--text-color);
+    font-weight: 300;
+    padding-top: 0.5rem;
+    line-height: 1.7rem;
+}
+ul{
+	padding-left: 2rem;
+}
+ul li{
+	list-style-type: none;
 	color: var(--text-color);
     font-weight: 300;
     padding-top: 0.5rem;
