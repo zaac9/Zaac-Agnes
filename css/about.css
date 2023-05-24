@@ -5,8 +5,8 @@
 	--text-color: rgb(90,90,90);
 	--light-text-color: rgb(120,120,120);
 	--background-color: rgb(240,240,240);
-	--main-color: #F8A70A;
-	--highlight-color: #16E6F7;
+	--main-color: #DBF7D3;
+	--main-text-color: #6A7866;
 
 	/* TYPEFACES */
 	--my-serifs: 'Cormorant Garamond', 'Cormorant', serif;
@@ -55,7 +55,7 @@ div.about-container{
 	font-family: var(--my-serifs);
 	/* margin-bottom: .5rem; */
     font-weight: 500;
-    color: var(--main-color);
+    color: var(--main-text-color);
 }
 
 .about-description{
@@ -88,7 +88,7 @@ div.about-container{
 
 .about-link{
 	/* color: var(--title-color); */
-	color: var(--main-color);
+	color: var(--main-text-color);
 	text-decoration: none;
 }
 
