@@ -135,12 +135,12 @@ div.project-container{
 }
 
 /* INDIVIDUAL PROJECTS */
-div.project-screen{
+.project-screen{
     margin-right: 10%;
     margin-top: 4%;
 }
 /* PROJECT SHOWCASE - HOME */
-h1.home-title {
+.home-title {
 	/* flex-basis: 30%; */
 	font-size: 2.5rem;
 	font-weight: 600;
@@ -292,7 +292,7 @@ span.it-bold {
 /* ________________________________________________________________________________________ */
 
 
-div.project-page-container{
+.project-page-container{
 	margin: 0 20%;
 }
 
@@ -307,7 +307,7 @@ div.project-content{
 }
 
 
-h1.project-title{
+.project-title{
 	color:var(--title-color);
 	padding-top: 20%;
 	font-size: 4rem;
@@ -525,14 +525,14 @@ p.photo-caption{
 		text-align: right;
 	}
 
-	h1.home-title{
+	.home-title{
 		font-size: 2rem;
 	}
 }
 
 @media screen and (max-width: 750px) {
-	div.project-showcase {
-		margin-left: 10%;
+	.project-showcase {
+		margin: 0 5%;
 	}
 	footer{
 		margin: 0 10%;
@@ -547,18 +547,20 @@ p.photo-caption{
 		flex-basis: 100%;
 		/* margin-left: 10%; */
 	}
-	h1.home-title{
+	.home-title{
 		margin-bottom: 2%;
-		margin-left: 10%;
-		
+		margin-left: 5%;
 	}
 	.project-showcase {
 		flex-basis: 100%;
 	}
-
 	.zaac-intro{
 		font-size: 1.5rem;
 		margin-top: 5%;
+		padding: 5%;
+	}
+	.project-screen{
+		margin-right: 0;
 	}
 }
 
@@ -610,6 +612,14 @@ p.photo-caption{
 	}
 
 }
+@media screen and (max-width: 500px){
+	div.project-roles-content {
+		flex-basis: 100%;
+	}
+	.project-title {
+		padding-top: 35%;
+	}
+}
 
 @media screen and (max-width: 400px) {
 	div.project-roles-content {
@@ -619,6 +629,9 @@ p.photo-caption{
 	.zaac-intro {
 		font-size: 1rem;
 		margin-top: 10%;
+	}
+	.project-page-container {
+		margin: 0 5%;
 	}
 	
 }
