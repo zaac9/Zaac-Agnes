@@ -412,6 +412,7 @@ ul li{
 	text-decoration: none;
 	color: var(--title-color);
 	display: flex;
+	align-items: center;
 	width: 100%;
 }
 .next-project-link:hover, .next-project-link:focus{
@@ -604,13 +605,16 @@ p.photo-caption{
 	* {
 		cursor: default;
 	}
-	/* CURSOR TRAIL */
+	/* REMOVE CURSOR TRAIL */
 	.navLink a {
 		font-size: 1rem;
 		margin-left: 0;
 		padding: 0.7rem 0.5rem;
 	}
 
+	#next-project-arrow {
+		font-size: 2.5rem;
+	}
 }
 @media screen and (max-width: 500px){
 	div.project-roles-content {
@@ -632,6 +636,13 @@ p.photo-caption{
 	}
 	.project-page-container {
 		margin: 0 5%;
+	}
+	/* .next-project {
+		padding: 10% 5%;
+	} */
+	footer {
+		margin: 0 5%;
+		margin-top: 5%;
 	}
 	
 }
