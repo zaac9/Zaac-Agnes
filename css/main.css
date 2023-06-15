@@ -597,23 +597,26 @@ p.photo-caption{
 	}
 
 	/* REMOVECURSOR (SET TO DEFAULT CURSOR)*/
-	.pointer{
-		/* width: 0;
-		height: 0; */
-		display: none;
-	}
 	* {
 		cursor: default;
 	}
-	/* REMOVE CURSOR TRAIL */
+	.pointer{
+		display: none;
+	}
 	.navLink a {
 		font-size: 1rem;
 		margin-left: 0;
 		padding: 0.7rem 0.5rem;
 	}
-
 	#next-project-arrow {
 		font-size: 2.5rem;
+	}
+	.project-page-container {
+		margin: 0 5%;
+	}
+	footer {
+		margin: 0 5%;
+		margin-top: 5%;
 	}
 }
 @media screen and (max-width: 500px){
@@ -623,6 +626,7 @@ p.photo-caption{
 	.project-title {
 		padding-top: 35%;
 	}
+	
 }
 
 @media screen and (max-width: 400px) {
@@ -634,15 +638,7 @@ p.photo-caption{
 		font-size: 1rem;
 		margin-top: 10%;
 	}
-	.project-page-container {
-		margin: 0 5%;
-	}
-	/* .next-project {
+		/* .next-project {
 		padding: 10% 5%;
 	} */
-	footer {
-		margin: 0 5%;
-		margin-top: 5%;
-	}
-	
 }
