@@ -83,12 +83,18 @@ ul.navbar {
 }
 
 header a {
-	text-decoration: none;
+	/* text-decoration: none; */
 	/* color: white; */
 	color: var(--main-text-color);
 	padding: 0.7rem 1.5rem;
 	font-size: 1.1rem;
     font-weight: 400;
+	text-decoration: underline;
+	text-decoration-color: var(--main-text-color);
+}
+
+#nav-name{
+	text-decoration: none;
 }
 .navText{
 	margin-left: 3rem;
@@ -266,6 +272,9 @@ p.roles-text{
 }
 span.it-bold {
 	font-style: italic;
+	font-weight: 500;
+}
+span.bold{
 	font-weight: 500;
 }
 .caption{
