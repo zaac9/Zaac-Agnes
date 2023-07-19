@@ -73,7 +73,7 @@ div.about-container{
 }
 
 .zaac-about-intro{
-	font-size: 2.5rem;
+	font-size: 2rem;
 	/* color:rgb(255, 255, 255); */
 	color: var(--title-color);
 	font-family: var(--my-sans);
@@ -101,7 +101,7 @@ div.about-container{
 
 @media screen and (max-width: 1000px) {
 	.zaac-about-intro{
-		font-size: 2rem;
+		font-size: 1.4rem;
 	}
 }
 @media screen and (max-width: 900px) {
@@ -127,7 +127,7 @@ div.about-container{
 		padding-bottom: 0;
 	}
 	.zaac-about-intro{
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 
 }
