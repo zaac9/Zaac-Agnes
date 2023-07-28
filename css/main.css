@@ -26,7 +26,7 @@
 	margin:  0;
 	padding:  0;
 	box-sizing:  border-box;
-	cursor:  none;
+	cursor: none;
 	font-family: var(--my-sans);
 	/* -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; */
@@ -41,10 +41,10 @@ body {
 	background-color: var(--background-color);
 }
 
-header {
+/* header {
 	width: 100%;
 	z-index: 100;
-}
+} */
 
 .text-underline{
 	border-bottom: 1px solid var(--main-text-color);
@@ -66,12 +66,14 @@ ul.navbar {
 }
 
 
-/* header li */
-.navLink {
+
+/*  NavLink moved to menu2*/
+/* .navLink {
 	height: 100%;
 	text-decoration: none;
-	transition: 0.3s ease;
-}
+	font-size: 1.2rem;
+} */
+
 #navzaac{
 	margin-right: auto;
 }
@@ -82,26 +84,15 @@ ul.navbar {
 	margin-left: auto;
 }
 
-header a {
-	/* text-decoration: none; */
-	/* color: white; */
-	color: var(--main-text-color);
-	padding: 0.7rem 1.5rem;
-	font-size: 1.1rem;
-    font-weight: 400;
-	text-decoration: underline;
-	text-decoration-color: var(--main-text-color);
-}
-
 #nav-name{
 	text-decoration: none;
 }
 .navText{
 	margin-left: 3rem;
 }
-header a:hover{
-	font-style: italic;
-	color: var(--text-color);
+
+a:hover{
+	font-style:italic;
 }
 
 /*  HOMEPAGE INTRO INFO*/
@@ -305,6 +296,11 @@ span.bold{
 	margin: 0 20%;
 }
 
+/* ADJUSTMENT FOR SCROLL WHEN CLICKING PROJECTS FROM MENU */
+#projects{
+	padding-top: 3rem;
+}
+
 /* ADJUSTMENT FOR HOME PADE TO SPAN ACROSS ENTIRE WIDTH */
 #project-container-home{
 	margin: 0;
@@ -470,7 +466,7 @@ ul li{
   transition: transform .2s ease-in-out;
   transform: translate(-50%, -50%) scale(1);
   pointer-events: none;
-  cursor: none;
+  /* cursor: none; */
 }
 
 .scale-pointer{

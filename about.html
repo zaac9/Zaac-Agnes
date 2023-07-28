@@ -13,6 +13,7 @@
 		<!-- <link rel="stylesheet" href="css/main.css"> -->
 		<link rel="stylesheet" href="css/main-min.css">
 		<link rel="stylesheet" href="css/about.css">
+		<link rel="stylesheet" href="css/menu.css">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@
 	<body>
 		<div class="pointer"></div>
 
-		<header>
+		<!-- <header>
 			<nav class="topnav">
 				<ul class="navbar">
 					<li class="navLink" id="navzaac">
@@ -40,7 +41,23 @@
 					</li>
 				</ul>
 			</nav>
-		</header>
+		</header> -->
+		<header id="hamburger">
+			<a id="navName" href="index.html">Zaac Agnes</a>
+			<a href="#" class="menu-control-open" id="menuControlOpen">
+			  Menu
+		  </a>
+		<div class="menu">
+			<div class="menu-inner">
+					<a href="#" class="menu-control-close" id="menuControlClose">Close</a>
+					<nav>
+						<a class="navButton" id="navWork" href="index.html#projects">Work</a>
+						<a class="navButton" href="about.html">About Me</a>
+					  <a class="navButton" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">Resume</a>
+					</nav>
+				</div>
+		  </div>
+	  </header>
 
 		<!-- <section id="intro"> -->
 			<div class="about-container" id="top-banner">
@@ -49,8 +66,8 @@
 				</div>
 
 				<div class="about-content">
-					<p class="zaac-about-intro">I'm <span class="zaac-intro-highlight">Zaac</span>, a recent graduate (Spring 2023) from SFU's Interactive Arts and Technology program with a concentration in design. I thrive in teams by being a versatile thinker who is adept at comprehending new problem spaces and distilling diverse perspectives to bring forth strategic decision making within teams. Currently I'm residing in Vancouver, Canada and am looking for work in Summer and Fall 2023.</p>
-					<p class="zaac-about-intro" id="zaac-intro-extra">Feel free to view my <a class="about-link text-underline" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">resume</a> or <a class="about-link text-underline" href="mailto:zaacagnes9@gmail.com" target="_blank">send me an email, I'm always happy to chat.</a></p>
+					<p class="zaac-about-intro">I am <span class="zaac-intro-highlight">Zaac</span>, a recent graduate (Spring 2023) from SFU's Interactive Arts and Technology program with a concentration in design. I thrive in teams by being a versatile thinker adept at comprehending new problem spaces and distilling diverse perspectives to bring forth strategic decision making within teams. Currently I am residing in Vancouver, Canada and am looking for work in Summer and Fall 2023.</p>
+					<p class="zaac-about-intro" id="zaac-intro-extra">Feel free to view my <a class="about-link text-underline" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">resume</a> or <a class="about-link text-underline" href="mailto:zaacagnes9@gmail.com" target="_blank">send me an email</a>, I am always happy to chat.</p>
 				</div>
 			</div>
 
@@ -130,6 +147,7 @@
 		<script src="script/cursor.js"></script>
 		<!-- <script src="script/cursors.js"></script> -->
 		<script src="script/hover.js"></script>
+		<script src="script/menu.js"></script>
 
 	</body>
 </html>

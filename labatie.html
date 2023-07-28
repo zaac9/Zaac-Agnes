@@ -13,6 +13,7 @@
         <!-- MAIN STYLE SHEET -->
         <!-- <link rel="stylesheet" href="css/main.css"> -->
 		<link rel="stylesheet" href="css/main-min.css">
+        <link rel="stylesheet" href="css/menu.css">
 
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +29,7 @@
     <body>
         <div class="pointer"></div>
 
-        <header>
+        <!-- <header>
             <nav class="topnav">
                 <ul class="navbar">
                     <li class="navLink" id="navzaac">
@@ -41,7 +42,23 @@
                     </li>
                 </ul>
             </nav>
-        </header>
+        </header> -->
+        <header id="hamburger">
+            <a id="navName" href="index.html">Zaac Agnes</a>
+            <a href="#" class="menu-control-open" id="menuControlOpen">
+              Menu
+          </a>
+        <div class="menu">
+            <div class="menu-inner">
+                    <a href="#" class="menu-control-close" id="menuControlClose">Close</a>
+                    <nav>
+                        <a class="navButton" id="navWork" href="index.html#projects">Work</a>
+                        <a class="navButton" href="about.html">About Me</a>
+                      <a class="navButton" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">Resume</a>
+                    </nav>
+                </div>
+          </div>
+      </header>
 
         <div class="project-page-container">
             <div class="project-content">
@@ -365,6 +382,7 @@
         <script src="script/cursor.js"></script>
         <script src="script/slideshow.js"></script>
         <script src="script/hover.js"></script>
+        <script src="script/menu.js"></script>
 
     </body>
 </html>
