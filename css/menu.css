@@ -33,9 +33,6 @@ header {
     padding: 1.5rem 2rem 1.5rem 2rem;
 }
 
-
-
-
 header h1 {
     font-size: 2.2rem;
     float: left;
@@ -169,9 +166,13 @@ transition: transform 0.15s ease-in;
     transition-delay: 0.4s;
 }
 @media screen and (max-width: 767px) {
-.menu--active .menu {
-    width: 80%;
-}
+    .menu--active .menu {
+        width: 80%;
+    }
+    .navButton{
+        padding: 1.5rem 0 1.5rem 0;
+        font-size: 2.2rem;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .menu--active .menu {
@@ -180,12 +181,9 @@ transition: transform 0.15s ease-in;
     .menu--active .menu .menu-inner {
         width: 40vw;
     }
-    header a {
-        padding: 0;
-    }
     .navButton{
         padding: 1.5rem 0 1.5rem 0;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -232,6 +230,15 @@ transition: transform 0.15s ease-in;
 @media screen and (max-width: 1024px){
     header nav a {
         color: var(--background-color);
+    }
+    header a {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 750px){
+    header {
+        padding: 5%;
     }
 }
   

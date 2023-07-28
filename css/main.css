@@ -568,16 +568,16 @@ p.photo-caption{
 	.project-screen{
 		margin-right: 0;
 	}
+	a.project-link .project-showcase-img{
+		-webkit-filter: grayscale(0);
+		filter: grayscale(0);
+	}
 }
 
 @media screen and (max-width: 600px) {
 	div.project-showcase{
 		flex-basis: 100%;
 		margin-bottom: 10%;
-	}
-	a.project-link .project-showcase-img{
-		-webkit-filter: grayscale(0);
-		filter: grayscale(0);
 	}
 
 	.footer-flex{
