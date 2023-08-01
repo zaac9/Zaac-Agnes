@@ -31,6 +31,7 @@ header {
     color: var(--main-text-color);
     /* padding: 2rem; */
     padding: 1.5rem 2rem 1.5rem 2rem;
+    border-bottom: 1px solid var(--main-text-color);
 }
 
 header h1 {
@@ -47,6 +48,7 @@ header a:hover{
 }
 #navName{
     padding-left: 0;
+    /* border-right: 1px solid var(--main-text-color); */
 }
 
 header .menu-control-open, header .menu-control-close, header nav, header a {
@@ -75,17 +77,23 @@ header .menu-control-open {
     float: right;
 }
 .menu-control-open:hover{
-    color:var(--title-color);
+    color:var(--text-color);
 }
 
 #menuControlOpen{
     color: var(--main-text-color);
     transform: none;
 }
+#menuControlOpen:hover, #menuControlOpen:focus {
+    color: var(--text-color);
+}
 
 #menuControlClose{
     color: var(--background-color);
     transform: none;
+}
+#menuControlClose:hover, #menuControlClose:focus{
+    color: var(--text-color);
 }
 
 /* header .menu-control-open svg {
@@ -210,6 +218,7 @@ transition: transform 0.15s ease-in;
     header .menu a {
         transform: none;
         transition: none;
+        /* border-left: 1px solid var(--main-text-color); */
     }
     header .menu .version, header .menu .madeIn {
         bottom: -90.85vh;
