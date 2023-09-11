@@ -106,14 +106,15 @@ a:hover{
 /* HOMEPAGE TITLE */
 .zaac-intro{
 	font-size: 2.5rem;
-	color:var(--title-color);
-	font-family: var(--my-sans);
-	font-weight: 500;
+	color: var(--title-color);
+	font-family: var(--my-serifs);
+	font-weight: 600;
 	padding: 5% 10% 5% 10%;
 	line-height: 125%;
 }
 .zaac-intro-highlight{
 	color: var(--main-text-color);
+	font-family: var(--my-serifs);
 }
 
 /* DIV - PROJECT CONTAINER */
@@ -129,11 +130,13 @@ div.project-container{
 }
 .project-showcase{
 	flex-basis: 50%;
+	display: grid;
 }
 
 /* INDIVIDUAL PROJECTS */
 .project-screen{
-    margin-right: 10%;
+    /* margin-right: 10%; */
+	margin-right: 2rem;
     margin-top: 4%;
 }
 /* PROJECT SHOWCASE - HOME */
@@ -155,10 +158,10 @@ div.project-container{
 	order: 4;
 }
 #dossier {
-	order: 1;
+	order: 2;
 }
 #italist {
-	order: 2;
+	order: 1;
 }
 
 a.project-link{
