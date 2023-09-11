@@ -461,7 +461,9 @@ ul li{
   width: 20px;
   height: 20px;
   /* background-color: #0e52ff; */
-  background-color: #2e0832;
+  /* background-color: #2e0832; */
+  /* Dark green: */
+  background-color: #c960d3;
   border-radius: 50%;
   border: 0.3px solid black;
   z-index: 10000;
