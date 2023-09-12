@@ -17,9 +17,13 @@ openMenu.addEventListener('click', function(e) {
 });
 
 // FIXES ERROR OF MENU SCREEN NOT CLOSING ON HOME SCREEN WHEN CLICKING PROJECTS
-clickWork.addEventListener('click', function(e){
-    h.classList.toggle('menu--active');
-});
+
+    clickWork.addEventListener('click', function(e){
+        if (h.classList.contains('menu--active')){
+            h.classList.toggle('menu--active');
+        }
+    });
+
 
 
 
