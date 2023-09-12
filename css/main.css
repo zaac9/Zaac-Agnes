@@ -8,8 +8,10 @@
 	/* --background-color: rgb(240,240,240); */
 	--main-color: #DBF7D3;
 	/* --main-color: #F8A70A; */
-	--main-text-color: #6A7866;
-	--highlight-color: #A1F989;
+	/* --main-text-color: #6A7866;
+	--highlight-color: #A1F989; */
+	--main-text-color: #0c8021;
+	--highlight-color: #7df55c;
 
 	/* TYPEFACES */
 	--my-serifs: 'Cormorant Garamond', 'Cormorant', serif;

@@ -6,7 +6,9 @@
 	--light-text-color: #787878;
 	--background-color: #F0F0F0;
 	--main-color: #DBF7D3;
-	--main-text-color: #6A7866;
+	/* --main-text-color: #6A7866; */
+	--main-text-color: #0c8021;
+	--highlight-color: #7df55c;
 
 	/* TYPEFACES */
 	--my-serifs: 'Cormorant Garamond', 'Cormorant', serif;

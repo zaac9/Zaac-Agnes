@@ -11,7 +11,7 @@
 	/* --main-color: #F8A70A; */
 	/* --main-text-color: #6A7866; */
     --main-text-color: #0c8021;
-	--highlight-color: #A1F989;
+	--highlight-color: #7df55c;
 
 	/* TYPEFACES */
 	--my-serifs: 'Cormorant Garamond', 'Cormorant', serif;
@@ -51,6 +51,9 @@ header a:hover{
     padding-left: 0;
     /* border-right: 1px solid var(--main-text-color); */
 }
+#navName:hover{
+    color: var(--highlight-color);
+}
 
 header .menu-control-open, header .menu-control-close, header nav, header a {
     font-weight: bold;
@@ -65,7 +68,8 @@ header .menu-control-open, header .menu-control-close, header nav a {
     color: var(--main-text-color);
 }
 .menu-control-close:hover, header nav a:hover {
-    color: var(--text-color)
+    /* color: var(--text-color); */
+    color: var(--highlight-color);
 }
 
 header .menu-control-open, header .menu-control-close {
@@ -78,7 +82,8 @@ header .menu-control-open {
     float: right;
 }
 .menu-control-open:hover{
-    color:var(--text-color);
+    /* color:var(--text-color); */
+    color: var(--highlight-color);
 }
 
 #menuControlOpen{
@@ -86,7 +91,8 @@ header .menu-control-open {
     transform: none;
 }
 #menuControlOpen:hover, #menuControlOpen:focus {
-    color: var(--text-color);
+    /* color: var(--text-color); */
+    color: var(--highlight-color);
 }
 
 #menuControlClose{
@@ -94,7 +100,8 @@ header .menu-control-open {
     transform: none;
 }
 #menuControlClose:hover, #menuControlClose:focus{
-    color: var(--text-color);
+    /* color: var(--text-color); */
+    color: var(--highlight-color);
 }
 
 /* header .menu-control-open svg {
