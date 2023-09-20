@@ -287,11 +287,11 @@ span.bold{
 	margin-top: 2rem;
 }
 .slides-link{
-	color: var(--light-text-color);
-	font-size: 1.2rem;
+	color: var(--main-text-color);
+	/* font-size: 1.2rem; */
 }
 .slides-link:hover, .slides-linkk:focus{
-	color: var(--main-text-color);
+	color: var(--highlight-color);
 	font-style: italic;
 }
 /* ________________________________________________________________________________________ */
