@@ -364,6 +364,13 @@ p.project-text{
 	font-weight: 500;
 }
 
+.title-number{
+	/* font-style: italic; */
+	font-family: var(--my-serifs);
+	/* font-style: italic; */
+	font-weight: 400;
+}
+
 ol{
 	padding-left: 2rem;
 }
@@ -500,6 +507,8 @@ p.photo-caption{
 	font-size: 0.8rem;
 	font-weight: 300;
 }
+
+
 
 /* COLOR FOR SELECTING TEXT/ELEMENTS */
 ::selection {
