@@ -359,6 +359,14 @@ p.project-text{
 	line-height: 190%; 
 	font-size: 1.2rem;
 }
+
+.project-em{
+	color: var(--main-text-color);
+	font-size: 2rem;
+	font-weight: 600;
+	padding-bottom: 0.8rem;
+}
+
 .bold{
 	font-style: normal;
 	font-weight: 500;
