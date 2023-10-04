@@ -87,6 +87,10 @@ div.about-container{
 	font-weight: 600;
 }
 
+.about-intro {
+	font-size: 2rem;
+}
+
 #zaac-intro-extra{
 	padding-top: 0;
 }
@@ -99,6 +103,14 @@ div.about-container{
 
 .about-link:hover, .about-link:focus{
 	font-style: italic;
+}
+
+.about-link-serif{
+	font-family: var(--my-serifs);
+}
+
+.zaac-about-intro{
+	font-size: 2rem;
 }
 
 /* _______________________________________________________________________ */
