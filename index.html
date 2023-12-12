@@ -31,6 +31,10 @@
 
 		<!-- <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script> -->
 		<script src="jquery/jquery-3.6.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js" integrity="sha512-/8phkpsAzxsbuX18zNkQ2gCq4Q5JsWoPo1jHLDeZorPUHRtx9YJxpdk+os05oDhPJVCNzA2/NMl4rmJyQ+6Fvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 	</head>
 
 	<body>
@@ -58,7 +62,8 @@
 
 			<!-- <section id="intro"> -->
 			<div class="project-container" id="top-banner">
-				<p class="zaac-intro">Hi, I am <span class="zaac-intro-highlight">Zaac</span>, a product designer adept at comprehending new problem spaces and distilling diverse perspectives to surface strategic decision-making within teams. I excel at translating conceptual ideas into visually captivating user-centric experiences.</p>
+				<!-- <p class="zaac-intro">Hi, I am <span class="zaac-intro-highlight project-hover">Zaac</span>, a product designer adept at comprehending new problem spaces and distilling diverse perspectives to surface strategic decision-making within teams. I excel at translating conceptual ideas into visually captivating user-centric experiences.</p> -->
+				<p class="zaac-intro">Hi, I am Zaac, a designer adept at comprehending new problem spaces and distilling diverse perspectives to surface strategic decision-making within teams. I excel at translating conceptual ideas into visually captivating user-centric experiences.</p>
 			</div> <!-- project-container -->
 
 			<!-- </section> -->
@@ -70,40 +75,69 @@
 						<h1 class="home-title">Select Case Studies <span class="title-number">(4)</i></h1>
 					</div>
 
+					<!-- PROJECT SHOWCASE -->
 					<div class="project-showcase">
 
-						<div class="project-screen" id="italist">
-							<a class="project-link" href="italist.html">
-								<p class="project-showcase-title">Italist</p>
-								<p class="project-showcase-subtitle">Interaction Design and Rebrand</p>
-								<img class="project-showcase-img" src="img/italist/italist-home.png" alt="">	
-							</a>
+						<!-- ITALIST -->
+						<div class="italist-main" id="italist">
+							<div class="project-screen" >
+								<a class="project-link italist-link" href="italist.html">
+									<p class="project-showcase-title">Italist Website Rebrand</p>
+									<p class="project-showcase-subtitle">User Experience and Visual Design</p>
+									<!-- <img class="project-showcase-img project-hover" src="img/italist/italist-home.png" alt="">	 -->
+								</a>
+							</div>
+							<div id="hover-content-italist">
+								<img class="photos" id="italist_photo" src="img/italist/italist-home-hover.png" alt="" width="480">
+								<!-- <h2 class="description">"bluh bluh bluh"</h2> -->
+							</div>
 						</div>
 
-						<div class="project-screen" id="labatie">
-							<a class="project-link" href="labatie.html">
-								<p class="project-showcase-title">La Batie</p>
-								<p class="project-showcase-subtitle">Interaction and Visual Design</p>
-								<img class="project-showcase-img" src="img/labatie/hallway-entrance-resize.png" alt="Asset mockup of walking into a La Batie Cabaret event">	
-							</a>
+						<!-- LABATIE -->
+						<div class="labatie-main" id="labatie" >
+							<div class="project-screen" onMouseOver="hideBlock('caption')" onMouseOut="showBlock('caption')">
+								<a class="project-link labatie-link" href="labatie.html">
+									<p class="project-showcase-title">La Batie Festival</p>
+									<p class="project-showcase-subtitle">Interaction and Visual Design</p>
+									<!-- <img class="project-showcase-img project-hover" src="img/italist/italist-home.png" alt="">	 -->
+								</a>
+							</div>
+							<div id="hover-content-labatie">
+								<img class="photos" id="labatie_photo" src="img/labatie/hallway-entrance-resize.png" alt="" width="480">
+								<!-- <h2 class="description">"doom doom doom"</h2> -->
+							</div>
 						</div>
 
-						<div class="project-screen" id="dossier">
-							<a class="project-link" href="dossier.html">
-								<p class="project-showcase-title">Dossier</p>
-								<p class="project-showcase-subtitle">Railyard Lab Branding Internship</p>	
-								<img class="project-showcase-img" src="img/dossier/railyard-home.png" alt="Dossier Railyard Lab Internship Icon">				
-							</a>
+						<!-- DOSSIER -->
+						<div class="dossier-main" id="dossier" >
+							<div class="project-screen" onMouseOver="hideBlock('caption')" onMouseOut="showBlock('caption')">
+								<a class="project-link dossier-link" href="dossier.html">
+									<p class="project-showcase-title">Dossier Design Internship</p>
+									<p class="project-showcase-subtitle">Created brand identities and naming strategies for two clients.</p>
+									<!-- <img class="project-showcase-img project-hover" src="img/italist/italist-home.png" alt="">	 -->
+								</a>
+							</div>
+							<div id="hover-content-dossier">
+								<img class="photos" id="dossier_photo" src="img/dossier/railyard-home.png" alt="" width="480">
+								<!-- <h2 class="description">"glee glee glee"</h2> -->
+							</div>
 						</div>
-
-						<div class="project-screen" id="summit">
-							<a class="project-link" href="summit.html">
-								<p class="project-showcase-title">Summit Application</p>
-								<p class="project-showcase-subtitle">Mobile Interface Design and UX</p>
-								<img class="project-showcase-img" src="img/summit/summit-home-1.png" alt="Summit application home screen preview">
-							</a>
+						
+						<!-- SUMMIT -->
+						<div class="summit-main" id="summit" >
+							<div class="project-screen" id="project-screen-last" onMouseOver="hideBlock('caption')" onMouseOut="showBlock('caption')">
+								<a class="project-link summit-link" href="summit.html">
+									<p class="project-showcase-title">Summit Mobile Application</p>
+									<p class="project-showcase-subtitle">Prototyped a smartphone application and tested among users</p>
+									<!-- <img class="project-showcase-img project-hover" src="img/italist/italist-home.png" alt="">	 -->
+								</a>
+							</div>
+							<div id="hover-content-summit">
+								<img class="photos" id="summit_photo" src="img/summit/summit-home.png" alt="" width="480">
+								<!-- <h2 class="description">"fashfklaf"</h2> -->
+							</div>
 						</div>
-					</div>
+					</div> <!-- project showcase-->
 				</div> <!-- project-container -->
 			</section> <!-- projects -->
 
@@ -137,5 +171,6 @@
 		<!-- <script src="script/cursors.js"></script> -->
 		<script src="script/hover.js"></script>
 		<script src="script/menu.js"></script>
+		<script src="script/homeImages.js"></script>
 	</body>
 </html>

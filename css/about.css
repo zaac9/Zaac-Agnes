@@ -18,7 +18,7 @@ div.about-container{
 	display: flex;
 	/* flex-flow: row wrap; */
     flex-flow: row;
-    border-top: .3px solid rgb(70, 70, 70);
+    border-top: .5px solid var(--main-text-color);
     padding: 3% 0;
 }
 #about-container-first{
@@ -52,12 +52,12 @@ div.about-container{
 }
 
 .about-subtitle{
-    font-size: 2.5rem;
+    font-size: 2rem;
 	color: var(--title-color);
 	font-family: var(--my-serifs);
 	/* margin-bottom: .5rem; */
     font-weight: 500;
-    color: var(--main-text-color);
+    /* color: var(--main-text-color); */
 }
 
 .about-description{
