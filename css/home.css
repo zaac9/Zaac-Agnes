@@ -16,16 +16,16 @@
 
 /* PROJECT DISPLAY ORDER */
 #labatie {
-	order: 2;
-}
-#summit {
-	order: 4;
-}
-#dossier {
 	order: 1;
 }
-#italist {
+/* #summit {
+	order: 4;
+} */
+#dossier {
 	order: 3;
+}
+#italist {
+	order: 2;
 }
 
 /* MAIN SECTIONS ON HOME PAGE */
