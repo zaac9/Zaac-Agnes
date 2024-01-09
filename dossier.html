@@ -1,188 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google" content="notranslate"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaac Agnes | Dossier</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicons/favicon-dossier.ico">
-
-    <!-- SLIDESHOW STYLE SHEET -->
-    <link rel="stylesheet" href="css/slideshow.css">
-    <!-- MAIN STYLE SHEET -->
-	<!-- <link rel="stylesheet" href="css/main.css"> -->
-    <link rel="stylesheet" href="css/main-min.css">
-    <link rel="stylesheet" href="css/menu.css">
-
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-	<!-- OPEN SANS + CORMORANT TYPEFACE -->
-    <link rel="stylesheet" href="https://use.typekit.net/mnt0bcx.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
-    <script src="jquery/jquery-3.6.0.min.js"></script>
-    <!-- Garamond Cormorant -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-    <!-- <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js" integrity="sha512-/8phkpsAzxsbuX18zNkQ2gCq4Q5JsWoPo1jHLDeZorPUHRtx9YJxpdk+os05oDhPJVCNzA2/NMl4rmJyQ+6Fvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-</head>
-
-<body>
-	<div class="pointer"></div>
-
-    <!-- <header>
-		<nav class="topnav">
-			<ul class="navbar">
-				<li class="navLink" id="navzaac">
-					<a href="index.html">Zaac Agnes</a>
-				</li>
-
-				<li class="navLink" id="navwork">
-					<a class="navText" href="index.html#projects">Work</a>
-					<a class="navText" href="about.html">About Me</a>
-				</li>
-			</ul>
-		</nav>
-	</header> -->
-    <header id="hamburger">
-        <a id="navName" href="index.html">Zaac Agnes</a>
-        <a href="#" class="menu-control-open" id="menuControlOpen">
-          Menu
-      </a>
-    <div class="menu">
-        <div class="menu-inner">
-                <a href="#" class="menu-control-close" id="menuControlClose">Close</a>
-                <nav>
-                    <a class="navButton" id="navWork" href="index.html#projects">Work</a>
-                    <a class="navButton" href="about.html">About Me</a>
-                  <a class="navButton" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">Resume</a>
-                </nav>
-            </div>
-      </div>
-  </header>
-
-
-    <div class="project-page-container">
-
-    <div class="project-content">
-        <h1 class="project-title">Dossier Internship</h1>
-        <h2 class="project-subtitle">Railyard Lab</h2>
-    <!-- </div>
-
-
-    <div class="project-content"> -->
-        <div class="project-roles">
-            <div class="project-roles-content">
-                <p class="roles-title">My Roles</p>
-                <p class="roles-text">Creative Strategy</p>
-                <p class="roles-text">Logo Design</p>
-                <p class="roles-text">Content Strategy</p>
-                <p class="roles-text">Secondary Research</p>
-                <p class="roles-text">Primary Research</p>
-            </div>
-            <div class="project-roles-content">
-                <p class="roles-title">Team</p>
-                <p class="roles-text">Ciara</p>
-                <p class="roles-text">Melissa</p>
-                <p class="roles-text">Michelle</p>
-            </div>
-            <div class="project-roles-content">
-                <p class="roles-title">Time Frame</p>
-                <p class="roles-text">Summer 2022, for 3 months</p>
-                <p class="roles-text">(June - September)</p>
-            </div>
-        </div>
-    </div>
-
-
-
-        <div class="project-content">
-            <h3>Context</h3>
-            <p class="project-em">Railyard Lab is an internship run by the branding and packaging company behind <span class="it-bold">Mikes Hard Lemonade</span> and <span class="it-bold">the Little Potato Company</span> among other household names. I collaborated with business and design students to develop a successful branding strategy for two clients in the social impact space.</p>
-            <p class="project-text">Currently, I am unable to showcase the project deliverables online while the designs are being launched by the companies we worked with. <span class="bold">I would love to talk more about my internship experience and show the produced designs in-person or over a call.</span></p>
-            <h4>Mentorship</h4>
-            <p class="project-text">I was very fortunate to be mentored by senior designers at Dossier where I learned about the branding and creative strategy processes. I learned how to effectively transfer client ideas into concrete design directions to visualize the brand for the client. Additionally, I gained insight in how to communicate design in a concise manner using mockups, colour theory, and design rationale.</p>
-        </div>
-
-        <div class="project-content">
-            <h3>Brand Identities</h3>
-
-            <h4>International Financial Consulting Company</h4>
-            <p class="project-text">An international financial consulting firm seeking a rebrand that better aligns with their core strenths and differentiates themselves in the financial sector.</p>
-            <p class="project-text">I designed three creative strategy directions including moodboards and colour palette options for the brand. Furthermore, I helped to materialize the brand values into actionable phrases which directed the ideation of renaming the client's business.</p>
-            <p class="project-text">The client's website with the rebrand can be found at <a class="slides-link" href="https://momentus.global/">momentus.global.</a></p>
-
-            <h4>Indigenous-led Apparel Company</h4>
-            <p class="project-text">An Indigenous company with the objective of creating a thought-provoking apparel brand with proceeds funding Indigenous non-profits, communities, and nature programs.</p>
-            <p class="project-text">One of my primary roles was to create a unique logo that encompassed the thought-provoking nature that defines the brand while being visually appealing to a wide audience. I also had a heavy hand in defining the values that define how the brand behaves and communicates with their audience.</p>
-            <!-- <img class="project-img" src="img/dossier/colour-nawos.png" alt="">
-            <p class="caption">Primary and secondary colour options for Client #1</p> -->
-            <!-- <img class="project-img" src="img/dossier/colour-momentus.png" alt="">
-            <p class="caption">Primary and secondary solour palette the client proceeded with</p> -->
-        </div>
-        <div class="project-content">
-            <h3>Learning Takeaways</h3>
-            <p class="project-text">This internship was an invaluable experience that taught me far more about the design process compared to the classroom. Client presenations and interactions, quickly developing team interactions, and explaining style guidelines for non-designers to understand are learnings that cannot be taught in a classroom.</p>
-        </div>
-
-        <div class="project-content">
-            <img class="project-img" src="img/dossier/team-photo.jpeg" alt="">
-        </div>
-
-        <div class="next-project">
-            <a class="next-project-link" href="labatie.html">
-                <div class="col-2">
-                    <p class="next-project-title" id="next-project-arrow">Next Project &#x203A;</p>
-                </div>
-                <div class="col-2" id="next-project-text-adjust">
-                    <p class="next-project-title">La Batie</p>
-                    <p class="next-project-subtitle">Interaction and Visual Design</p>
-                </div>
-            </a>
-        </div>
-    </div>
-
-	<footer>
-		<div class="project-container">
-			<div class="footer-flex" id="footer-empty">
-
-			</div>
-			<div class="footer-flex" id="footer-connect">
-				<p class="footer-title">Let's connect</p>
-				<p class="footer-content">
-					<a href="mailto:zaacagnes9@gmail.com">zaacagnes9@gmail.com</a>
-				</p>
-				<p class="footer-content">
-					<a href="https://www.linkedin.com/in/zaac-agnes">LinkedIn</a>
-				</p>
-			</div>
-			<div class="footer-flex" id="footer-location">
-				<p class="footer-title">Where abouts</p>
-				<p class="footer-content">Currently living in Vancouver Canada</p>
-			</div>
-			<div class="footer-flex" id="footer-copyright">
-				<p class="about-title"> </p>
-				<p class="footer-content right-align">&copy; Zaac Agnes 2023</p>
-			</div>
-		</div>
-	</footer>
-
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
-    
-    
-    <script src="script/cursor.js"></script>
-    <script src="script/hover.js"></script>
-    <script src="script/menu.js"></script>
-    
-</body>
+        <title>Zaac Agnes | Home</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicons/favicon-italist.ico">
+
+        <!-- LINKING STYLE SHEETS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/style-min.css"> -->
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/projects.css">
+        <!-- <link rel="stylesheet" href="css/slideshow.css"> -->
+
+        <!-- LINKING TYPEFACES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!-- IMPORT DOWNLOADED JQUERY -->
+        <script src="jquery/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+        <div class="pointer"></div>
+		<header id="hamburger">
+			<a id="navName" href="index.html">Zaac Agnes</a>
+			<a href="#" class="menu-control-open" id="menuControlOpen">Menu</a>
+			<div class="menu">
+				<div class="menu-inner">
+						<a href="#" class="menu-control-close" id="menuControlClose">Close</a>
+						<nav>
+							<a class="navButton" id="navWork" href="index.html#projects">Work</a>
+							<a class="navButton" href="about.html">About</a>
+							<a class="navButton" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">Resume</a>
+						</nav>
+				</div> <!-- menu-inner -->
+			</div> <!-- menu -->
+    	</header>
+
+
+        <div class="project-page-container">
+            <section class="project-banner">
+                <div class="flex-container content-gap-medium project-banner">
+                    <div class="col-3-of-5">
+                        <h1 class="project-main-title">Dossier Internship</h1>
+                    </div>
+                    <div class="col-1-of-5">
+                        <div class="project-details-content">
+                            <li class="details-title">My Roles</li>
+                            <li class="details-text">Creative Strategy</li>
+                            <li class="details-text">Logo Design</li>
+                            <li class="details-text">Content Strategy</li>
+                            <li class="details-text">UX Research</li>
+                        </div>
+                    </div>
+                    <div class="col-1-of-5">
+                        <div class="project-details-content">
+                            <li class="details-title">Branding Design</li>
+                            <li class="details-text">4-member Team</li>
+                            <li class="details-text">Summer 2022</li>
+                            <li class="details-text">2-month Internship</li>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="flex-container">
+                <div class="col-3-of-5">
+                    <p class="primary-text">Railyard Lab is an internship program run by <span class="primary-text-em">Dossier Creative</span> the branding and packaging design agency behind <span class="primary-text-em">Mikes Hard Lemonade</span>, <span class="primary-text-em">Portofino Bakery</span>, <span class="primary-text-em">Naked Grape Wines</span>, and other household brands.</p>
+                    <p class="primary-text content-gap-small">I collaborated with business and design students to develop a successful branding strategies for two clients in the social impact space.</p>
+                </div>
+            </div>
+
+            <div class="flex-container content-gap-large">
+                <div class="col-3-of-5">
+                    <p class="primary-text">More details of my internship are to come once the companies we worked with release their designs. In the meantime I am happy to share more details of the projects I worked on in-person or over a call.</p>
+                </div>
+            </div>
+
+            <div class="next-project">
+                <a class="flex-container next-project-link" href="labatie.html">
+                    <div class="col-2-of-5">
+                        <p class="next-project-title" id="next-project-arrow">Next Project &#x203A;</p>
+                    </div>
+                    <div class="col-3-of-5">
+                        <p class="next-project-title">La Batie</p>
+                        <p class="next-project-subtitle">Visual Design and Interaction Design</p>
+                    </div>
+                </a>
+            </div>
+        </div> <!-- project-page-container-->
+
+        <!-- FOOTER CONTENT -->
+        <footer>
+            <div class="flex-container footer-container">
+                <div class="footer-flex" id="footer-connect">
+                    <p class="footer-title">Reach Out</p>
+                    <p class="footer-content">
+                        <a href="mailto:zaacagnes9@gmail.com">zaacagnes9@gmail.com</a>
+                    </p>
+                    <p class="footer-content">
+                        <a href="https://www.linkedin.com/in/zaac-agnes">View my LinkedIn</a>
+                    </p>
+                </div>
+                <div class="footer-flex rain-main" id="footer-location">
+                    <p class="footer-title">Where abouts</p>
+                    <p class="footer-content">Currently living in </p>
+                    <p class="footer-content">Vancouver, Canada </p>
+                </div>
+                <div class="footer-flex" id="footer-copyright">
+                    <p class="footer-title right-align">&copy; Zaac Agnes 2023</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script/main.js"></script>
+        <!-- <script src="script/videolabatie.js"></script> -->
+        <!-- <script src="script/slideshow.js"></script> -->
+    </body>
 </html>
+

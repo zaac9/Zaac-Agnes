@@ -1,0 +1,140 @@
+
+#about-banner{
+	padding-top: 4.25rem;
+	border-bottom: 0.5px solid var(--text-color);
+}
+
+.about-header{
+    flex-basis: 36%;
+}
+.about-content{
+    flex-basis: 64%;
+}
+
+#about-container-adjust{
+	padding: 2rem 0;
+}
+
+.about-display-list{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.about-display-container{
+    margin-right: 5vw;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.about-display-title{
+    text-align: left;
+	font-size: 2rem;
+	font-weight: 400;
+	font-family: var(--serifs);
+    color: var(--text-color);
+}
+.about-display-subtitle{
+	text-align: left;
+	font-size: 1.2rem;
+	font-weight: 300;
+	font-family: var(--serifs);
+	padding-bottom: 0.3rem;
+}
+
+
+.about-img{
+	max-width: 100%;
+	/* display: block; */
+	padding-left: 10%;
+    padding-top: 25%;
+}
+
+.about-intro {
+	font-weight: 400;
+	font-size: 2rem;
+	padding-left: 1rem;
+	padding-bottom: 2rem;
+}
+
+.about-gap{
+	padding-top: 0;
+}
+
+.about-link{
+	color: var(--main-text-color);
+	text-decoration: underline;
+	text-decoration-color: var(--light-grey);
+	text-decoration-thickness: from-font;
+}
+
+/* _______________________________________________________________________ */
+/*********** MEDIA QUERIES ***********/
+
+@media screen and (max-width: 1000px) {
+	/* .zaac-about-intro{
+		font-size: 1.4rem;
+	} */
+}
+@media screen and (max-width: 900px) {
+	.about-title{
+		font-size: 2rem;
+	}
+	.about-subtitle{
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	div.about-container{
+		display: block;
+	}
+	.about-title{
+		margin-bottom: 1.5rem;
+		margin-left: 10%;
+	}
+	.about-img{
+		max-width: 100%;
+		padding: 0;
+		margin: 0 5%;
+	}
+	.zaac-about-intro{
+		font-size: 1.2rem;
+		padding: 5% 0;
+		margin: 0 5%;
+	}
+
+	.about-subcontainer {
+		padding: 0;
+		padding-bottom: 1rem;
+		margin: 0 5%;
+	}
+	.about-title{
+		padding: 0;
+		margin: 0 5%;
+		margin-bottom: 1.5rem;
+	}
+
+
+}
+
+@media screen and (max-width: 600px) {
+	.about-title{
+		font-size: 1.5rem;
+	}
+	.about-subtitle{
+		font-size: 1.5rem;
+	}
+	.about-description{
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.zaac-about-intro {
+		font-size: 1rem;
+	}
+}
+
+
+
+

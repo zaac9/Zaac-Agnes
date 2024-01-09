@@ -2,243 +2,378 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="google" content="notranslate"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Zaac Agnes | Italist</title>
-        <link rel="icon" type="image/x-icon" href="/img/favicons/favicon-italist.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>Zaac Agnes | Home</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicons/favicon-italist.ico">
 
-        <!-- SLIDESHOW STYLE SHEET -->
-        <link rel="stylesheet" href="css/slideshow.css">
-        <!-- MAIN STYLE SHEET -->
-        <!-- <link rel="stylesheet" href="css/main.css"> -->
-		<link rel="stylesheet" href="css/main-min.css">
+        <!-- LINKING STYLE SHEETS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/style-min.css"> -->
         <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/projects.css">
+        <!-- <link rel="stylesheet" href="css/slideshow.css"> -->
 
-
+        <!-- LINKING TYPEFACES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-        <!-- OPEN SANS + CORMORANT TYPEFACE -->
-        <link rel="stylesheet" href="https://use.typekit.net/mnt0bcx.css">
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
+        <!-- IMPORT DOWNLOADED JQUERY -->
         <script src="jquery/jquery-3.6.0.min.js"></script>
-        <!-- Garamond Cormorant -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-        <!-- <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js" integrity="sha512-/8phkpsAzxsbuX18zNkQ2gCq4Q5JsWoPo1jHLDeZorPUHRtx9YJxpdk+os05oDhPJVCNzA2/NMl4rmJyQ+6Fvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-        </head>
+        <!-- <script src="jquery/"></script> -->
+    </head>
 
     <body>
         <div class="pointer"></div>
+		<header id="hamburger">
+			<a id="navName" href="index.html">Zaac Agnes</a>
+			<a href="#" class="menu-control-open" id="menuControlOpen">Menu</a>
+			<div class="menu">
+				<div class="menu-inner">
+						<a href="#" class="menu-control-close" id="menuControlClose">Close</a>
+						<nav>
+							<a class="navButton" id="navWork" href="index.html#projects">Work</a>
+							<a class="navButton" href="about.html">About</a>
+							<a class="navButton" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">Resume</a>
+						</nav>
+				</div> <!-- menu-inner -->
+			</div> <!-- menu -->
+    	</header>
 
-        <!-- <header>
-            <nav class="topnav">
-                <ul class="navbar">
-                    <li class="navLink" id="navzaac">
-                        <a href="index.html">Zaac Agnes</a>
-                    </li>
-
-                    <li class="navLink" id="navwork">
-                        <a class="navText" href="index.html#projects">Work</a>
-                        <a class="navText" href="about.html">About Me</a>
-                    </li>
-                </ul>
-            </nav>
-        </header> -->
-        <header id="hamburger">
-            <a id="navName" href="index.html">Zaac Agnes</a>
-            <a href="#" class="menu-control-open" id="menuControlOpen">
-              Menu
-          </a>
-        <div class="menu">
-            <div class="menu-inner">
-                    <a href="#" class="menu-control-close" id="menuControlClose">Close</a>
-                    <nav>
-                        <a class="navButton" id="navWork" href="index.html#projects">Work</a>
-                        <a class="navButton" href="about.html">About Me</a>
-                      <a class="navButton" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">Resume</a>
-                    </nav>
-                </div>
-          </div>
-      </header>
 
         <div class="project-page-container">
-            <div class="project-content">
-                <h1 class="project-title">Italist</h1>
-                <h2 class="project-subtitle">Interaction Design and Rebrand</h2>
-            </div>
-
-            <div class="project-content">
-                <div class="project-video">
-                    <!-- <iframe src="https://www.youtube.com/embed/HFqAtRsJ0NY" title="Italist.com Website Redesign Demo" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen SameSite="None" ;></iframe> -->
-                    <iframe src="https://www.youtube.com/embed/HFqAtRsJ0NY" title="Italist.com Website Redesign Demo" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                </div>
-                <p class="caption">Final rebranding of website (no audio)</p>
-            </div>
-
-            <div class="project-content">
-                <div class="project-roles">
-                    <div class="project-roles-content">
-                        <p class="roles-title">My Roles</p>
-                        <p class="roles-text">Content Strategy</p>
-                        <p class="roles-text">Art Direction</p>
-                        <p class="roles-text">UX Research</p>
-                        <p class="roles-text">Visual Design</p>
+            <section class="project-banner">
+                <div class="flex-container content-gap-medium project-banner">
+                    <div class="col-3-of-5">
+                        <h1 class="project-main-title">Italist Rebrand</h1>
                     </div>
-                    <div class="project-roles-content">
-                        <p class="roles-title">Team</p>
-                        <p class="roles-text">Avril</p>
-                        <p class="roles-text">Linda</p>
-                        <p class="roles-text">Michelle</p>
-                        <p class="roles-text">Thomas</p>
+                    <div class="col-1-of-5">
+                        <div class="project-details-content">
+                            <li class="details-title">My Roles</li>
+                            <li class="details-text">Content Design</li>
+                            <li class="details-text">UX Research</li>
+                            <li class="details-text">Art Direction</li>
+                            <li class="details-text">Visual Design</li>
+                            <li class="details-text">Copywriting</li>
+                            <li class="details-text">Quality Control</li>
+                        </div>
                     </div>
-                    <div class="project-roles-content">
-                        <p class="roles-title">Time Frame</p>
-                        <p class="roles-text">Spring 2022, 3 week design sprint</p>
-                        <p class="roles-text">(March - April)</p>
+                    <div class="col-1-of-5">
+                        <div class="project-details-content">
+                            <li class="details-title">Student Project</li>
+                            <li class="details-text">5-member Team</li>
+                            <li class="details-text">Spring 2022</li>
+                            <li class="details-text">4 Week Design Sprint</li>
+                        </div>
                     </div>
                 </div>
-            </div>
-<!-- 
-            <div class="project-content" id="slides-link-div">
-                <a class="slides-link" href="https://drive.google.com/file/d/1yI3fxXEJnoNvqBjs_70LIEBTHi3vvpj9/view?usp=sharing" target="_blank">View Final Slide Deck (PDF) &#x203A;</a>
+            </section>
 
-            </div> -->
-
-            <div class="project-content">
-                <h3>Context</h3>
-                <p class="project-em">This case study is an experience design intervention that bridges business and design to benefit the customer and retailer. Ultimately, the final form was a website rebrand that is more visually engaging and better surfaces Italist’s competitive advantage.</p>
-                <!-- <p class="project-text">This project was for a senior level user experience design calss and has no affiliation with Italist.</p> -->
-
-                <h4>About Italist</h4>
-                <p class="project-text">Italist is an online luxury fashion marketplace based in Los Angeles that provides a unique value to customers by partnering with Italian boutiques which allows them to offer a more unique selection of brands and products.</p>
-                <p class="project-text">Italist claims that visiting the Italist website is like having a tour of Italy's best boutiques, but without the jet lag, the cost of a plane and hotel, or the footwork of going from store to store in search of the perfect item at the best price.</p>
-
-                <h4>Brand Value Pillars</h4>
-                <p class="project-text">After researching Italist's brand and reading how customers perceive the company, the team extracted three brand pillars that guided the design intervention:</p>
-                <ol>
-                    <li><span class="bold">Small Boutique Partners: </span>Italist partners with small, Italian boutiques to provide authentic and prsitine luxury goods.</li>
-                    <li><span class="bold">Luxury Discovery: </span>Global customers have access to over 1,500 international luxury brands carefully curated by the Italist team and their partner boutiques.</li>
-                    <li><span class="bold">Shop Italian from America: </span>Italist provides greater international reach for their partnered boutiques, allowing international customers to feel as if they are shopping in Italy.</li>
-                </ol>
-
-                
-            </div>
-
-            <div class="project-content">
-                <h3>Research Insights</h3>
-                <p class="project-text">I led the team through the primary (User testing and interviews) and secondary research (academic papers, online articles) throughout the project which built the framework for the content design of the website redesign.</p>
-
-                <h4>Secondary Research</h4>
-
-                <img class="project-img" src="img/italist/research-insights.png" alt="">
-
-                <h4>Primary Research</h4>
-                <img class="project-img" src="img/italist/user-testing-insights.png" alt="">
-            </div>
-
-            <div class="project-content">
-                <h3>Value Proposition</h3>
-                <h4>Problem Statement</h4>
-                <p class="project-text">Italist’s customers are not being served meaningful content about the Italian boutiques because the content is hidden between sale banners and hundreds of popular brands. Our research identified that luxury fashion customers seek an emotional connection to the brands and people they are purchasing from.</p>
-
-                <h4>Value to Customer</h4>
-                <p class="project-text">Italist’s customers are able to discover unique up and coming fashion items through Italian boutiques while supporting businesses with similar values.</p>
-
-                <h4>Value to Business</h4>
-                <p class="project-text">Help to transition customers from being satisfied to being fully connected to the business by appealing to the emotional aspect of connecting with smaller boutique buyers.</p>
-            </div>
-
-            <div class="project-content">
-                <h3>Design Intervention</h3>
-                <img class="project-img" src="img/italist/site-comparison.png" alt="">
-
-                <h4>Content Design</h4>
-                <p class="project-text">The content we chose to better surface on the Italist website was displaying the partnerships with Italian boutiques, which we identified as Italist's unique selling point. The content design was separated into why, how, and what.</p>
-                <ul>
-                    <li><span class="bold">Why: </span>Aim to better connect customers with the brands and boutiques to build familiarity which can help inform purchasing decisions customers make online.</li>
-                    <li><span class="bold">How: </span>Allow customers to discover and learn from the boutiques they are purchasing from and browse relevent products from brands they are unfamilar with. </li>
-                    <li><span class="bold">What: </span>Customers are able to explore products offered from particular Italian boutiques that often have a very distinct aesthetic in their product selection which differentiates them from other boutiques.</li>
-                </ul>
-            </div>
-
-            <div class="project-content">
-                <h3>Art Direction</h3>
-                <img class="project-img" src="img/italist/italist-art-direction.png" alt="">
-            </div>
-
-            <div class="project-content">
-                <h3>Learning Takeaways</h3>
-                <p class="project-text">An invaluable learning outcome that will stick with me is how to work with a diverse group of creative people across business and design with differing perspectives. Additionally, I learned how to balance design goals with that of business and technology. Understanding where design fits with an existing brand and how to better communicate content that the business has access to.</p>
-            </div>
-
-
-
-            <!-- <div class="next-project">
-                <div class="col-2">
-                    <p class="next-project-title">Project Page</p>
+            <div class="flex-container">
+                <div class="col-3-of-5">
+                    <p class="primary-text"><span class="primary-text-em">For a senior user experience design course</span>, our team analyzed the experience of interacting with the brand <span class="primary-text-em">Italist</span>, an online luxury fashion marketplace based in Los Angeles that partners with boutique stores in Italy.</p>
+                    <p class="primary-text content-gap-small">The purpose of our branding intervention was to bring forth an experience that engages Italists customers and provides value to Italist as a business.</p>
                 </div>
-                <a class="next-project-link" href="labatie.html">
-                    <div class="col-2" id="next-project-text-adjust">
-                        <p class="next-project-title" id="next-project-arrow">Next Project &#x203A</p>
-                        <p class="next-project-title">La Batie</p>
-                        <p class="next-project-subtitle">Interaction and Visual Design</p>
+            </div>
+
+            <div class="flex-container content-gap-medium">
+                <h2 class="project-title">Project Overview</h2>
+            </div>
+            <div class="flex-container">
+                <div class="project-overview-list">
+                    <a href="#final-deliverables" class="project-overview">01. Final Deliverables</a>
+                </div>
+                <div class="project-overview-list">
+                    <a href="#research" class="project-overview">02. UX Research</a>
+                </div>
+                <div class="project-overview-list">
+                    <a href="#framing" class="project-overview">03. Problem Framing</a>
+                </div>
+                <!-- <div class="project-overview-list">
+                    <a class="project-overview">03. Content Strategy</a>
+                </div> -->
+                <div class="project-overview-list">
+                    <a href="#art-direction" class="project-overview">04. Art Direction</a>
+                </div>
+                <!-- <div class="project-overview-list">
+                    <a href="#reflection" class="project-overview">05. Before/After</a>
+                </div> -->
+                <div class="project-overview-list">
+                    <a href="#reflection" class="project-overview">05. Reflection</a>
+                </div>
+            </div>
+
+            
+            <section id="final-deliverables">
+                <div class="flex-container content-gap-large">
+                    <h2 class="project-title">01. Final Deliverables</h2>
+                </div>
+
+                <div class="flex-container content-gap-small">
+                    <div class="col-5-of-5">
+                        <div class="project-video">
+                            <figure>
+                                <video class="project-video" id="italist-full-demo"controls loop muted playsinline>
+                                    <source src="img/italist/italist-full-demo.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                                <figcaption>Final rebranding of website (1.5x speed, no audio)</figcaption>
+                            </figure>
+                        </div>
+                    </div>  <!--col-5-of-5-->              
+                </div> <!--flex-container-->
+
+                <div class="flex-container content-gap-medium">
+                    <div class="col-2-of-5">
+                        <h3 class="project-subtitle">Familiarity with Boutiques</h3>
+                        <p class="secondary-text">One of our main goals with the design intervention was to foster stronger connections between customers and the boutiques listed on Italist to build familiarity and help inform purchasing decisions.</p>
+                        <p class="secondary-text">Users can browse items by boutique which builds stronger relationships between the customer and the boutique that matches their aesthetic.</p>
                     </div>
-                </a>
-            </div> -->
+                    <div class="col-3-of-5">
+                        <div class="project-video">
+                            <figure>
+                                <video class="project-video" controls loop muted autoplay playsinline>
+                                    <source src="img/italist/italist-intro.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                                <figcaption>Redesigned intro to Italist website (no audio)</figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>
+
+
+                <div class="flex-container content-gap-medium">
+                    <div class="col-2-of-5">
+                        <h3 class="project-subtitle">Discovering Products</h3>
+                        <p class="secondary-text">Allowing customers to discover and learn about the boutiques they are purchasing from and browse relevant products they may be interested in based on the aesthetic of the boutique.</p>
+                        <p class="secondary-text">Boutique owners can drop a tag on an item to give customers a personalized message when browsing items.</p>
+                    </div>
+                    <div class="col-3-of-5">
+                        <div class="project-video">
+                            <figure>
+                                <video class="project-video" controls loop muted autoplay playsinline>
+                                    <source src="img/italist/italist-discovery.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                                <figcaption>Redesigned browsing product listings (no audio)</figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="flex-container content-gap-medium">
+                    <div class="col-2-of-5">
+                        <h3 class="project-subtitle">Boutique Experience</h3>
+                        <p class="secondary-text">Italist claims they want to deliver an experience of shopping Italian boutiques to customers online; however, their current platform falls short as users get lost in the thousands of products listed.</p>
+                        <p class="secondary-text">The redesign gives customers an opportunity to explore products from different boutiques and to learn more about the history of boutiques if they choose to.</p>
+                    </div>
+                    <div class="col-3-of-5">
+                        <div class="project-video">
+                            <figure>
+                                <video class="project-video" id="italist-boutique" controls loop muted autoplay playsinline>
+                                    <source src="img/italist/italist-boutique.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                                <figcaption>Learn about Italist's boutiques (no audio)</figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>
+            </section> <!-- final-deliverables -->
+
+
+            <section id="research">
+                <div class="flex-container content-gap-large">
+                    <div class="col-3-of-5">
+                        <h2 class="project-title">02. UX Research</h2>
+                        <p class="primary-text"><span class="primary-text-em">To better understand Italist’s brand identity</span>, we first looked into their mission statement, values, tone, and read how customers perceive the company. I synthesized our findings into three brand pillars that laid the initial framework for the design intervention:</p>
+                    </div>
+                </div>
+
+
+                <div class="flex-container content-gap-small">
+                    <div class="col-1-of-3">
+                        <h3 class="project-subtitle-number">01.</h3>
+                        <h3 class="project-subtitle project-subtitle-short">Small Boutique Partners</h3>
+                        <p class="secondary-text">Italist partners with small, Italian boutiques to provide authentic and prsitine luxury goods.</p>
+                    </div>
+                    <div class="col-1-of-3">
+                        <h3 class="project-subtitle-number">02.</h3>
+                        <h3 class="project-subtitle project-subtitle-short">Luxury Discovery</h3>
+                        <p class="secondary-text">Global customers have access to over 1,500 international luxury brands carefully curated by the Italist team and their partner boutiques.</p>
+                    </div>
+                    <div class="col-1-of-3">
+                        <h3 class="project-subtitle-number">03.</h3>
+                        <h3 class="project-subtitle project-subtitle-short">Shop Italian from home</h3>
+                        <p class="secondary-text">Italist provides greater international reach for their partnered boutiques, allowing international customers to feel as if they are shopping in Italy.</p>
+                    </div>
+                </div>
+
+                <div class="flex-container content-gap-med-large">
+                    <div class="col-3-of-5">
+                        <p class="primary-text"><span class="primary-text-em">Further expanding on our findings</span>, we conducted user interviews and collected research on consumer habits surrounding luxury fashion goods. I formed this research into four key insights:</p>
+                    </div>
+                </div>
+
+                <div class="flex-container content-gap-small">
+                    <div class="col-1-of-4">
+                        <h3 class="project-subtitle-number">01.</h3>
+                        <h3 class="project-subtitle project-subtitle-short">Discounts are not everything</h3>
+                        <p class="secondary-text">Purchasing decisions are largely affected also by how the brand makes the customer feel.</p>
+                    </div>
+                    <div class="col-1-of-4">
+                        <h3 class="project-subtitle-number">02.</h3>
+                        <h3 class="project-subtitle project-subtitle-short">Online reliability</h3>
+                        <p class="secondary-text">Users first concern when shopping online luxury fashion is whether the site is reliable. </p>
+                    </div>
+                    <div class="col-1-of-4">
+                        <h3 class="project-subtitle-number">03.</h3>
+                        <h3 class="project-subtitle project-subtitle-short">Too many product listings</h3>
+                        <p class="secondary-text">Italist offers thousands of products making it difficult to find everything on the site</p>
+                    </div>
+                    <div class="col-1-of-4">
+                        <h3 class="project-subtitle-number">04.</h3>
+                        <h3 class="project-subtitle project-subtitle-short">Intimidating atmosphere</h3>
+                        <p class="secondary-text">Online shopping eliminates the intimidating atmosphere of boutiques.</p>
+                    </div>
+                </div>
+            </section> <!--research-->
+
+            <section id="framing">
+                <div class="flex-container content-gap-large">
+                    <div class="col-3-of-5">
+                        <h2 class="project-title">03. Problem Framing</h2>
+                        <p class="primary-text"><span class="primary-text-em">Based on our research and insights </span>, we saw an opportunity for Italist to focus on creating a unique experience for their customers rather than enticing people with sales. We framed this as a <span class="primary-text-em">problem statement</span> that we always kept in mind throughout the project:</p>
+                    </div>
+                </div>
+                <div class="flex-container content-gap-small">
+                    <div class="col-5-of-5">
+                        <p id="problem-statement">Italist’s customers are not being served meaningful content about the Italian boutiques because the content is hidden between sales banners and hundreds of popular brands.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="art-direction">
+                <div class="flex-container content-gap-large">
+                    <h2 class="project-title">04. Art Direction</h2>
+                </div>
+
+                <div class="flex-container">
+                    <div class="col-2-of-5">
+                        <h3 class="project-subtitle">Visual Design</h3>
+                        <p class="secondary-text">The visual design was aimed to elicit similar feelings of experiencing a boutique store in-person and deliver a positive experience to first-time and repeat customers.</p>
+                        <!-- <p class="secondary-text"></p> -->
+                    </div>
+                    <div class="col-3-of-5">
+                        <figure>
+                            <img class="project-img" src="img/italist/italist-art-direction.png" alt="Visual art direction for Italist Rebrand">
+                            <figcaption>Visual design rebrand strategy</figcaption>
+                        </figure>
+                    </div> 
+                </div>
+
+                <div class="flex-container content-gap-small">
+                    <div class="col-2-of-5">
+                        <h3 class="project-subtitle">Content Design</h3>
+                        <p class="secondary-text">The goal with the content design was to better surface the unique partnership that Italist has with Italian boutique stores by creating an online experience that aligns with the feeling of shopping boutique stores in-person.</p>
+                        <p class="secondary-text">Users who are curious may learn more about the history of each boutique, while repeat customers can focus on viewing products and styling options from their favourite boutiques.</p>
+                    </div>
+                    <div class="col-3-of-5">
+                        <figure>
+                            <img class="project-img" src="img/italist/detailed-product-page.png" alt="Detailed product page showing the showroom feel, allowing customers to seek more information about the boutique if they choose to.">
+                            <figcaption>Product page displaying showroom feel</figcaption>
+                        </figure>
+                    </div> 
+                </div>
+            </section>
+
+            <section id="reflection">
+                <div class="flex-container content-gap-large">
+                    <h2 class="project-title">05. Reflection</h2>
+                </div>
+
+                <div class="flex-container">
+                    <div class="col-3-of-5">
+                        <p class="primary-text">An invaluable learning outcome that will stick with me is how to work with a diverse group of creative people across business and design with differing perspectives. Additionally, I learned how to balance design goals with that of business and technology.</p>
+                        <p class="primary-text content-gap-small">Understanding where design fits with an existing brand and how to better communicate content that the business has access to. A critical step of effective brand design is understnading who you are designing for before moving to the visual design.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Empty class to ass space -->
+            <!-- <div class="content-gap-small"></div> -->
+
             <div class="next-project">
-                <a class="next-project-link" href="dossier.html">
-                    <div class="col-2">
+                <a class="flex-container next-project-link" href="dossier.html">
+                    <div class="col-2-of-5">
                         <p class="next-project-title" id="next-project-arrow">Next Project &#x203A;</p>
                     </div>
-                    <div class="col-2" id="next-project-text-adjust">
-                        <p class="next-project-title">Dossier</p>
-                        <p class="next-project-subtitle">Railyard Lab Branding Internship</p>
+                    <div class="col-3-of-5">
+                        <p class="next-project-title">Dossier Creative</p>
+                        <p class="next-project-subtitle">Design Internship</p>
                     </div>
                 </a>
             </div>
 
-        </div>
 
 
+        </div> <!-- project-page-container-->
+
+        <!-- FOOTER CONTENT -->
         <footer>
-            <div class="project-container">
-                <div class="footer-flex" id="footer-empty">
-
-                </div>
+            <div class="flex-container footer-container">
                 <div class="footer-flex" id="footer-connect">
-                    <p class="footer-title">Let's connect</p>
+                    <p class="footer-title">Reach Out</p>
                     <p class="footer-content">
                         <a href="mailto:zaacagnes9@gmail.com">zaacagnes9@gmail.com</a>
                     </p>
                     <p class="footer-content">
-                        <a href="https://www.linkedin.com/in/zaac-agnes">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/zaac-agnes">View my LinkedIn</a>
                     </p>
                 </div>
-                <div class="footer-flex" id="footer-location">
+                <div class="footer-flex rain-main" id="footer-location">
                     <p class="footer-title">Where abouts</p>
-                    <p class="footer-content">Currently living in Vancouver Canada</p>
+                    <p class="footer-content">Currently living in </p>
+                    <p class="footer-content">Vancouver, Canada </p>
                 </div>
                 <div class="footer-flex" id="footer-copyright">
-                    <p class="about-title"> </p>
-                    <p class="footer-content right-align">&copy; Zaac Agnes 2023</p>
+                    <p class="footer-title right-align">&copy; Zaac Agnes 2023</p>
                 </div>
             </div>
         </footer>
-        
-        
-            <script src="script/cursor.js"></script>
-            <script src="script/hover.js"></script>
-            <script src="script/menu.js"></script>
-        
+
+        <script src="script/main.js"></script>
+        <script src="script/videoitalist.js"></script>
+        <!-- <script src="script/slideshow.js"></script> -->
     </body>
 </html>
+
+
+            <!-- Took out audience. NN group has very similar content here: https://www.nngroup.com/articles/luxury-user-groups-journeys/#:~:text=Summary%3A%20There%20are%20four%20primary,consider%E2%80%9D%20phase%20of%20their%20journey. -->
+            <!-- <div class="flex-container content-gap">
+                <div class="col-3-of-5">
+                    <p class="primary-text">Additionally, I identified three primary user groups:</p>
+                </div>
+            </div>
+            <div class="flex-container content-gap-small">
+                <div class="col-1-of-3">
+                    <h3 class="project-subtitle-number">01.</h3>
+                    <h3 class="project-subtitle">Everyday Outfitter</h3>
+                    <p class="secondary-text">People who own a wardrobe of luxury fashion items and wear them everyday. </p>
+                </div>
+                <div class="col-1-of-3">
+                    <h3 class="project-subtitle-number">02.</h3>
+                    <h3 class="project-subtitle">Luxury Enthusiast</h3>
+                    <p class="secondary-text">Those who own a handful of luxury items, typically styling them in combination with other brands they own.</p>
+                </div>
+                <div class="col-1-of-3">
+                    <h3 class="project-subtitle-number">03.</h3>
+                    <h3 class="project-subtitle">Prospective Buyer</h3>
+                    <p class="secondary-text">Those who save up to buy luxury fashion. They may own one to two items or are looking to purchase their first.</p>
+                </div>
+            </div> -->
+
+

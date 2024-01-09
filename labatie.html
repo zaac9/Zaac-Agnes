@@ -2,396 +2,391 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="google" content="notranslate"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Zaac Agnes | La Batie</title>
-        <link rel="icon" type="image/x-icon" href="/img/favicons/favicon-labatie.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>Zaac Agnes | Home</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicons/favicon-italist.ico">
 
-        <!-- SLIDESHOW STYLE SHEET -->
-        <link rel="stylesheet" href="css/slideshow.css">
-        <!-- MAIN STYLE SHEET -->
-        <!-- <link rel="stylesheet" href="css/main.css"> -->
-		<link rel="stylesheet" href="css/main-min.css">
+        <!-- LINKING STYLE SHEETS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/style-min.css"> -->
         <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/projects.css">
+        <!-- <link rel="stylesheet" href="css/slideshow.css"> -->
 
-
+        <!-- LINKING TYPEFACES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-        <!-- OPEN SANS + CORMORANT TYPEFACE -->
-        <link rel="stylesheet" href="https://use.typekit.net/mnt0bcx.css">
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
+        <!-- IMPORT DOWNLOADED JQUERY -->
         <script src="jquery/jquery-3.6.0.min.js"></script>
-        <!-- Garamond Cormorant -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-        <!-- <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js" integrity="sha512-/8phkpsAzxsbuX18zNkQ2gCq4Q5JsWoPo1jHLDeZorPUHRtx9YJxpdk+os05oDhPJVCNzA2/NMl4rmJyQ+6Fvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+        <!-- <script src="jquery/"></script> -->
     </head>
 
     <body>
         <div class="pointer"></div>
+		<header id="hamburger">
+			<a id="navName" href="index.html">Zaac Agnes</a>
+			<a href="#" class="menu-control-open" id="menuControlOpen">Menu</a>
+			<div class="menu">
+				<div class="menu-inner">
+						<a href="#" class="menu-control-close" id="menuControlClose">Close</a>
+						<nav>
+							<a class="navButton" id="navWork" href="index.html#projects">Work</a>
+							<a class="navButton" href="about.html">About</a>
+							<a class="navButton" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">Resume</a>
+						</nav>
+				</div> <!-- menu-inner -->
+			</div> <!-- menu -->
+    	</header>
 
-        <!-- <header>
-            <nav class="topnav">
-                <ul class="navbar">
-                    <li class="navLink" id="navzaac">
-                        <a href="index.html">Zaac Agnes</a>
-                    </li>
-
-                    <li class="navLink" id="navwork">
-                        <a class="navText" href="index.html#projects">Work</a>
-                        <a class="navText" href="about.html">About Me</a>
-                    </li>
-                </ul>
-            </nav>
-        </header> -->
-        <header id="hamburger">
-            <a id="navName" href="index.html">Zaac Agnes</a>
-            <a href="#" class="menu-control-open" id="menuControlOpen">
-              Menu
-          </a>
-        <div class="menu">
-            <div class="menu-inner">
-                    <a href="#" class="menu-control-close" id="menuControlClose">Close</a>
-                    <nav>
-                        <a class="navButton" id="navWork" href="index.html#projects">Work</a>
-                        <a class="navButton" href="about.html">About Me</a>
-                      <a class="navButton" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">Resume</a>
-                    </nav>
-                </div>
-          </div>
-      </header>
 
         <div class="project-page-container">
-            <div class="project-content">
-                <h1 class="project-title">La Batie, Festival De Geneve</h1>
-                <h2 class="project-subtitle">Le Poudrier Cabaret Microsite</h2>
-            </div>
-
-            <div class="project-content">
-                <div class="project-video">
-                    <iframe src="https://www.youtube.com/embed/Pu0Ln4FQcC0" title="La Batie Le Poudrier Cabaret: Drag Shop" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+            <section class="project-banner">
+                <div class="flex-container content-gap-medium project-banner">
+                    <div class="col-3-of-5">
+                        <h1 class="project-main-title">La Batie Festival</h1>
+                    </div>
+                    <div class="col-1-of-5">
+                        <div class="project-details-content">
+                            <li class="details-title">My Roles</li>
+                            <li class="details-text">Content Design</li>
+                            <li class="details-text">UX Research</li>
+                            <li class="details-text">Visual Design</li>
+                            <li class="details-text">Copywriting</li>
+                            <li class="details-text">Prototyping</li>
+                            <li class="details-text">Interaction Design</li>
+                        </div>
+                    </div>
+                    <div class="col-1-of-5">
+                        <div class="project-details-content">
+                            <li class="details-title">Student Project</li>
+                            <li class="details-text">5-member Team</li>
+                            <li class="details-text">Spring 2022</li>
+                            <li class="details-text">4 Week Design Sprint</li>
+                        </div>
+                    </div>
                 </div>
-                <p class="caption">Final microsite branding (no audio)</p>
-            </div>
+            </section>
 
-            <div class="project-content">
-                <div class="project-roles">
-                    <div class="project-roles-content">
-                        <p class="roles-title">My Roles</p>
-                        <p class="roles-text">Content Design</p>
-                        <p class="roles-text">Secondary Research</p>
-                        <p class="roles-text">Visual Design</p>
-                        <p class="roles-text">Prototyping</p>
-                        <p class="roles-text">Interaction Design</p>
-                    </div>
-                    <div class="project-roles-content">
-                        <p class="roles-title">Team</p>
-                        <p class="roles-text">Avril</p>
-                        <p class="roles-text">Linda</p>
-                        <p class="roles-text">Michelle</p>
-                        <p class="roles-text">Thomas</p>
-                    </div>
-                    <div class="project-roles-content">
-                        <p class="roles-title">Time Frame</p>
-                        <p class="roles-text">Spring 2022, for 4 weeks</p>
-                        <p class="roles-text">(Janurary - February)</p>
-                    </div>
+            <div class="flex-container">
+                <div class="col-3-of-5">
+                    <p class="primary-text"><span class="primary-text-em">For a senior user experience design course</span>, our team produced a visual identity for La Batie Festival de Geneve, a summer festival in Geneva, Switzerland, showcasing a variety of contemporary art performances.</p>
+                    <p class="primary-text content-gap-small">Ultimately, we produced a microsite centered around <span class="primary-text-em">La Poudrier Cabaret</span>, the festival nightlife, that pushes the boundary of how expressive web interaction can be, while considering functional design concepts of usability.</p>
                 </div>
             </div>
 
-            <div class="project-content">
-                <h3>Project Context</h3>
-                <p class="project-em">A visual brand identity for La Batie Festival de Geneve, bringing inspiration from renowned designers Dan Friedman and Wim Crouwel. Ultimately, the result is a microsite that pushes the boundaries of how expressive web interaction can be, while considering functional aspects such that users can understand the site.</p>
-
-                <h4>About the Festival</h4>
-                <p class="project-text">La Batie is an annual festival occurring in the late summer in Geneva, Switzerland where artists abroad perform music, theatre, and contemporary dance performances. <em class="bold">Le Poudrier Cabaret</em> is the nightlife program of the festival, highlighted with shows and themes from drag artists.</p>
-                
-                <!-- <h4>A Highly Fluent Audience</h4>
-                <p class="project-text">The microsite is intended for an audience that is accustomed to artistic experiences, both in the physical world of attending events such as La Batie as well as through digital experiences. With this in mind, we were able to design a microsite dedicated to the drag artists of La Batie's Le Poudrier events. The final microsite is a post-show experience, evoking the unique memories of the cabaret shows and financially supporting the artists who get discriminated against in society.</p>  -->
+            <div class="flex-container content-gap-medium">
+                <h2 class="project-title">Project Overview</h2>
             </div>
-
-            <!-- <div class="project-content">
-                <h3>Designer Precedents</h3>
-                <h4 class="first">Dan Friedman</h4>
-                <p class="project-text">Friedman's work inspired us to push the boundaries between legibility and unpredictability by engaging negative space through wide spacing of letters.</p>
-
-                <h4>Wim Crouwel</h4>
-                <p class="project-text">From Wim Crouwel, we learned his need for consistency in a design and strict willingness to deviate from the grid.</p>
-            </div> -->
-
-            <div class="project-content">
-                <h3>Lateral Exploration of Visual Concepts</h3>
-                <!-- <h4>Exploring Visual Concepts</h4> -->
-                <p class="project-text">In the first two weeks of the project, we explored the design qualities through visual design experimentation including posters and visual assets that would attract attention to the La Batie Event.</p>
-                <!-- The purpose here was to rigorously experiment with different visual styles while keeping the learnings from the precedent studies of Friedman and Crouwel in focus. As the project progressed, we learned more from these designers which shifted our understanding of their work. -->
-                
-                <!-- <h4>Typographic Grid</h4>
-                <p class="project-text">The first line of investigation explored a typographic grid where the structure of the grid is informed by small groups of typography and imagery.</p> -->
-                <!-- The negative space between the groupings creates pockets of space that command attention to particular elements in the hierarchy. In addition, stacking short segments of typography with close crop framing of content was explored to establish feelings of mystery and suspense by inviting the viewer to speculate what might be the remaining part of the frame. -->
-
-                <h4>Direction 1</h4>
-
-                <div class="slideshow-container">
-                    <div class="mySlides1">
-                        <img class="project-img" src="img/labatie/poster-direction-1/window-display.png" alt="">
-                    </div>
-                    <div class="mySlides1">
-                        <img class="project-img" src="img/labatie/poster-direction-1/design-qualities.png" alt="">
-                    </div>
-                    <div class="mySlides1">
-                        <img class="project-img" src="img/labatie/poster-direction-1/posters.png" alt="">
-                    </div>
-                    <div class="mySlides1">
-                        <img class="project-img" src="img/labatie/poster-direction-1/chocolate-bar-1.png" alt="">
-                    </div>
-                    
-                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <div class="flex-container">
+                <div class="project-overview-list">
+                    <a href="#final-deliverables" class="project-overview">01. Final Deliverables</a>
                 </div>
-
-
-                <!-- <h4>Connecting the Graphic Elements</h4>
-                <p class="project-text">This line of investigation investigated a concept that fragmented typography about the page. While being careful about not causing visual distractions, the reader is invited to piece together the elements to understand the whole composition. The type is carefully placed in orientations that lead the eye throughout the composition. The structure of the geometric elements is to create order in the composition which allows the type to be more unpredictable.</p> -->
-
-                <h4>Direction 2</h4>
-                <div class="slideshow-container">
-                    <div class="mySlides2">
-                        <img class="project-img" src="img/labatie/poster-direction-2/hallway.png" alt="">
-                    </div>
-                    <div class="mySlides2">
-                        <img class="project-img" src="img/labatie/poster-direction-2/design-qualities.png" alt="">
-                    </div>
-                    <div class="mySlides2">
-                        <img class="project-img" src="img/labatie/poster-direction-2/nightime-poster.png" alt="">
-                    </div>
-                    <div class="mySlides2">
-                        <img class="project-img" src="img/labatie/poster-direction-2/ticket-1.png" alt="">
-                    </div>
-                    <div class="mySlides2">
-                        <img class="project-img" src="img/labatie/poster-direction-2/ticket-2.png" alt="">
-                    </div>
-                    
-                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                <div class="project-overview-list">
+                    <a href="#design-exploration" class="project-overview">02. Design Exploration</a>
                 </div>
-    <!-- 
-                <h4>Stacking Typography with Short Line Widths</h4>
-                <p class="project-text">The Third line of investigation we surfaced was driven by stacking narrow images and text with short line-lengths, which created tension by emphasizing asymmetry through diagonal lines. Pockets of negative space are sculpted by the asymmetrical elements which direct the eye towards the next element in the composition.</p> -->
-
-                <h4>Direction 3</h4>
-                <div class="slideshow-container">
-                    <div class="mySlides3">
-                        <img class="project-img" src="img/labatie/poster-direction-3/building.png" alt="">
-                    </div>
-                    <div class="mySlides3">
-                        <img class="project-img" src="img/labatie/poster-direction-3/design-qualities.png" alt="">
-                    </div>
-                    <div class="mySlides3">
-                        <img class="project-img" src="img/labatie/poster-direction-3/concert.png" alt="">
-                    </div>
-                    <div class="mySlides3">
-                        <img class="project-img" src="img/labatie/poster-direction-3/poster.png" alt="">
-                    </div>
-                    
-                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                <div class="project-overview-list">
+                    <a href="#visual-design" class="project-overview">03. Visual Design</a>
                 </div>
-
-            </div>
-
-            <!-- <div class="project-content">
-                <h3>Converging on a direction</h3>
-                <p class="project-text">The next portion of the project required the team to select one direction to pursue further for web interactions. A large commitment the team had to make was placing personal biases aside to determine which direction the team was feeling strongest about.</p>
-            </div> -->
-
-            <div class="project-content">
-                <h3>Exploring Interaction Design</h3>
-                <!-- <p class="project-text">Touching back on the intended audience of this website; they are a highly fluent audience of individuals who welcome a visual challenge and intriguing path as long as they can still navigate their way throughout the site.</p> -->
-                <p class="project-text">We explored three lines of investigation once again, each being a small sample of what the final site might look like, and further employing expressive interactions over functional ones to intrigue the audience.</p>
-                <!-- To help frame this exploration, a fully functional site could be an e-commerce site you may see for a clothing brand. In this project's context, even the site we identified as most functional is quite expressive compared to fully functional sites. -->
-            </div>
-
-            <div class="project-content">
-                <!-- <h3>Direction 1</h3> -->
-                <h4>Direction 1: Mid-Expressive</h4>
-                <p class="project-text">The strategy that went into designing this site was to illustrate the provocative and dynamic personalities of the performers who play an integral part in building the atmosphere of the cabaret shows. The content of the site was to be all about the performers who are often marginalized by society and don't have the opportunity to tell their story of what drag is.</p>
-                <!-- <p class="project-text">The microsite employs fast-paced interactions that shock and excite the user, drawing a similarity to the experience of a cabaret show and the exuberant personalities of the performers.</p> -->
-
-                <img class="project-img" src="img/labatie/most-functional.gif" alt="Sample gif of mid level expressive microsite">
-            </div>
-
-            <div class="project-content">
-                <!-- <h3>Direction 2</h3> -->
-                <h4>Direction 2: Expressive</h4>
-                <p class="project-text">The driving principle of this microsite exploration was to display the interconnectedness of the four La Cabaret Poudrier performances by displaying elements of each event on screen at the same time.</p>
-                <!-- The intent is to give the user control of which content is displayed by resizing the four quadrants, changing the content in each quadrant depending on its relative size. -->
-
-                <img class="project-img" src="img/labatie/expressive.gif" alt="Sample gif of high level expressive microsite">
-            </div>
-
-            <div class="project-content">
-                <!-- <h3>Direction 3</h3> -->
-                <h4>Direction 3: Highly Expressive</h4>
-
-                <p class="project-text">The most expressive site is intended to establish feelings of mystery and curiosity for viewers to discover the content of the site, similar to how drag events aim to surprise and scite the audience.</p>
-                <!-- One of the ways this was explored was by showing the user details of the event in small bits which teased the performance and incentivized the user to come and see the show live. -->
-
-                <img class="project-img" src="img/labatie/most-expressive.gif" alt="Sample gif of most expressive microsite">
-    <!-- 
-                <p class="project-text">This was our most expressive microsite and one that we were interested in pursuing further while combining interaction and content strategies from our other two examples. The critique that we received was that the site felt like a teaser to lead the user to more content, which is something we explored deeply in the final iteration.</p> -->
-                <!-- <p clas="project-text">One of the reasons we pursued this direction further was the employment of the Friedman and Crouwel precedent studies where we were interested in stacking short segments of type to create negative space, and close crop framing of media content to intrigue the user to further explore.</p> -->
-            </div>
-
-
-            <div class="project-content">
-                <h3>Converging on a Final Direction</h3>
-                <!-- <h4 class="first">Converging on a Final Direction</h4> -->
-
-                <p class="project-text">We saw potential with all three of the microsite samples we designed in the previous iterations; however, we needed to focus on one direction to pursue. This decision required a large commitment for everyone on the team to place personal biases aside to determine which direction the team was feeling strongest about.</p>
-                <!-- The mysterious nature and vibrant energy of the most expressive direction aligned well with the drag performances of Le Cabaret. This direction also had the opportunity to sprinkle in some of the interactions from the other two directions while maintaining consistent visuals and interactions. -->
+                <div class="project-overview-list">
+                    <a href="#content-strategy" class="project-overview">04. Content Strategy</a>
+                </div>
+                <!-- <div class="project-overview-list">
+                    <a href="#reflection" class="project-overview">05. Interaction Strategy</a>
+                </div> -->
+                <div class="project-overview-list">
+                    <a href="#reflection" class="project-overview">05. Reflection</a>
+                </div>
             </div>
 
             
+            <section id="final-deliverables">
+                <div class="flex-container content-gap-large">
+                    <h2 class="project-title">01. Final Deliverables</h2>
+                </div>
 
-            <div class="project-content">
-                <h3>Art Direction</h3>
-                <h4 class="first">Colour Palette</h4>
-                <!-- <p class="project-text">Without distracting or overcomplicating the rationale, the colour palette and graphic visuals of the microsite serve to re-immerse the users in the exuberant energy of Le Cabaret's drag scene.</p> -->
-                <p class="project-text">The bright colours serve to re-immerse the users in the exuberant energy of Le Cabaret's drag scene.</p>
+                <div class="flex-container content-gap-small">
+                    <div class="col-5-of-5">
+                        <div class="project-video">
+                            <figure>
+                                <video class="project-video" id="labatie-full-demo-" controls loop muted playsinline>
+                                    <source src="img/labatie/labatie-full-demo-min.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                                <figcaption>Final microsite (1.5x speed, no audio)</figcaption>
+                            </figure>
+                        </div>
+                    </div>  <!--col-5-of-5-->              
+                </div> <!--flex-container-->
 
-                <img class="project-img" src="img/labatie/colour-palette.png" alt="">
+                <div class="flex-container content-gap-medium">
+                    <div class="col-2-of-5">
+                        <h3 class="project-subtitle">Drag Interaction</h3>
+                        <p class="secondary-text">The drag interaction reveals the content of a seemingly blank canvas in small pieces.</p>
+                        <p class="secondary-text">Dragging is a slow interaction, which gets the user to be more engaged with the interaction and focus on a single piece of content.</p>
+                    </div>
+                    <div class="col-3-of-5">
+                        <div class="project-video">
+                            <figure>
+                                <video class="project-video" controls loop muted autoplay playsinline>
+                                    <source src="img/labatie/labatie-drag.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                                <figcaption>Microsite drag interaction (no audio)</figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>
 
-                <h4>Texture</h4>
-                <p class="project-text">The background texture of the home screen has a rippling effect as the user moves their cursor about the screen. This effect intends to promote the user to explore the page and discover.</p>
-                <img class="project-img" src="img/labatie/ripple.gif" alt="">
-            </div>
+                <div class="flex-container content-gap-medium">
+                    <div class="col-2-of-5">
+                        <h3 class="project-subtitle">Scramble Interaction</h3>
+                        <p class="secondary-text">By scrambling the type and imagery during the drag, the identity of the content is masked until the user commits to the drag by releasing their cursor.</p>
+                        <p class="secondary-text">Users may guess at what the content might be based on their experience of the show, which leads to an "aha" moment when the content lands as the user recalls the event.</p>
+                    </div>
+                    <div class="col-3-of-5">
+                        <div class="project-video">
+                            <figure>
+                                <video class="project-video" controls loop muted autoplay playsinline>
+                                    <source src="img/labatie/labatie-scramble.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                                <figcaption>Microsite scramble interaction (no audio)</figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>
 
-            <div class="project-content">
-                <h3>Content Strategy</h3>
-                <p class="project-text">One of my lead roles in the project was the strategy for revealing the content of the microsite, which was separated into why a design intervention was necessary, how we would implement it, and what the final result would be. Early on, this helped the team frame our focus on what exactly we were trying to achieve with the microsite.</p>
+                <div class="flex-container content-gap-medium">
+                    <div class="col-2-of-5">
+                        <h3 class="project-subtitle">Hold Interaction</h3>
+                        <p class="secondary-text">When users click and hold a piece of content from the home page, the merchandise tied to the particular event and a looping video of the event is revealed.</p>
+                        <!-- <p class="secondary-text"></p> -->
+                    </div>
+                    <div class="col-3-of-5">
+                        <div class="project-video">
+                            <figure>
+                                <video class="project-video italist-boutique" controls loop muted autoplay playsinline>
+                                    <source src="img/labatie/labatie-hold.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                                <figcaption>Microsite hold interaction (no audio)</figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>
 
-                <!-- <h4>Why</h4>
-                <p class="project-text">Many drag artists are severely underpaid for their shows and their income relies primarily on tips from audience members. To further support drag artists, users re-engage with the shows by interacting with the site and can provide additional financial support at the checkout page.</p>
+            </section> <!-- final-deliverables -->
 
-                <h4>How</h4>
-                <p class="project-text">Users are able to re-discover the cabaret performances with similar excitement as though they are watching the shows for the first time. The <em>Drag Shop</em> re-immerses the user in the cabaret shows by evoking memorable experiences through the discovery of the content.</p>
 
-                <h4>What</h4>
-                <p class="project-text">Anticipating that users have already seen the event allowed us to keep the content surrounding the merchandise more minimalist and avoid non-essential event details, focusing instead on short pieces of content that trigger the user's memory of the cabaret event.</p> -->
+            <section id="design-exploration">
+                <div class="flex-container content-gap-large">
+                    <h2 class="project-title">02. Design Exploration</h2>
+                </div>
 
-                <ul>
-                    <li><span class="bold">Why: </span>Many drag artists are severely underpaid for their shows and their income relies primarily on tips from audience members. To further support drag artists, users re-engage with the shows by interacting with the site and can provide additional financial support at the checkout page.</li>
-                    <li><span class="bold">How: </span>Many drag artists are severely underpaid for their shows and their income relies primarily on tips from audience members. To further support drag artists, users re-engage with the shows by interacting with the site and can provide additional financial support at the checkout page.</li>
-                    <li><span class="bold">What: </span>Anticipating that users have already seen the event allowed us to keep the content surrounding the merchandise more minimalist and avoid non-essential event details, focusing instead on short pieces of content that trigger the user's memory of the cabaret event.</li>
-                </ul>
+                <div class="flex-container content-gap-small">
+                    <div class="col-3-of-5">
+                        <p class="primary-text"><span class="primary-text-em">We initially laterally explored three design directions</span> that demonstrated design qualities we identified from studying renowned designers <span class="primary-text-em">Dan Friedman and Wim Crouwel</span> in a modern context.</p>
+                    </div>
+                </div>
+                <div class="flex-container content-gap-small">
+                    <figure>
+                        <img class="project-img" src="img/labatie/visual-exploration.png" alt="showcase of visual design directions before converging onto a final direction">
+                        <figcaption>Visual design exploration of posters and assets</figcaption>
+                    </figure>
+                </div>
 
-            </div>
-            
-            <div class="project-content">
-                <h4>Insights and Framing</h4>
-                <p class="project-text">From doing a deep dive research study into what drag artists and drag shows are about, we synthesized three insights and framing questions that ultimately drove the content design of the microsite and gave the site a meaningful purpose.</p>
-                <!-- The project also shifted from creating a pre-show excitement that was intended to direct attention to the performances, to a post-show experience that serves as a reminder of the event and reminds the user of the shows. -->
-                <p class="project-text">The three insights are summarized as:</p>
-                <ol>
-                    <li>Showcasing drag as a deserving art form that similarly captivates the audience as a live drag show</li>
-                    <li>Designing a unique and enjoyable experience that differs from typical experiences users are accustomed to</li>
-                    <li>Re-engaging the audience post-show to help financially support the drag artists who tend to rely on audience tips during shows as a primary source of income</li>
-                </ol>
+                <div class="flex-container content-gap-large">
+                    <div class="col-3-of-5">
+                        <p class="primary-text"><span class="primary-text-em">After converging on one visual direction</span>, we expanded once again to explore three directions of what the final form of the site might be.</p>
+                        <p class="primary-text content-gap-small">Each direction employed more expressive interactions that would intrigue our audience who are accustomed to expressive art forms.</p>
+                    </div>
+                </div>
 
-                <img class="project-img" src="img/labatie/insights.png" alt="Insights discovered from researching into drag artists.">
+                <!-- DIRECTION 1 -->
+                <div class="flex-container content-gap-medium">
+                    <div class="col-2-of-5">
+                        <h3 class="project-subtitle">Direction 01: Mid Expressive</h3>
+                        <p class="secondary-text">The strategy was to illustrate the provocative and dynamic personalities of the cabaret's performers.</p>
+                    </div>
+                    <div class="col-3-of-5">
+                        <div class="project-video">
+                            <figure>
+                                <video class="project-video" controls loop muted autoplay playsinline>
+                                    <source src="img/labatie/labatie-direction1.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                                <figcaption>Mid-level expressive microsite exploration (no audio)</figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>
 
-                <h4>Value Proposition</h4>
-                <p class="project-text">For users who have attended the Cabaret shows at La Batie Festival, the microsite or <em>Drag Shop</em> as we have named it, allows users to purchase merchandise tied to the live shows and further financially support the artists while re-discovering the experience of the performances.</p>
-            </div>
+                <!-- DIRECTION 2 -->
+                <div class="flex-container content-gap-medium">
+                    <div class="col-2-of-5">
+                        <h3 class="project-subtitle">Direction 02: Expressive</h3>
+                        <p class="secondary-text">The driving principle was to display the interconnectedness of the four cabaret performances, while driving attention towards the performances.</p>
+                    </div>
+                    <div class="col-3-of-5">
+                        <div class="project-video">
+                            <figure>
+                                <video class="project-video" controls loop muted autoplay playsinline>
+                                    <source src="img/labatie/labatie-direction2.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                                <figcaption>Expressive microsite exploration (no audio)</figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>
 
-            <div class="project-content">
-                <h3>Interaction Strategy</h3>
-                <p class="project-text">A goal with the interaction strategy for the microsite beyond incentivizing the user to explore the content was developing a consistent language for the interactions throughout the site. While the interactions were very expressive, the consistency helps users expect where interactions and be able to navigate the site.</p>
+                <!-- DIRECTION 3 -->
+                <div class="flex-container content-gap-medium">
+                    <div class="col-2-of-5">
+                        <h3 class="project-subtitle">Direction 03: Highly Expressive</h3>
+                        <p class="secondary-text">This site establishes feelings of intrigue and mystery, similar to to how cabaret events surprise and excite the audience.</p>
+                    </div>
+                    <div class="col-3-of-5">
+                        <div class="project-video">
+                            <figure>
+                                <video class="project-video" controls loop muted autoplay playsinline>
+                                    <source src="img/labatie/labatie-direction3.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                                <figcaption>High-level expressive microsite exploration (no audio)</figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>
+            </section> <!--design exploration-->
 
-                <h4>Drag to Discover</h4>
-                <p class="project-text">The drag interaction reveals the content of a seemingly blank canvas in bits and pieces. Dragging is a slow interaction, which forces the user to be more engaged with the interactions and focus on a single piece of content.</p>
 
-                <img class="project-img" src="img/labatie/drag.gif" alt="">
+            <section id="visual-design">
+                <div class="flex-container content-gap-large">
+                    <h2 class="project-title">03. Visual Design</h2>
+                </div>
 
-                <h4>Scramble</h4>
-                <p class="project-text">By scrambling the type and imagery during the drag, the identity of the content is masked until the user commits to the drag by releasing their cursor. The user can guess at what the content might be based on their experience of the show, leading up to an "aha" moment when the content lands as the user recalls the event.</p>
+                <div class="flex-container">
+                    <div class="col-2-of-5">
+                        <h3 class="project-subtitle">Colour Palette</h3>
+                        <p class="secondary-text">The bright colours serve to re-immerse the users in the exhuberant energy of Le Cabaret's night life scene.</p>
+                    </div>
+                    <div class="col-3-of-5">
+                        <div class="flex-container content-gap-small">
+                            <figure>
+                                <img class="project-img" src="img/labatie/labatie-visual-design.png" alt="visual design of labatie">
+                                <figcaption>Visual design strategy summary</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
 
-                <img class="project-img" src="img/labatie/scramble.gif" alt="">
+                <div class="flex-container content-gap-small">
+                    <div class="col-2-of-5">
+                        <h3 class="project-subtitle">Texture</h3>
+                        <p class="secondary-text">The texture in the background has a rippling effect as the user moves their cursor about the screen.</p>
+                        <p class="secondary-text">This effect promotes the user to explore and interact with the site.</p>
+                    </div>
+                    <div class="col-3-of-5">
+                        <div class="project-video">
+                            <figure>
+                                <video class="project-video" controls loop muted autoplay playsinline>
+                                    <source src="img/labatie/labatie-texture.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                                <figcaption>Texture display on product summary page (no audio)</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                <h4>Hold to Unveil</h4>
-                <p class="project-text">When users click and hold a piece of content from the home page, the merchandise tied to the particular event and a looping video of the event is revealed.</p>
-                <!-- This interaction re-engages the user with the event show and commands the user's attention to drag the merchandise to the cart. -->
+            <section id="content-strategy">
+                <div class="flex-container content-gap-large">
+                    <div class="col-3-of-5">
+                        <h2 class="project-title">04. Content Strategy</h2>
+                        <p class="primary-text">One of my lead roles in the project was the strategy for delivering content of the microsite, which was separated into <span class="primary-text-em">why</span> a design intervention was necessary, <span class="primary-text-em">how</span> we would implement it, and <span class="primary-text-em">what</span> the final form was.</p>
+                    </div>
+                </div>
 
-                <img class="project-img" src="img/labatie/hold.gif" alt="">
-            </div>
 
-            <div class="project-content">
-                <h3>Reminder to the Physical Experience</h3>
-                <h4 class="first">Entrance to Le Cabaret Show</h4>
-                <p class="project-text">Beyond the microsite serves as a reminder of the experience of the shows themselves. We designed a mockup of what the interior space might look like as the viewer walks into a cabaret performance. This creates a build-up of intrigue through a mysterious element as the viewer walks through a dark and irregular-shaped hallway before the exuberant energy of the open purple space is unveiled to them where the event takes place.</p>
-                <img class="project-img" src="img/labatie/hallwayEntrance-original.png" alt="">
-                <p class="photo-caption">Photoshop asset mockup I created to display how the graphic style would be translated into the in-person Cabaret event.</p>
+                <div class="flex-container content-gap-small">
+                    <div class="col-1-of-3">
+                        <h3 class="project-subtitle project-subtitle-short">Why</h3>
+                        <p class="secondary-text">Many drag artists are severely underpaid for their shows and their income relies primarily on tips from audience members.</p>
+                    </div>
+                    <div class="col-1-of-3">
+                        <h3 class="project-subtitle project-subtitle-short">How</h3>
+                        <p class="secondary-text">Users are re-immersed into the cabaret shows by evoking memorable experiences through the discovery of the content. </p>
+                    </div>
+                    <div class="col-1-of-3">
+                        <h3 class="project-subtitle project-subtitle-short">What</h3>
+                        <p class="secondary-text">The microsite focuses instead on short pieces of content that trigger the user's memory of the cabaret event.</p>
+                    </div>
+                </div>
+            </section> <!--content-strategy-->
 
-            </div>
+            <section id="reflection">
+                <div class="flex-container content-gap-large">
+                    <h2 class="project-title">05. Reflection</h2>
+                </div>
 
-            <div class="project-content">
-                <h3>Learning Takeaways</h3>
-                <p class="project-text">Over the weeks involved in this project, I learned much about the design process and how to rapidly move a project forward in new directions. Ensuring to think in a lateral process, not getting attached to an idea, and when a good time to pivot the project is when it means achieving a greater final result. Additionally, I learned how deep research and insights into a problem space can drive a project to the next level beyond what visual design can do alone. It's the combination of having a strong driving purpose mixed with great visuals that result in the most successful design projects.</p>
-            </div>
+                <div class="flex-container">
+                    <div class="col-3-of-5">
+                        <p class="primary-text">I learned much about the design process and how to rapidly move a project forward in new directions. Ensuring to think in a lateral process, not getting attached to an idea, and when a good time to pivot the project is when it means achieving a greater final result.</p>
+                        <p class="primary-text content-gap-small">Additionally, I learned how deep research and insights into a problem space can drive a project to the next level beyond what visual design can do alone. It's the combination of having a strong driving purpose mixed with great visuals that result in the most successful design projects.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Empty class to ass space -->
+            <!-- <div class="content-gap-small"></div> -->
 
             <div class="next-project">
-                <a class="next-project-link" href="summit.html">
-                    <div class="col-2">
+                <a class="flex-container next-project-link" href="summit.html">
+                    <div class="col-2-of-5">
                         <p class="next-project-title" id="next-project-arrow">Next Project &#x203A;</p>
                     </div>
-                    <div class="col-2" id="next-project-text-adjust">
-                        <p class="next-project-title">Summit Application</p>
-                        <p class="next-project-subtitle">Mobile Interface Design and UX</p>
+                    <div class="col-3-of-5">
+                        <p class="next-project-title">Italist Rebrand</p>
+                        <p class="next-project-subtitle">User Experience Design and Visual Design</p>
                     </div>
                 </a>
             </div>
 
-        </div>
 
+        </div> <!-- project-page-container-->
+
+        <!-- FOOTER CONTENT -->
         <footer>
-            <div class="project-container">
-                <div class="footer-flex" id="footer-empty">
-
-                </div>
+            <div class="flex-container footer-container">
                 <div class="footer-flex" id="footer-connect">
-                    <p class="footer-title">Let's connect</p>
+                    <p class="footer-title">Reach Out</p>
                     <p class="footer-content">
                         <a href="mailto:zaacagnes9@gmail.com">zaacagnes9@gmail.com</a>
                     </p>
                     <p class="footer-content">
-                        <a href="https://www.linkedin.com/in/zaac-agnes">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/zaac-agnes">View my LinkedIn</a>
                     </p>
                 </div>
-                <div class="footer-flex" id="footer-location">
+                <div class="footer-flex rain-main" id="footer-location">
                     <p class="footer-title">Where abouts</p>
-                    <p class="footer-content">Currently living in Vancouver Canada</p>
+                    <p class="footer-content">Currently living in </p>
+                    <p class="footer-content">Vancouver, Canada </p>
                 </div>
                 <div class="footer-flex" id="footer-copyright">
-                    <p class="about-title"> </p>
-                    <p class="footer-content right-align">&copy; Zaac Agnes 2023</p>
+                    <p class="footer-title right-align">&copy; Zaac Agnes 2023</p>
                 </div>
             </div>
         </footer>
 
-
-        <script src="script/cursor.js"></script>
-        <script src="script/slideshow.js"></script>
-        <script src="script/hover.js"></script>
-        <script src="script/menu.js"></script>
-
+        <script src="script/main.js"></script>
+        <script src="script/videolabatie.js"></script>
+        <!-- <script src="script/slideshow.js"></script> -->
     </body>
 </html>
+

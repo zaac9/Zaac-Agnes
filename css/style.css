@@ -1,0 +1,210 @@
+
+/* VARIABLES */
+:root {
+    /* COLORS */
+    --text-color: rgb(56,56,56);
+    --text-color: #3d280b;
+    --light-text-color: #6c6c6c;
+    --light-grey: rgb(150, 150, 150);
+    --background-color: #fffcee;
+    --highlight-color: #ffffad;
+
+    /* BORDER */
+    --border: 0.5px solid var(--text-color);
+
+    /* TYPEFACES */
+    --serifs: 'Cormorant Garamond', serif;
+    --sans: 'Lato', sans-serif;
+}
+
+::selection{
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-variant-alternates: styleset(alt-a); */
+    /* cursor: none; */
+    /* cursor:cell; */
+    cursor:
+        url("../img/cursor-3.svg") 12 12,
+        cell;
+
+}
+html{
+    width: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--background-color);
+    font-family: var(--sans);
+    text-decoration-thickness: from-font;
+    color: var(--text-color);
+}
+
+a{
+    text-decoration-thickness: from-font;
+}
+
+.text-em{
+    background-color: var(--highlight-color);
+}
+
+/* .text-highlight{
+    background-image: linear-gradient(0deg, var(--highlight-color) 40%, transparent 0%);
+} */
+
+.hide-show{
+    display: none;
+}
+
+a:hover{
+	font-style:italic;
+}
+
+
+/* CUSTOM POINTER */
+.pointer{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    mix-blend-mode: difference;
+    transition: transform 0.2s ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.scale-pointer{
+    transition: transform 0.15s ease-in-out;
+    transform: translate(-50%, -50%) scale(2);
+}
+
+/* a:hover{
+    transition: transform 5s ease-in-out;
+    cursor:
+    url("../img/cursor-rotate.svg") 10 10,
+    pointer;
+} */
+
+/* TEXT STYLE & EFFECT */
+.serifs{
+    font-family: var(--serifs);
+    font-weight: 400;
+}
+/* CLASS TO ADD WHEN HOVER OVER ELEMENTS */
+.text-hover{
+    font-style: italic;
+    /* color: var(--highlight-color); */
+}
+
+/* BASE PAGE STYLING */
+.flex-container{
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.content-container{
+    padding-top: 5%;;
+}
+
+/* #main-banner {
+    border-bottom: var(--border);
+    padding: 0;
+    padding-top: 10%;
+} */
+
+.banner-intro{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-family: var(--serifs);
+    font-weight: 400;
+    /* padding: 5% 8% 5% 8%; */
+    padding: 8vw 5vw; /* get used to using vw instead of % with flexbox*/
+}
+
+
+
+/* FOOTER STYLING */
+footer{
+	/* margin: 3% 0; */
+    margin-bottom: 3%;
+    padding-top: 3%;
+	/* border-top: var(--border); */
+    border-top: var(--border);
+    color: var(--text-color);
+}
+.footer-container{
+    padding: 0 2rem; /*line up with hero content (about paragraph) */
+}
+.footer-flex{
+	/* flex-basis: 25%; */
+    flex-basis: 33.33%;
+	/* padding: 0 1rem; */
+    /* margin-top: 5%; */
+}
+.footer-title{
+	/* font-size: 1.2rem; */
+    /* font-family: var(--serifs); */
+    font-size: 0.9rem;
+	color: var(--light-text-color);
+	font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+.footer-content{
+	font-size: 0.9rem;
+	font-weight: 400;
+	/* color: var(--text-color); */
+	padding-bottom: 0.3rem;
+}
+.footer-content a {
+	/* font-size: 1rem; */
+	font-weight: 400;
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+/* .footer-content a:hover{
+	color: var(--text-color);
+} */
+
+[id *="hover-content-"]{
+	display: none;
+
+}
+.italist-main:hover #hover-content-italist{
+	display: block;
+}
+.dossier-main:hover #hover-content-dossier{
+	display: block;
+}
+.labatie-main:hover #hover-content-labatie{
+	display: block;
+}
+.summit-main:hover #hover-content-summit{
+	display: block;
+}
+/* .rain-main:hover #hover-content-rain{
+	display: block;
+} */
+
+/* Dispalying image home */
+/* .img-hover{
+    z-index: -10;
+	position: fixed;
+	transition: .2s ease-out; 
+} */
+
+/* SHOW PROJECT IMAGES ON HOVER */

@@ -1,0 +1,151 @@
+
+/* HOME FLEXBOX STYLING */
+.home-header{
+    flex-basis: 36%;
+}
+.project-showcase{
+    flex-basis: 64%;
+}
+
+.project-display-list{
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: space-between;
+    align-items: stretch; */
+}
+
+/* PROJECT DISPLAY ORDER */
+#labatie {
+	order: 2;
+}
+#summit {
+	order: 4;
+}
+#dossier {
+	order: 1;
+}
+#italist {
+	order: 3;
+}
+
+/* MAIN SECTIONS ON HOME PAGE */
+/* no content in intro so far as nothing to add */
+#intro{ 
+    border-bottom: var(--border);
+    padding: 0;
+    padding-top: 4.25rem; 
+}
+
+#projects{
+    padding-top: 1rem; /*adjustment for when clicking projects from menu */
+}
+
+#project-container-home {
+    align-items: baseline;
+}
+/* ****************************************************************** */
+/* PROJECT SHOWCASE HEADERS */
+h1.home-projects-title{
+    font-size: 2rem;
+    font-weight: 400;
+    /* padding-top: 2rem;  TOOK OUT BECAUSE IT ADDED EXTRA SPACE AFTER ADDINF align-items: baseline;*/
+    /* margin-left: 20%; */
+    padding-left: 5vw; /* Using vw here as flexbox effects % */
+    font-family: var(--serifs);
+    color: var(--text-color);
+}
+
+/* INDIVIDUAL PROJECT SHOWCASE */
+.project-display-container{
+    /* margin-right: 2rem; */
+    margin-right: 5vw;
+    /* padding: 2rem 0; */
+    padding: 1rem 0;
+    padding-left: 1rem;
+    /* padding: 1rem 0 1rem 1rem; */
+    border-bottom: var(--border);
+    /* min-height: 10vw; */
+    min-height: 22vh;
+}
+#project-display-last{
+    border-bottom:none;
+}
+#project-display-container-last{
+    border-bottom: none;
+}
+/* PARENT OF TITLE AND SUBTITLE */
+.project-display-link{
+    text-decoration: none;
+    color: var(--title-color);
+}
+.project-display-title{
+    text-align: left;
+	font-size: 2rem;
+	font-weight: 400;
+	font-family: var(--serifs);
+    color: var(--text-color);
+}
+.project-display-subtitle{
+	text-align: left;
+	font-size: 1.2rem;
+	font-weight: 300;
+	font-family: var(--serifs);
+	padding-bottom: 0.3rem;
+}
+
+.project-display-img{
+	position: fixed;
+	z-index: -10;
+	opacity: 0.3;
+	/* transition: .2s ease-out;  */
+    /* transition: .1s ease;  */
+    /* transform: translate(-30%, -30%); */
+}
+
+.display-img-adjust-1{
+    transform: translate(-70%, -70%);
+}
+.display-img-adjust-2{
+    transform: translate(-20%, -80%);
+}
+.display-img-adjust-3{
+    transform: translate(-65%, -65%);
+}
+.display-img-adjust-4{
+    transform: translate(-40%, -80%);
+}
+
+/* .description{
+	font-size: 1.5rem;
+	line-height: 2.1rem;
+    font-weight: 400;
+    font-family: var(--serifs);
+	left: 10%;
+	bottom: 30%;
+	max-width: 28rem;
+	position: fixed;
+    background-color: var(--background-color);
+    border: var(--border);
+} */
+
+/* ****************************************************************** */
+
+/* SHOW PROJECT IMAGES ON HOVER */
+/* [id *="hover-content-"]{
+	display: none;
+}
+.italist-main:hover #hover-content-italist{
+	display: block;
+}
+.dossier-main:hover #hover-content-dossier{
+	display: block;
+}
+.labatie-main:hover #hover-content-labatie{
+	display: block;
+}
+.summit-main:hover #hover-content-summit{
+	display: block;
+} */
+
+
+

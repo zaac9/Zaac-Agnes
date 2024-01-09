@@ -7,103 +7,83 @@
 
 		<meta name="description" content="Zaac Agnes(he/him)">
 		<title>Zaac Agnes | About</title>
-		<link rel="icon" type="image/x-icon" href="/img/favicons/favicon-home.ico">
+		<link rel="icon" type="image/x-icon" href="img/favicons/favicon-home.ico">
 
-		<!-- MAIN STYLE SHEET -->
-		<!-- <link rel="stylesheet" href="css/main.css"> -->
-		<link rel="stylesheet" href="css/main-min.css">
+		<!-- LINKING STYLE SHEETS -->
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/about.css">
+		<!-- <link rel="stylesheet" href="css/style-min.css"> -->
 		<link rel="stylesheet" href="css/menu.css">
-
+		<link rel="stylesheet" href="css/home.css">
+	
+		<!-- LINKING TYPEFACES -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-		<!-- OPEN SANS + CORMORANT TYPEFACE -->
-		<link rel="stylesheet" href="https://use.typekit.net/mnt0bcx.css">
-		<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
-				<!-- Garamond Cormorant -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-		<!-- <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script> -->
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	
+		<!-- IMPORT DOWNLOADED JQUERY -->
 		<script src="jquery/jquery-3.6.0.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js" integrity="sha512-/8phkpsAzxsbuX18zNkQ2gCq4Q5JsWoPo1jHLDeZorPUHRtx9YJxpdk+os05oDhPJVCNzA2/NMl4rmJyQ+6Fvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+
 	</head>
 
 	<body>
 		<div class="pointer"></div>
-
-		<!-- <header>
-			<nav class="topnav">
-				<ul class="navbar">
-					<li class="navLink" id="navzaac">
-						<a href="index.html">Zaac Agnes</a>
-					</li>
-
-					<li class="navLink" id="navwork">
-						<a class="navText" href="index.html#projects">Work</a>
-						<a class="navText" href="about.html">About Me</a>
-					</li>
-				</ul>
-			</nav>
-		</header> -->
 		<header id="hamburger">
 			<a id="navName" href="index.html">Zaac Agnes</a>
-			<a href="#" class="menu-control-open" id="menuControlOpen">
-			  Menu
-		  </a>
-		<div class="menu">
-			<div class="menu-inner">
-					<a href="#" class="menu-control-close" id="menuControlClose">Close</a>
-					<nav>
-						<a class="navButton" id="navWork" href="index.html#projects">Work</a>
-						<a class="navButton" href="about.html">About Me</a>
-					  <a class="navButton" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">Resume</a>
-					</nav>
-				</div>
-		  </div>
-	  </header>
+			<a href="#" class="menu-control-open" id="menuControlOpen">Menu</a>
+			<div class="menu">
+				<div class="menu-inner">
+						<a href="#" class="menu-control-close" id="menuControlClose">Close</a>
+						<nav>
+							<a class="navButton" id="navWork" href="index.html#projects">Work</a>
+							<a class="navButton" href="about.html">About</a>
+							<a class="navButton" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">Resume</a>
+						</nav>
+				</div> <!-- menu-inner -->
+			</div> <!-- menu -->
+    	</header>
 
 		<!-- <section id="intro"> -->
-			<div class="about-container" id="top-banner">
-				<div class="about-heading">
+			<div class="flex-container" id="about-banner">
+				<div class="about-header">
 					<img class="about-img" src="img/about/zaac-portrait.png" alt="Portrait of Zaac Agnes">
 				</div>
 
 				<div class="about-content">
-					<p class="zaac-intro about-intro">I am <span class="zaac-intro-highlight">Zaac</span>, a recent graduate (Spring 2023) from SFU's Interactive Arts and Technology program with a concentration in design. I thrive in teams by being a versatile thinker adept at comprehending new problem spaces and distilling diverse perspectives surface strategic decision making. I excel at translating conceptual ideas into visually captivating user-centric experiences grounded by strong decision making processes. Currently I am residing in Vancouver, Canada.</p>
-					<p class="zaac-intro about-intro" id="zaac-intro-extra">Feel free to view my <a class="about-link about-link-serif text-underline" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">resume</a> or contact me via email at <a class="about-link about-link-serif text-underline" href="mailto:zaacagnes9@gmail.com" target="_blank">zaacagnes9@gmail.com.</a> I am always happy to chat.</p>
+					<p class="banner-intro about-intro">I am <span class="zaac-intro-highlight">Zaac</span>, a graduate from SFU's Interactive Arts and Technology program with a concentration in design. I thrive in teams by being a versatile thinker adept at comprehending new problem spaces and distilling diverse perspectives to surface strategic decision making. 
+					</p>	
+					<p class="banner-intro about-intro about-gap">I excel at translating conceptual ideas into visually captivating user-centric experiences grounded by strong decision making processes.</p>
+					<p class="banner-intro about-intro about-gap">Feel free to take a peak at <a class="about-link text-underline text-em" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">my resume</a> or contact me via email at <a class="about-link text-underline text-em" href="mailto:zaacagnes9@gmail.com" target="_blank">zaacagnes9@gmail.com.</a> I am always happy to chat.</p>
 				</div>
 			</div>
 
 		<!-- </section> -->
 
-		<div class="about-container" id="about-container-first">
-			<div class="about-flex about-heading">
-				<h1 class="about-title flex-container">My Interests</h1>
-			</div>
+		<div class="flex-container" id="about-container-adjust">
+            <div class="about-header">
+                <h1 class="home-projects-title">My Interests</h1>
+            </div>
+    
+            <!-- PROJECT SHOWCASE -->
+            <div class="about-content">
+                <div class="about-display-list">
+                    <div class="about-display-container" >
+						<h2 class="about-display-title">Art</h2>
+						<h3 class="about-display-subtitle">I love to sketch and paint in my free time. Whether it be with traditional tools or digitally, I enjoy expressing my thoughts through my artwork.</h3>
+						<h3 class="about-display-subtitle">Check out my <a class="about-link text-underline text-em" href="https://www.instagram.com/zaacdesignsart/?hl=en" target="_blank">art Instragram account &#x203A;</a>.</h3>
+					</div>
+					<div class="about-display-container" >
+						<h2 class="about-display-title">Leadership</h2>
+						<h3 class="about-display-subtitle">I'm passionate about teaching and inspiring others through my past and present roles as a lacrosse coach, teaching assistant, and summer camp coordinator.</h3>
+					</div>
+					<div class="about-display-container" >
+						<h2 class="about-display-title">Outdoor Sports</h2>
+						<h3 class="about-display-subtitle">I love the outdoors, especially winter sports. I've been skiing since I was three years old and have always enjoyed skiing with friends and family. Recently I've started backcountry skiing as a way of getting excercise and exploring the outdoors.</h3>
+					</div>
 
-			<div class="about-flex about-content">
-				<div class="about-subcontainer">
-					<p class="about-subtitle">Art</p>
-					<p class="about-description">I love to sketch and paint in my free time. Whether it be with traditional tools or digitally, I enjoy expressing my thoughts through my artwork.</p>
-					<p class="about-description">Check out my <a class="about-link text-underline" href="https://www.instagram.com/zaacdesignsart/?hl=en" target="_blank">art Instragram account</a>.</p>
-				</div>
-				<div class="about-subcontainer">
-					<p class="about-subtitle">Leadership</p>
-					<p class="about-description">I'm passionate about teaching and inspiring others through my past and present roles as a lacrosse coach, teaching assistant, and summer camp coordinator.</p>
-				</div> 
-				<div class="about-subcontainer">
-					<p class="about-subtitle">Skiing</p>
-					<p class="about-description">I've been skiing since I was three years old and have always enjoyed skiing with friends and family. Recently I've started backcountry skiing as a way of getting excercise and exploring the outdoors.</p>
-				</div>
-			</div>
-		</div>
+                </div> <!-- about-display-list -->
+            </div> <!-- project showcase-->
+        </div> <!-- flex-container -->
 
 
 		<!-- <div class="about-container">
@@ -131,34 +111,34 @@
 		</div> -->
 
 		<footer>
-			<div class="project-container">
-				<div class="footer-flex" id="footer-empty">
+            <div class="flex-container footer-container">
+                <div class="footer-flex" id="footer-connect">
+                    <p class="footer-title">Reach Out</p>
+                    <p class="footer-content">
+                        <a href="mailto:zaacagnes9@gmail.com">zaacagnes9@gmail.com</a>
+                    </p>
+                    <p class="footer-content">
+                        <a href="https://www.linkedin.com/in/zaac-agnes">View my LinkedIn</a>
+                    </p>
+                </div>
+                <div class="footer-flex rain-main" id="footer-location">
+                    <p class="footer-title">Where abouts</p>
+                    <p class="footer-content">Currently living in </p>
+                    <p class="footer-content">Vancouver, Canada </p>
+                </div>
+                <div class="footer-flex" id="footer-copyright">
+                    <p class="footer-title right-align">&copy; Zaac Agnes 2023</p>
+                </div>
+            </div>
+        </footer>
 
-				</div>
-				<div class="footer-flex" id="footer-connect">
-					<p class="footer-title">Let's connect</p>
-					<p class="footer-content">
-						<a href="mailto:zaacagnes9@gmail.com">zaacagnes9@gmail.com</a>
-					</p>
-					<p class="footer-content">
-						<a href="https://www.linkedin.com/in/zaac-agnes" target="_blank">LinkedIn</a>
-					</p>
-				</div>
-				<div class="footer-flex" id="footer-location">
-					<p class="footer-title">Where abouts</p>
-					<p class="footer-content">Currently living in Vancouver Canada</p>
-				</div>
-				<div class="footer-flex" id="footer-copyright">
-					<p class="about-title"> </p>
-					<p class="footer-content right-align">&copy; Zaac Agnes 2023</p>
-				</div>
-			</div>
-		</footer>
-
-		<script src="script/cursor.js"></script>
+		<!-- <script src="script/cursor.js"></script> -->
 		<!-- <script src="script/cursors.js"></script> -->
-		<script src="script/hover.js"></script>
-		<script src="script/menu.js"></script>
+		<!-- <script src="script/hover.js"></script> -->
+		<!-- <script src="script/menu.js"></script> -->
+		<!-- <script src="script/imageMove.js"></script> -->
+
+		<script src="script/main.js"></script>
 
 	</body>
 </html>
