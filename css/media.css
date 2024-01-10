@@ -49,6 +49,9 @@
 
 
     /* PROJECT PAGE CONTENT */
+    h1.project-main-title {
+        padding-bottom: 1rem;
+    }
     div.col-3-of-5-adjust{
         flex-basis: 75%;
     }
@@ -82,6 +85,12 @@
     .banner-intro{
         font-size: 1.7rem;
     }
+    h1.project-main-title {
+        font-size: 5em;
+    }
+    .my-roles{
+        padding-right: 0;
+    }
 }
 
 
@@ -90,12 +99,7 @@
     .pointer{
         display: none;
     }
-    .my-roles{
-        padding-right: 0;
-    }
-    h1.project-main-title {
-        font-size: 5em;
-    }
+
     .secondary-text{
         margin-right: 0;
         padding-top: 0.5rem;

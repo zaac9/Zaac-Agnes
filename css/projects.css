@@ -80,7 +80,7 @@ div.col-1-of-4:last-child{
 /* PROJECT BANNER STYLING */
 h1.project-main-title{
     font-family: var(--serifs), serif;
-    font-size: 8em;
+    font-size: 8rem;
     font-weight: 700;
     max-width: 5em;
     line-height: 90%;
