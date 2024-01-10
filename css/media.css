@@ -70,6 +70,17 @@
     }
 }
 
+@media screen and (max-width: 699px){
+    .secondary-text{
+        margin-right: 10%;
+        /* padding-top: 0.5rem; */
+    }
+    .primary-text{
+        margin-right: 10%;
+        font-size: 1.7rem;
+    }
+}
+
 
 @media screen and (max-width: 499px){
     /* Remove pointer class on mobile as not necessary */
