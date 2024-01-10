@@ -241,7 +241,7 @@ transition: transform 0.15s ease-in;
 
 @media screen and (max-width: 999px){
     header{
-        padding: 1.5rem 2rem 1.5rem 2rem;
+        padding: 1.5rem 5vw 1.5rem 5vw;
     }
     header nav a {
         color: var(--background-color);
