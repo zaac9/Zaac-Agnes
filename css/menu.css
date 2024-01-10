@@ -25,14 +25,12 @@ header a:hover{
     color: var(--text-color);
 }
 
-#navName{
-    padding-left: 0;
-    /* border-right: var(--border); */
+#nav-name{
+    /* padding-left: 0; */
     text-decoration-color: var(--light-text-color);
 }
-#navName:hover{
+#nav-name:hover{
     color: var(--light-text-color);
-    border-left:none;
 }
 
 header .menu-control-open, header .menu-control-close, header nav, header a {
