@@ -97,6 +97,10 @@
     .content-gap-medium{
         padding-top: 10%;
     }
+
+    .project-display-img{
+        display: none;
+    }
 }
 
 
