@@ -79,6 +79,9 @@
         margin-right: 10%;
         font-size: 1.7rem;
     }
+    .banner-intro{
+        font-size: 1.7rem;
+    }
 }
 
 
@@ -99,6 +102,10 @@
     }
     .primary-text{
         margin-right: 0;
+        font-size: 1.4rem;
+    }
+
+    .banner-intro{
         font-size: 1.4rem;
     }
 
