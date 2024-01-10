@@ -240,11 +240,31 @@ transition: transform 0.15s ease-in;
 }
 
 @media screen and (max-width: 999px){
-    header{
+    /* header{
         padding: 1.5rem 5vw 1.5rem 5vw;
+    } */
+    header{
+        padding: 0;
     }
+    #menuControlOpen{
+        padding: 1.5rem 5vw;
+    }
+    #menuControlOpen:hover{
+        border-left: var(--border);
+    }
+    #nav-name{
+        position: fixed;
+        padding: 1.5rem 5vw;
+        /* top: 0; */
+    }
+    #nav-name:hover{
+        border-right: var(--border);
+    }
+
+
     header nav a {
         color: var(--background-color);
+        padding: 1.5rem 5vw;
     }
     header a {
         padding: 0;
@@ -255,10 +275,3 @@ transition: transform 0.15s ease-in;
     }
     
 }
-
-/* @media screen and (max-width: 750px){
-    header {
-        padding: 5%;
-    }
-} */
-  
