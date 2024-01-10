@@ -1,0 +1,28 @@
+
+/* 999px and below */
+@media screen and (max-width: 999px){
+    .home-header{
+        flex-basis: 100%;
+    }
+    .project-showcase{
+        flex-basis: 100%;
+    }
+    .flex-container{
+        flex-flow: row wrap;
+        /* justify-content: space-between;
+        align-items: stretch;
+        gap: 1rem; */
+    }
+    .project-display-container{
+        padding: 1rem 0;
+        margin-left: 5vw;
+        min-height: 18vh;
+    }
+}
+
+
+@media screen and (max-width: 499px){
+    .pointer{
+        display: none;
+    }
+}

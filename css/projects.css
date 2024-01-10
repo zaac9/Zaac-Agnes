@@ -1,16 +1,26 @@
 /* STYLING OF FLEX CONTAINERS AND DIV CONTAINERS */
-.project-banner{
+#project-banner{
     margin-bottom: 30vh;
-
 }
-
-
 .project-page-container{
     padding: 0 8vw;
     padding-top: 4.25rem;
     /* padding-left: 12vh; */
     /* NEW CODE */
     /* display: flex; */
+}
+
+.flex-container-project{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.my-roles{
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .content-gap-large{
@@ -41,11 +51,9 @@ div.col-4-of-5{
 div.col-3-of-5{
     flex-basis: 60%;
 }
-
 div.col-2-of-5{
     flex-basis: 40%;
 }
-
 div.col-1-of-5{
     flex-basis: 20%;
 }
@@ -80,6 +88,7 @@ h1.project-main-title{
 }
 
 .project-details-content{
+    flex-basis: 50%;
     align-content: flex-end;
 }
 .project-details-content li{
@@ -208,16 +217,24 @@ figcaption{
 }
 
 /* NEXT PROJECT BUTTONS */
+
+.flex-next-project{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+}
+
 .next-project{
 	margin-top: 5%;
-	/* display: flex; */
 	border-top: var(--border);
 }
 .next-project-link{
 	text-decoration: none;
 	color: var(--text-color);
 	/* display: flex; */
-	align-items: center;
+	align-items: baseline;
     padding: 10% 0;
 	/* width: 100%; */
     
@@ -227,7 +244,7 @@ figcaption{
 	color: var(--light-text-color);
 }
 #next-project-arrow{
-	font-size: 3rem
+	font-size: 2rem;
 }
 .next-project-title{
 	font-family: var(--serifs);

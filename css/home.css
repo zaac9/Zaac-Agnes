@@ -48,23 +48,17 @@
 h1.home-projects-title{
     font-size: 2rem;
     font-weight: 400;
-    /* padding-top: 2rem;  TOOK OUT BECAUSE IT ADDED EXTRA SPACE AFTER ADDINF align-items: baseline;*/
-    /* margin-left: 20%; */
-    padding-left: 5vw; /* Using vw here as flexbox effects % */
+    padding-left: 5vw;
     font-family: var(--serifs);
     color: var(--text-color);
 }
 
 /* INDIVIDUAL PROJECT SHOWCASE */
 .project-display-container{
-    /* margin-right: 2rem; */
     margin-right: 5vw;
-    /* padding: 2rem 0; */
     padding: 1rem 0;
-    padding-left: 1rem;
-    /* padding: 1rem 0 1rem 1rem; */
+    padding-left: 5vw;
     border-bottom: var(--border);
-    /* min-height: 10vw; */
     min-height: 22vh;
 }
 #project-display-last{

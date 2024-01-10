@@ -13,7 +13,8 @@
         <!-- <link rel="stylesheet" href="css/style-min.css"> -->
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/projects.css">
-        <!-- <link rel="stylesheet" href="css/slideshow.css"> -->
+        <link rel="stylesheet" href="css/projects-media.css">
+        
 
         <!-- LINKING TYPEFACES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,12 +45,12 @@
 
 
         <div class="project-page-container">
-            <section class="project-banner">
-                <div class="flex-container content-gap-medium project-banner">
+            <section id="project-banner">
+                <div class="flex-container-project content-gap-medium project-banner">
                     <div class="col-3-of-5">
                         <h1 class="project-main-title">La Batie Festival</h1>
                     </div>
-                    <div class="col-1-of-5">
+                    <div class="my-roles">
                         <div class="project-details-content">
                             <li class="details-title">My Roles</li>
                             <li class="details-text">Content Design</li>
@@ -59,29 +60,27 @@
                             <li class="details-text">Prototyping</li>
                             <li class="details-text">Interaction Design</li>
                         </div>
-                    </div>
-                    <div class="col-1-of-5">
                         <div class="project-details-content">
                             <li class="details-title">Student Project</li>
                             <li class="details-text">5-member Team</li>
                             <li class="details-text">Spring 2022</li>
                             <li class="details-text">4 Week Design Sprint</li>
                         </div>
-                    </div>
-                </div>
+                    </div> <!--my-roles-->
+                </div> <!--flex-container-project-->
             </section>
 
-            <div class="flex-container">
-                <div class="col-3-of-5">
+            <div class="flex-container-project">
+                <div class="col-3-of-5 col-3-of-5-adjust">
                     <p class="primary-text"><span class="primary-text-em">For a senior user experience design course</span>, our team produced a visual identity for La Batie Festival de Geneve, a summer festival in Geneva, Switzerland, showcasing a variety of contemporary art performances.</p>
                     <p class="primary-text content-gap-small">Ultimately, we produced a microsite centered around <span class="primary-text-em">La Poudrier Cabaret</span>, the festival nightlife, that pushes the boundary of how expressive web interaction can be, while considering functional design concepts of usability.</p>
                 </div>
             </div>
 
-            <div class="flex-container content-gap-medium">
+            <div class="flex-container-project content-gap-medium">
                 <h2 class="project-title">Project Overview</h2>
             </div>
-            <div class="flex-container">
+            <div class="flex-container-project">
                 <div class="project-overview-list">
                     <a href="#final-deliverables" class="project-overview">01. Final Deliverables</a>
                 </div>
@@ -104,15 +103,15 @@
 
             
             <section id="final-deliverables">
-                <div class="flex-container content-gap-large">
+                <div class="flex-container-project content-gap-large">
                     <h2 class="project-title">01. Final Deliverables</h2>
                 </div>
 
-                <div class="flex-container content-gap-small">
+                <div class="flex-container-project content-gap-small">
                     <div class="col-5-of-5">
                         <div class="project-video">
                             <figure>
-                                <video class="project-video" id="labatie-full-demo-" controls loop muted playsinline>
+                                <video class="project-video" id="labatie-full-demo" controls loop muted playsinline>
                                     <source src="img/labatie/labatie-full-demo-min.mp4" type="video/mp4">
                                     Your browser does not support HTML video.
                                 </video>
@@ -120,9 +119,9 @@
                             </figure>
                         </div>
                     </div>  <!--col-5-of-5-->              
-                </div> <!--flex-container-->
+                </div> <!--flex-container-project-->
 
-                <div class="flex-container content-gap-medium">
+                <div class="flex-container-project content-gap-medium">
                     <div class="col-2-of-5">
                         <h3 class="project-subtitle">Drag Interaction</h3>
                         <p class="secondary-text">The drag interaction reveals the content of a seemingly blank canvas in small pieces.</p>
@@ -141,7 +140,7 @@
                     </div> 
                 </div>
 
-                <div class="flex-container content-gap-medium">
+                <div class="flex-container-project content-gap-medium">
                     <div class="col-2-of-5">
                         <h3 class="project-subtitle">Scramble Interaction</h3>
                         <p class="secondary-text">By scrambling the type and imagery during the drag, the identity of the content is masked until the user commits to the drag by releasing their cursor.</p>
@@ -160,7 +159,7 @@
                     </div> 
                 </div>
 
-                <div class="flex-container content-gap-medium">
+                <div class="flex-container-project content-gap-medium">
                     <div class="col-2-of-5">
                         <h3 class="project-subtitle">Hold Interaction</h3>
                         <p class="secondary-text">When users click and hold a piece of content from the home page, the merchandise tied to the particular event and a looping video of the event is revealed.</p>
@@ -183,23 +182,23 @@
 
 
             <section id="design-exploration">
-                <div class="flex-container content-gap-large">
+                <div class="flex-container-project content-gap-large">
                     <h2 class="project-title">02. Design Exploration</h2>
                 </div>
 
-                <div class="flex-container content-gap-small">
+                <div class="flex-container-project content-gap-small">
                     <div class="col-3-of-5">
                         <p class="primary-text"><span class="primary-text-em">We initially laterally explored three design directions</span> that demonstrated design qualities we identified from studying renowned designers <span class="primary-text-em">Dan Friedman and Wim Crouwel</span> in a modern context.</p>
                     </div>
                 </div>
-                <div class="flex-container content-gap-small">
+                <div class="flex-container-project content-gap-small">
                     <figure>
                         <img class="project-img" src="img/labatie/visual-exploration.png" alt="showcase of visual design directions before converging onto a final direction">
                         <figcaption>Visual design exploration of posters and assets</figcaption>
                     </figure>
                 </div>
 
-                <div class="flex-container content-gap-large">
+                <div class="flex-container-project content-gap-large">
                     <div class="col-3-of-5">
                         <p class="primary-text"><span class="primary-text-em">After converging on one visual direction</span>, we expanded once again to explore three directions of what the final form of the site might be.</p>
                         <p class="primary-text content-gap-small">Each direction employed more expressive interactions that would intrigue our audience who are accustomed to expressive art forms.</p>
@@ -207,7 +206,7 @@
                 </div>
 
                 <!-- DIRECTION 1 -->
-                <div class="flex-container content-gap-medium">
+                <div class="flex-container-project content-gap-medium">
                     <div class="col-2-of-5">
                         <h3 class="project-subtitle">Direction 01: Mid Expressive</h3>
                         <p class="secondary-text">The strategy was to illustrate the provocative and dynamic personalities of the cabaret's performers.</p>
@@ -226,7 +225,7 @@
                 </div>
 
                 <!-- DIRECTION 2 -->
-                <div class="flex-container content-gap-medium">
+                <div class="flex-container-project content-gap-medium">
                     <div class="col-2-of-5">
                         <h3 class="project-subtitle">Direction 02: Expressive</h3>
                         <p class="secondary-text">The driving principle was to display the interconnectedness of the four cabaret performances, while driving attention towards the performances.</p>
@@ -245,7 +244,7 @@
                 </div>
 
                 <!-- DIRECTION 3 -->
-                <div class="flex-container content-gap-medium">
+                <div class="flex-container-project content-gap-medium">
                     <div class="col-2-of-5">
                         <h3 class="project-subtitle">Direction 03: Highly Expressive</h3>
                         <p class="secondary-text">This site establishes feelings of intrigue and mystery, similar to to how cabaret events surprise and excite the audience.</p>
@@ -266,17 +265,17 @@
 
 
             <section id="visual-design">
-                <div class="flex-container content-gap-large">
+                <div class="flex-container-project content-gap-large">
                     <h2 class="project-title">03. Visual Design</h2>
                 </div>
 
-                <div class="flex-container">
+                <div class="flex-container-project">
                     <div class="col-2-of-5">
                         <h3 class="project-subtitle">Colour Palette</h3>
                         <p class="secondary-text">The bright colours serve to re-immerse the users in the exhuberant energy of Le Cabaret's night life scene.</p>
                     </div>
                     <div class="col-3-of-5">
-                        <div class="flex-container content-gap-small">
+                        <div class="flex-container-project content-gap-small">
                             <figure>
                                 <img class="project-img" src="img/labatie/labatie-visual-design.png" alt="visual design of labatie">
                                 <figcaption>Visual design strategy summary</figcaption>
@@ -285,7 +284,7 @@
                     </div>
                 </div>
 
-                <div class="flex-container content-gap-small">
+                <div class="flex-container-project content-gap-small">
                     <div class="col-2-of-5">
                         <h3 class="project-subtitle">Texture</h3>
                         <p class="secondary-text">The texture in the background has a rippling effect as the user moves their cursor about the screen.</p>
@@ -306,7 +305,7 @@
             </section>
 
             <section id="content-strategy">
-                <div class="flex-container content-gap-large">
+                <div class="flex-container-project content-gap-large">
                     <div class="col-3-of-5">
                         <h2 class="project-title">04. Content Strategy</h2>
                         <p class="primary-text">One of my lead roles in the project was the strategy for delivering content of the microsite, which was separated into <span class="primary-text-em">why</span> a design intervention was necessary, <span class="primary-text-em">how</span> we would implement it, and <span class="primary-text-em">what</span> the final form was.</p>
@@ -314,7 +313,7 @@
                 </div>
 
 
-                <div class="flex-container content-gap-small">
+                <div class="flex-container-project content-gap-small">
                     <div class="col-1-of-3">
                         <h3 class="project-subtitle project-subtitle-short">Why</h3>
                         <p class="secondary-text">Many drag artists are severely underpaid for their shows and their income relies primarily on tips from audience members.</p>
@@ -331,11 +330,11 @@
             </section> <!--content-strategy-->
 
             <section id="reflection">
-                <div class="flex-container content-gap-large">
+                <div class="flex-container-project content-gap-large">
                     <h2 class="project-title">05. Reflection</h2>
                 </div>
 
-                <div class="flex-container">
+                <div class="flex-container-project">
                     <div class="col-3-of-5">
                         <p class="primary-text">I learned much about the design process and how to rapidly move a project forward in new directions. Ensuring to think in a lateral process, not getting attached to an idea, and when a good time to pivot the project is when it means achieving a greater final result.</p>
                         <p class="primary-text content-gap-small">Additionally, I learned how deep research and insights into a problem space can drive a project to the next level beyond what visual design can do alone. It's the combination of having a strong driving purpose mixed with great visuals that result in the most successful design projects.</p>
@@ -347,7 +346,7 @@
             <!-- <div class="content-gap-small"></div> -->
 
             <div class="next-project">
-                <a class="flex-container next-project-link" href="italist.html">
+                <a class="flex-next-project next-project-link" href="italist.html">
                     <div class="col-2-of-5">
                         <p class="next-project-title" id="next-project-arrow">Next Project &#x203A;</p>
                     </div>
@@ -362,27 +361,27 @@
         </div> <!-- project-page-container-->
 
         <!-- FOOTER CONTENT -->
-        <footer>
-            <div class="flex-container footer-container">
-                <div class="footer-flex" id="footer-connect">
-                    <p class="footer-title">Reach Out</p>
-                    <p class="footer-content">
-                        <a href="mailto:zaacagnes9@gmail.com">zaacagnes9@gmail.com</a>
-                    </p>
-                    <p class="footer-content">
-                        <a href="https://www.linkedin.com/in/zaac-agnes">View my LinkedIn</a>
-                    </p>
-                </div>
-                <div class="footer-flex rain-main" id="footer-location">
-                    <p class="footer-title">Where abouts</p>
-                    <p class="footer-content">Currently living in </p>
-                    <p class="footer-content">Vancouver, Canada </p>
-                </div>
-                <div class="footer-flex" id="footer-copyright">
-                    <p class="footer-title right-align">&copy; Zaac Agnes 2023</p>
-                </div>
-            </div>
-        </footer>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-flex" id="footer-connect">
+					<p class="footer-title">Reach Out</p>
+					<p class="footer-content">
+						<a href="mailto:zaacagnes9@gmail.com">zaacagnes9@gmail.com</a>
+					</p>
+					<p class="footer-content">
+						<a href="https://www.linkedin.com/in/zaac-agnes">View my LinkedIn</a>
+					</p>
+				</div>
+				<div class="footer-flex rain-main" id="footer-location">
+					<p class="footer-title">Where abouts</p>
+					<p class="footer-content">Currently living in </p>
+					<p class="footer-content">Vancouver, Canada </p>
+				</div>
+				<div class="footer-flex" id="footer-copyright">
+					<p class="footer-title right-align">&copy; Zaac Agnes 2023</p>
+				</div>
+			</div>
+		</footer>
 
         <script src="script/main.js"></script>
         <script src="script/videolabatie.js"></script>

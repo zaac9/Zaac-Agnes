@@ -1,0 +1,30 @@
+
+@media screen and (max-width: 999px){
+    div.col-3-of-5-adjust{
+        flex-basis: 75%;
+    }
+    .flex-container-project{
+        flex-flow: column nowrap;
+    }
+    .my-roles  {
+        padding-right: 50%;
+    }
+    #project-banner{
+        margin-bottom: 20vh;
+    }
+    .secondary-text, .primary-text{
+        margin-right: 25%;
+    }
+    #problem-statement {
+        text-align: left;
+        padding: 0 5vw;
+    }
+}
+
+
+@media screen and (max-width: 499px){
+    /* Remove pointer class on mobile as not necessary */
+    .pointer{
+        display: none;
+    }
+}

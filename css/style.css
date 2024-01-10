@@ -26,13 +26,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-variant-alternates: styleset(alt-a); */
-    /* cursor: none; */
-    /* cursor:cell; */
     cursor:
         url("../img/cursor-3.svg") 12 12,
         cell;
-
 }
 html{
     width: 100%;
@@ -43,6 +39,7 @@ body{
     font-family: var(--sans);
     text-decoration-thickness: from-font;
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 a{
@@ -50,7 +47,8 @@ a{
 }
 
 .text-em{
-    background-color: var(--highlight-color);
+    /* background-color: var(--highlight-color); */
+    font-style: italic;
 }
 
 /* .text-highlight{
@@ -64,6 +62,10 @@ a{
 a:hover{
 	font-style:italic;
 }
+.text-hover{
+    font-style: italic;
+}
+
 
 
 /* CUSTOM POINTER */
@@ -98,10 +100,6 @@ a:hover{
     font-weight: 400;
 }
 /* CLASS TO ADD WHEN HOVER OVER ELEMENTS */
-.text-hover{
-    font-style: italic;
-    /* color: var(--highlight-color); */
-}
 
 /* BASE PAGE STYLING */
 .flex-container{
@@ -147,14 +145,16 @@ footer{
     color: var(--text-color);
 }
 .footer-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
     padding: 0 2rem; /*line up with hero content (about paragraph) */
 }
-.footer-flex{
-	/* flex-basis: 25%; */
+/* .footer-flex{
     flex-basis: 33.33%;
-	/* padding: 0 1rem; */
-    /* margin-top: 5%; */
-}
+} */
 .footer-title{
 	/* font-size: 1.2rem; */
     /* font-family: var(--serifs); */
