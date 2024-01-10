@@ -47,7 +47,7 @@
 /* PROJECT SHOWCASE HEADERS */
 h1.home-projects-title{
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 500;
     padding-left: 5vw;
     font-family: var(--serifs);
     color: var(--text-color);
@@ -75,7 +75,7 @@ h1.home-projects-title{
 .project-display-title{
     text-align: left;
 	font-size: 2rem;
-	font-weight: 400;
+	font-weight: 500;
 	font-family: var(--serifs);
     color: var(--text-color);
 }
