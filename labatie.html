@@ -29,19 +29,20 @@
     <body>
         <div class="pointer"></div>
 		<header id="hamburger">
-			<a id="navName" href="index.html">Zaac Agnes</a>
-			<a href="#" class="menu-control-open" id="menuControlOpen">Menu</a>
-			<div class="menu">
-				<div class="menu-inner">
-						<a href="#" class="menu-control-close" id="menuControlClose">Close</a>
-						<nav>
-							<a class="navButton" id="navWork" href="index.html#projects">Work</a>
-							<a class="navButton" href="about.html">About</a>
-							<a class="navButton" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">Resume</a>
-						</nav>
-				</div> <!-- menu-inner -->
-			</div> <!-- menu -->
-    	</header>
+            <!-- Took out id="navName from below:" -->
+            <a href="index.html">Zaac Agnes</a>
+            <a href="#" class="menu-control-open" id="menuControlOpen">Menu</a>
+            <div class="menu">
+                <div class="menu-inner">
+                        <a href="#" class="menu-control-close" id="menuControlClose">Close</a>
+                        <nav>
+                            <a class="navButton" id="navWork" href="index.html#projects">Work</a>
+                            <a class="navButton" href="about.html">About</a>
+                            <a class="navButton" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">Resume</a>
+                        </nav>
+                </div> <!-- menu-inner -->
+            </div> <!-- menu -->
+        </header>
 
 
         <div class="project-page-container">
@@ -362,30 +363,37 @@
 
         <!-- FOOTER CONTENT -->
 		<footer>
-			<div class="footer-container">
-				<div class="footer-flex" id="footer-connect">
-					<p class="footer-title">Reach Out</p>
-					<p class="footer-content">
-						<a href="mailto:zaacagnes9@gmail.com">zaacagnes9@gmail.com</a>
-					</p>
-					<p class="footer-content">
-						<a href="https://www.linkedin.com/in/zaac-agnes">View my LinkedIn</a>
-					</p>
-				</div>
-				<div class="footer-flex rain-main" id="footer-location">
-					<p class="footer-title">Where abouts</p>
-					<p class="footer-content">Currently living in </p>
-					<p class="footer-content">Vancouver, Canada </p>
-				</div>
-				<div class="footer-flex" id="footer-copyright">
-					<p class="footer-title right-align">&copy; Zaac Agnes 2023</p>
-				</div>
-			</div>
-		</footer>
+            <div class="footer-container">
+                <!-- <div class="footer-flex" id="footer-empty">
+    
+                </div> -->
+                <div class="footer-flex" id="footer-connect">
+                    <p class="footer-title">Reach Out</p>
+                    <p class="footer-content">
+                        <a href="mailto:zaacagnes9@gmail.com">zaacagnes9@gmail.com</a>
+                    </p>
+                    <p class="footer-content">
+                        <a href="https://www.linkedin.com/in/zaac-agnes">View my LinkedIn</a>
+                    </p>
+                </div>
+                <div class="footer-flex rain-main" id="footer-location">
+                    <p class="footer-title">Where abouts</p>
+                    <p class="footer-content">Currently living in </p>
+                    <p class="footer-content">Vancouver, Canada <span id="rain-text">(it rains a lot)</span></p>
+                    <div id="hover-content-rain">
+                        <img class="img-hover display-img-adjust-rain" id="rain_img" src="img/home/rain-2.gif" alt="" width="120">
+                    </div>
+                </div>
+                <div class="footer-flex" id="footer-copyright">
+                    <!-- <p class="footer-title"> </p> -->
+                    <p class="footer-title right-align">&copy; Zaac Agnes 2023</p>
+                </div>
+            </div>
+        </footer>
 
+        <script src="script/imageMove.js"></script>
         <script src="script/main.js"></script>
         <script src="script/videolabatie.js"></script>
-        <!-- <script src="script/slideshow.js"></script> -->
     </body>
 </html>
 

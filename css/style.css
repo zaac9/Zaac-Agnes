@@ -180,6 +180,13 @@ footer{
 	color: var(--text-color);
 } */
 
+.img-hover{
+    position: fixed;
+    z-index: -10;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
 [id *="hover-content-"]{
 	display: none;
 
@@ -196,9 +203,21 @@ footer{
 .summit-main:hover #hover-content-summit{
 	display: block;
 }
-/* .rain-main:hover #hover-content-rain{
+
+.rain-main:hover #hover-content-rain{
 	display: block;
-} */
+}
+
+#rain-text{
+    display:none;
+    color: var(--light-text-color);
+}
+.rain-main:hover #rain-text{
+    display: block;
+}
+.display-img-adjust-rain{
+    transform: translate(-40%, -80%);
+}
 
 /* Dispalying image home */
 /* .img-hover{

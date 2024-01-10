@@ -8,7 +8,7 @@ header {
     background-color: var(--background-color);
     width: 100%;
     color: var(--text-color);
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    padding: 1.5rem 0rem 1.5rem 0rem;
     border-bottom: var(--border);
 }
 
@@ -160,6 +160,7 @@ transition: transform 0.15s ease-in;
     transition: transform 500ms ease-out;
     /* Handles items within the slide-out to give them the delayed slide-in */
     text-decoration-color: var(--light-text-color);
+    padding-left: 1rem;
 }
 .menu--active nav a:first-child {
     transition-delay: 0.2s;
@@ -170,6 +171,7 @@ transition: transform 0.15s ease-in;
 .menu--active nav a:last-child {
     transition-delay: 0.4s;
 }
+
 @media screen and (max-width: 767px) {
     .menu--active .menu {
         width: 80%;
@@ -238,6 +240,9 @@ transition: transform 0.15s ease-in;
 }
 
 @media screen and (max-width: 999px){
+    header{
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
     header nav a {
         color: var(--background-color);
     }
@@ -251,9 +256,9 @@ transition: transform 0.15s ease-in;
     
 }
 
-@media screen and (max-width: 750px){
+/* @media screen and (max-width: 750px){
     header {
         padding: 5%;
     }
-}
+} */
   
