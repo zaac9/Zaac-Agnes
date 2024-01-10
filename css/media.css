@@ -76,6 +76,27 @@
     .pointer{
         display: none;
     }
+    .my-roles{
+        padding-right: 0;
+    }
+    h1.project-main-title {
+        font-size: 5em;
+    }
+    .secondary-text{
+        margin-right: 0;
+        padding-top: 0.5rem;
+    }
+    .primary-text{
+        margin-right: 0;
+        font-size: 1.4rem;
+    }
+
+    .content-gap-small{
+        padding-top: 2%;
+    }
+    .content-gap-medium{
+        padding-top: 10%;
+    }
 }
 
 
