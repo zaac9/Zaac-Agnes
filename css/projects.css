@@ -231,14 +231,13 @@ figcaption{
 	border-top: var(--border);
 }
 .next-project-link{
-	text-decoration: none;
+	text-decoration: underline;
+    text-decoration-thickness: from-font;
 	color: var(--text-color);
-	/* display: flex; */
 	align-items: baseline;
     padding: 10% 0;
-	/* width: 100%; */
-    
 }
+
 .next-project-link:hover, .next-project-link:focus{
 	font-style: italic;
 	color: var(--light-text-color);
