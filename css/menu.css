@@ -80,13 +80,14 @@ header .menu-control-open {
 #menuControlClose{
     color: var(--background-color);
     transform: none;
-    margin: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
 }
 #menuControlClose:hover, #menuControlClose:focus{
-    /* color: var(--text-color); */
-    color: var(--light-text-color);
     color: var(--highlight-color);
-    /* color:red */
+    cursor: 
+    url("../img/cursor-close.svg") 9 9,
+    pointer;
 }
 
 /* header .menu-control-open svg {

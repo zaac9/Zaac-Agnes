@@ -34,7 +34,7 @@ html{
     width: 100%;
     scroll-behavior: smooth;
     cursor:
-    url("../img/cursor.svg") 12 12,
+    url("../img/cursor.svg") 13 13,
     cell;
 }
 body{
@@ -68,6 +68,7 @@ a:hover{
     cursor: 
         url("../img/arrow.svg") 12 6,
         pointer;
+
 }
 .text-hover{
     font-style: italic;
