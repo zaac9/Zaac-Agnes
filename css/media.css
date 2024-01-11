@@ -134,6 +134,12 @@
     .footer-content{
         padding-bottom: 1rem;
     }
+    .img-hover{
+        display:none;
+    }
+    #rain-text{
+        display: none;
+    }
 }
 
 
