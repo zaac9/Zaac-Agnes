@@ -72,6 +72,12 @@ h1.home-projects-title{
     text-decoration: none;
     color: var(--title-color);
 }
+/* .project-display-link:hover{
+    cursor: 
+        url("../img/arrow.svg") 12 6,
+        cell;
+} */
+
 .project-display-title{
     text-align: left;
 	font-size: 2rem;
