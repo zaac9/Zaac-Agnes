@@ -192,11 +192,14 @@ footer{
 }
 
 #rain-text{
-    display:none;
-    color: var(--light-text-color);
+    /* display:none; */
+    /* color: var(--light-text-color); */
+    color: var(--background-color);
+    display: block;
 }
 .rain-main:hover #rain-text{
-    display: block;
+    /* display: block; */
+    color: var(--light-text-color);
 }
 .display-img-adjust-rain{
     transform: translate(-40%, -80%);
