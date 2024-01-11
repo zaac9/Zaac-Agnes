@@ -90,16 +90,6 @@ header .menu-control-open {
     pointer;
 }
 
-/* header .menu-control-open svg {
-    position: absolute;
-    top: -12px;
-    left: 12px;
-} */
-/* header .menu-control-open svg line, header .menu-control-open svg circle {
-    fill: none;
-    stroke: #ffffff;
-    stroke-width: 3;
-} */
 header .menu-control-open:before {
     padding-top: 1px;
 }
@@ -274,4 +264,7 @@ transition: transform 0.15s ease-in;
         color: var(--highlight-color);
     }
     
+    .menu--active{
+        padding:0;
+    }
 }
