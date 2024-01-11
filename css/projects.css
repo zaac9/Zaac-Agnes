@@ -149,6 +149,9 @@ h3.project-subtitle-number{
 }
 .project-overview:hover, .project-overview:focus{
     border-bottom: var(--border);
+    cursor:
+        url("../img/arrow-down.svg") 6 12,
+        cell;
 }
 
 .primary-text{
