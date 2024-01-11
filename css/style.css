@@ -165,6 +165,12 @@ footer{
 	text-decoration: underline;
     text-decoration-thickness: from-font;
 }
+.footer-content{
+    padding-bottom: .7rem;
+}
+#footer-adjust{
+    padding-bottom: 0.3rem;
+}
 
 /* .footer-content a:hover{
 	color: var(--text-color);

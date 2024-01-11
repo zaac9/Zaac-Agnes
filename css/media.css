@@ -128,14 +128,11 @@
         justify-content: space-between;
         gap: 1rem;
     }
-    .footer-content{
-        padding-bottom: 1rem;
-    }
     .footer-width{
         width: 100%;
     }
-    #footer-adjust{
-        padding-bottom: 0.3rem;
+    .footer-content{
+        padding-bottom: 1rem;
     }
 }
 
