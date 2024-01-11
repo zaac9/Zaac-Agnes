@@ -142,9 +142,9 @@ footer{
     gap: 1rem;
     padding: 0 2rem; /*line up with hero content (about paragraph) */
 }
-/* .footer-flex{
-    flex-basis: 33.33%;
-} */
+.footer-width{
+    width: 33%;
+}
 .footer-title{
     font-family: var(--serifs);
     font-size: 1.1rem;
