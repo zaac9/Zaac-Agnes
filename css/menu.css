@@ -132,7 +132,7 @@ transition: transform 0.15s ease-in;
 .menu .menu-inner {
     position: relative;
     height: 100%;
-    width: 80vw;
+    width: 70vw;
     /* padding: 1.5rem; */
     /* Unnecessary styles for the menu footer */
 }
@@ -172,7 +172,7 @@ transition: transform 0.15s ease-in;
 
 @media screen and (max-width: 767px) {
     .menu--active .menu {
-        width: 80%;
+        width: 70%;
     }
     .navButton{
         padding: 1.5rem 0 1.5rem 0;
