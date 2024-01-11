@@ -64,6 +64,7 @@ a{
 
 a:hover{
 	font-style:italic;
+    letter-spacing: .05em;
     cursor: 
         url("../img/arrow.svg") 12 6,
         pointer;
@@ -145,9 +146,8 @@ footer{
     flex-basis: 33.33%;
 } */
 .footer-title{
-	/* font-size: 1.2rem; */
-    /* font-family: var(--serifs); */
-    font-size: 0.9rem;
+    font-family: var(--serifs);
+    font-size: 1.1rem;
 	color: var(--light-text-color);
 	font-weight: 400;
     padding-bottom: 0.5rem;
@@ -211,12 +211,3 @@ footer{
 .display-img-adjust-rain{
     transform: translate(-40%, -80%);
 }
-
-/* Dispalying image home */
-/* .img-hover{
-    z-index: -10;
-	position: fixed;
-	transition: .2s ease-out; 
-} */
-
-/* SHOW PROJECT IMAGES ON HOVER */
