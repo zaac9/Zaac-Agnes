@@ -31,6 +31,7 @@ header a:hover{
 }
 #nav-name:hover{
     color: var(--light-text-color);
+    border-left: none;
 }
 
 header .menu-control-open, header .menu-control-close, header nav, header a {
