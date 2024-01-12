@@ -150,7 +150,7 @@ h3.project-subtitle-number{
 .primary-text{
     font-family: var(--serifs);
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--text-color);
 }
 span.primary-text-em{
@@ -160,6 +160,7 @@ span.primary-text-em{
 .secondary-text{
     font-family: var(--sans);
     font-size: 1rem;
+    font-weight: 400;
     line-height: 150%;
     color: var(--light-text-color);
     padding-top: 1em;
