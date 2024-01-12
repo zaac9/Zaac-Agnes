@@ -26,7 +26,6 @@ header a:hover{
 }
 
 #nav-name{
-    /* padding-left: 0; */
     text-decoration-color: var(--light-text-color);
 }
 #nav-name:hover{
@@ -43,14 +42,10 @@ header .menu-control-open, header .menu-control-close, header nav, header a {
     transform: none;
 }
 header .menu-control-open, header .menu-control-close, header nav a {
-    /* font-size: 2.2rem; */
-    /* margin-bottom: 1.5rem; */
     color: var(--text-color);
 }
 .menu-control-close:hover, header nav a:hover {
-    /* color: var(--text-color); */
     color: var(--light-text-color);
-    /* color: var(--highlight-color); */
 }
 
 header .menu-control-open, header .menu-control-close {
@@ -63,9 +58,7 @@ header .menu-control-open {
     float: right;
 }
 .menu-control-open:hover{
-    /* color:var(--text-color); */
     color: var(--light-text-color);
-    color:red;
 }
 
 #menuControlOpen{
@@ -73,7 +66,6 @@ header .menu-control-open {
     transform: none;
 }
 #menuControlOpen:hover, #menuControlOpen:focus {
-    /* color: var(--text-color); */
     color: var(--light-text-color);
 }
 
@@ -99,7 +91,6 @@ header .menu-control-open:before, header .menu-control-open:after {
     width: 100%;
 }
 header .menu-control-close {
-    /* font-size: 1.2rem; */
     text-align: right;
 }
 header nav {
@@ -125,7 +116,6 @@ transition: transform 0.15s ease-in;
     position: relative;
     height: 100%;
     width: 70vw;
-    /* padding: 1.5rem; */
     /* Unnecessary styles for the menu footer */
 }
 .menu .version, .menu .madeIn {
@@ -179,7 +169,6 @@ transition: transform 0.15s ease-in;
         width: 40vw;
     }
     .menu--active, .navButton{
-        /* padding: 1.5rem 0 1.5rem 0; */
         padding:1.5rem;
         font-size: 2.2rem;
     }
@@ -187,15 +176,10 @@ transition: transform 0.15s ease-in;
 
 /* WHEN SCREEN SIZE IS 1000 PIXELS OR ABOVE */
 @media screen and (min-width: 1000px) {
-    /* header {
-        height: 7rem;
-        padding: 2.5rem;
-    } */
     header .menu-control-open, header .menu-control-close {
         display: none;
     }
     header .menu {
-        /* position: static; */
         overflow: visible;
         background-color: transparent;
         width: auto;
@@ -230,9 +214,6 @@ transition: transform 0.15s ease-in;
 }
 
 @media screen and (max-width: 999px){
-    /* header{
-        padding: 1.5rem 5vw 1.5rem 5vw;
-    } */
     header{
         padding: 0;
     }
@@ -250,8 +231,6 @@ transition: transform 0.15s ease-in;
     #nav-name:hover{
         border-right: var(--border);
     }
-
-
     header nav a {
         color: var(--background-color);
         padding: 1.5rem 5vw;

@@ -26,9 +26,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* cursor:
-        url("../img/cursor.svg") 12 12,
-        cell; */
 }
 html{
     width: 100%;
@@ -53,10 +50,6 @@ a{
     /* background-color: var(--highlight-color); */
     font-style: italic;
 }
-
-/* .text-highlight{
-    background-image: linear-gradient(0deg, var(--highlight-color) 40%, transparent 0%);
-} */
 
 .hide-show{
     display: none;
@@ -120,7 +113,6 @@ a:hover{
     color: var(--text-color);
     font-family: var(--serifs);
     font-weight: 500;
-    /* padding: 5% 8% 5% 8%; */
     padding: 8vw 5vw; /* get used to using vw instead of % with flexbox*/
 }
 
@@ -128,10 +120,8 @@ a:hover{
 
 /* FOOTER STYLING */
 footer{
-	/* margin: 3% 0; */
     margin-bottom: 3%;
     padding-top: 3%;
-	/* border-top: var(--border); */
     border-top: var(--border);
     color: var(--text-color);
 }
@@ -173,9 +163,6 @@ footer{
     padding-bottom: 0.3rem;
 }
 
-/* .footer-content a:hover{
-	color: var(--text-color);
-} */
 
 .img-hover{
     position: fixed;
@@ -206,13 +193,10 @@ footer{
 }
 
 #rain-text{
-    /* display:none; */
-    /* color: var(--light-text-color); */
     color: var(--background-color);
     display: block;
 }
 .rain-main:hover #rain-text{
-    /* display: block; */
     color: var(--light-text-color);
 }
 .display-img-adjust-rain{

@@ -79,11 +79,6 @@
 /* _______________________________________________________________________ */
 /*********** MEDIA QUERIES ***********/
 
-@media screen and (max-width: 1000px) {
-	/* .zaac-about-intro{
-		font-size: 1.4rem;
-	} */
-}
 @media screen and (max-width: 900px) {
 	.about-title{
 		font-size: 2rem;

@@ -9,9 +9,6 @@
     }
     .flex-container{
         flex-flow: row wrap;
-        /* justify-content: space-between;
-        align-items: stretch;
-        gap: 1rem; */
     }
     .project-display-container{
         padding: 1rem 0;
@@ -141,11 +138,3 @@
         display: none;
     }
 }
-
-
-
-/* @media print {
-    html{
-        display: none;
-    }
-} */
