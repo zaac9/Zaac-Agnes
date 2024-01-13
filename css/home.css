@@ -57,7 +57,8 @@ h1.home-projects-title{
     padding: 1rem 0;
     padding-left: 5vw;
     border-bottom: var(--border);
-    min-height: 22vh;
+    /* min-height: 22vh; */
+    height: 18vh;
 }
 #project-display-last{
     border-bottom:none;
