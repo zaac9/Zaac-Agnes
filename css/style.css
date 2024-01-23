@@ -142,7 +142,7 @@ footer{
     font-family: var(--serifs);
     font-size: 1.1rem;
 	color: var(--light-text-color);
-	font-weight: 400;
+	font-weight: 600;
     padding-bottom: 0.5rem;
 }
 .footer-content{
