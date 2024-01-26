@@ -58,7 +58,7 @@ h1.home-projects-title{
     padding-left: 5vw;
     border-bottom: var(--border);
     /* min-height: 22vh; */
-    height: 18vh;
+    /* height: 18vh; */
 }
 #project-display-last{
     border-bottom:none;
@@ -105,4 +105,21 @@ h1.home-projects-title{
 }
 .display-img-adjust-4{
     transform: translate(-40%, -80%);
+}
+
+
+.topic-container{
+    display: flex;
+    flex-flow: row wrap;
+    /* padding-top: 0.7rem; */
+    padding-bottom: 1rem;
+}
+
+.topic-card{
+    padding: 0.2rem 0.5rem;
+    margin-top: 0.3rem;
+    margin-right: 0.3rem;
+    border-radius: 0.3rem;
+    border: var(--border);
+    font-family: var(--serifs);
 }
