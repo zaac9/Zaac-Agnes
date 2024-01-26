@@ -59,6 +59,7 @@ h1.home-projects-title{
     border-bottom: var(--border);
     /* min-height: 22vh; */
     /* height: 18vh; */
+    min-height: 18vh;
 }
 #project-display-last{
     border-bottom:none;
