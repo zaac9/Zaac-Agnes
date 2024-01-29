@@ -197,8 +197,14 @@ figcaption{
     font-weight: 400;
 }
 
-/* NEXT PROJECT BUTTONS */
+.project-link{
+	color: var(--main-text-color);
+	text-decoration: underline;
+	text-decoration-color: var(--light-grey);
+	text-decoration-thickness: from-font;
+}
 
+/* NEXT PROJECT BUTTONS */
 .flex-next-project{
     display: flex;
     flex-flow: row nowrap;
