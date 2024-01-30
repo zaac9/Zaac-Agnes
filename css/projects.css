@@ -15,6 +15,10 @@
     gap: 1rem;
 }
 
+#flex-project-overview-adjust{
+    justify-content: flex-start;
+}
+
 .my-roles{
     display: flex;
     flex-flow: row nowrap;
