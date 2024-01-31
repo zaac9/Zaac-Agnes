@@ -119,6 +119,15 @@ a:hover{
     padding: 8vw 5vw; /* get used to using vw instead of % with flexbox*/
 }
 
+.intro-paragraph{
+    padding-bottom: 1rem;
+}
+.intro-link{
+    color: var(--main-text-color);
+	text-decoration: underline;
+	text-decoration-color: var(--light-grey);
+	text-decoration-thickness: from-font;
+}
 
 
 /* FOOTER STYLING */

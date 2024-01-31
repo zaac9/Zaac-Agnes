@@ -4,6 +4,10 @@
 	border-bottom: 0.5px solid var(--text-color);
 }
 
+#about-banner-content{
+	padding-left: 0;
+	padding-right: 0;
+}
 .about-header{
     flex-basis: 36%;
 }
@@ -62,7 +66,7 @@
 	font-weight: 400;
 	font-size: 2rem;
 	padding-left: 0;
-	padding-bottom: 2rem;
+	/* padding-bottom: 2rem; */
 }
 
 .about-gap{
