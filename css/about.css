@@ -125,24 +125,6 @@
 
 }
 
-@media screen and (max-width: 600px) {
-	.about-title{
-		font-size: 1.5rem;
-	}
-	.about-subtitle{
-		font-size: 1.5rem;
-	}
-	.about-description{
-		font-size: 1rem;
-	}
-}
-
-@media screen and (max-width: 400px) {
-	.zaac-about-intro {
-		font-size: 1rem;
-	}
-}
-
 
 
 
