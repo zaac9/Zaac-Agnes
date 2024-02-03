@@ -3,11 +3,13 @@
 :root {
     /* COLORS */
     --text-color: rgb(56,56,56);
-    --text-color: #543a16;
+    /* --text-color: #543a16; */
+    --text-color: #292929;
     --light-text-color: #575757;
     /* --light-grey: rgb(150, 150, 150); */
     --light-grey: #727272;
-    --background-color: #fffcee;
+    /* --background-color: #fffdf6; */
+    --background-color: #f4f4f4;
     --highlight-color: #ffffad;
 
     /* BORDER */
