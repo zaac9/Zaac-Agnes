@@ -1,12 +1,12 @@
 
 #about-banner{
 	padding-top: 4.25rem;
-	border-bottom: 0.5px solid var(--text-color);
+	border-bottom: var(--border);
 }
 
 #about-banner-content{
 	padding-left: 0;
-	padding-right: 0;
+	padding-right: 5vw;
 }
 .about-header{
     flex-basis: 36%;
