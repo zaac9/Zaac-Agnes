@@ -38,6 +38,10 @@
     /* padding-left: 1rem; */
 }
 
+.border-about{
+	border-bottom: var(--border);
+}
+
 .about-display-title{
     text-align: left;
 	font-size: 2rem;
