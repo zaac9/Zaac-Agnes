@@ -112,6 +112,10 @@
         font-size: 1.4rem;
     }
 
+    figcaption{
+        text-align: left;
+    }
+
     .banner-intro{
         font-size: 1.4rem;
     }
