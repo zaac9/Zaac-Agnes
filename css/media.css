@@ -72,7 +72,7 @@
     }
     #problem-statement {
         text-align: left;
-        padding: 0 5vw;
+        margin: 0 5vw;
     }
 }
 
@@ -94,6 +94,10 @@
     .my-roles{
         padding-right: 0;
     }
+    #problem-statement {
+        margin: 0;
+        font-size: 1.7rem;
+    }
 }
 
 
@@ -109,6 +113,10 @@
     }
     .primary-text{
         margin-right: 0;
+        font-size: 1.4rem;
+    }
+
+    #problem-statement {
         font-size: 1.4rem;
     }
 

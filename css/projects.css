@@ -174,9 +174,13 @@ span.primary-text-em{
     font-family: var(--serifs);
     font-size: 2.2rem;
     line-height: 150%;
-    text-align: center;
+    /* text-align: center; */
     color: var(--light-grey);
-    padding: 0 10vw;
+    /* padding: 0 10vw; */
+    padding: 2rem;
+    margin: 0 10vw;
+    border: var(--border);
+    background-color: white;
 }
 
 /* Project Images */
