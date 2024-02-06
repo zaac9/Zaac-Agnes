@@ -49,6 +49,7 @@ h1.home-projects-title{
     padding-left: 5vw;
     font-family: var(--serifs);
     color: var(--text-color);
+    font-style: italic;
 }
 
 /* INDIVIDUAL PROJECT SHOWCASE */
