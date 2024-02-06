@@ -21,6 +21,7 @@
     padding-left: 5vw;
     font-family: var(--serifs);
     color: var(--text-color);
+	font-style: italic;
 }
 
 #about-container-adjust{
@@ -51,9 +52,10 @@
 }
 .about-display-subtitle{
 	text-align: left;
-	font-size: 1.2rem;
-	font-weight: 300;
-	font-family: var(--serifs);
+	font-size: 1rem;
+	font-weight: 400;
+	/* font-family: var(--serifs); */
+	font-family: var(--sans);
 	padding-bottom: 0.3rem;
 }
 
@@ -67,8 +69,9 @@
 }
 
 .about-intro {
-	font-weight: 400;
-	font-size: 2rem;
+	font-weight: 500;
+	/* font-size: 2rem; */
+	font-size: 1.7rem;
 	padding-left: 0;
 	/* padding-bottom: 2rem; */
 }
@@ -87,14 +90,14 @@
 /* _______________________________________________________________________ */
 /*********** MEDIA QUERIES ***********/
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
 	.about-title{
 		font-size: 2rem;
 	}
 	.about-subtitle{
 		font-size: 2rem;
 	}
-}
+} */
 
 @media screen and (max-width: 750px) {
 	div.about-container{
@@ -107,7 +110,7 @@
 	.about-img{
 		max-width: 100%;
 		padding: 0;
-		margin: 0 5%;
+		/* margin: 0 5%; */
 	}
 	.zaac-about-intro{
 		font-size: 1.2rem;
