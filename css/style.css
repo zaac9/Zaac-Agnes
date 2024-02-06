@@ -138,6 +138,10 @@ a:hover{
 .intro-paragraph{
     padding-bottom: 1rem;
 }
+.intro-subparagraph{
+    font-size: 1.5rem;
+}
+
 .intro-link{
     color: var(--main-text-color);
 	text-decoration: underline;
