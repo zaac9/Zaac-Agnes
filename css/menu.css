@@ -35,6 +35,7 @@ header a:hover{
 }
 #nav-name:hover{
     /* color: var(--light-text-color); */
+    letter-spacing: 0.051em;
     border-left: none;
     background-color: var(--text-color);
     color: var(--background-color);
