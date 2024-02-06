@@ -137,6 +137,7 @@ a:hover{
 
 .intro-paragraph{
     padding-bottom: 1rem;
+    max-width: 30em;
 }
 .intro-subparagraph{
     font-size: 1.5rem;
