@@ -61,7 +61,6 @@ header .menu-control-open, header .menu-control-close, header nav a {
 
 header .menu-control-open, header .menu-control-close {
     display: block;
-    /* cursor: pointer; */
 }
 header .menu-control-open {
     position: relative;
