@@ -92,7 +92,7 @@ header .menu-control-open {
     /* color: var(--highlight-color); */
     color: var(--very-light-grey);
     cursor: 
-    url("../img/cursor-close.svg") 9 9,
+    url("../img/cursors/close2.svg") 9 9,
     pointer;
 }
 

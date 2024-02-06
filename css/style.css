@@ -36,7 +36,8 @@ html{
     width: 100%;
     scroll-behavior: smooth;
     cursor:
-    url("../img/cursor.svg") 13 13,
+    /* url("../img/cursor.svg") 13 13,  */
+    url("../img/cursors/cursor2.svg") 13 13,
     cell;
 }
 body{
@@ -65,7 +66,8 @@ a:hover{
     /* letter-spacing: .035em; */
     letter-spacing: 0.03em;
     cursor: 
-        url("../img/arrow.svg") 12 6,
+        /* url("../img/arrow.svg") 12 6, */
+        url("../img/cursors/arrow-right2.svg") 13 6,
         pointer;
 
 }
