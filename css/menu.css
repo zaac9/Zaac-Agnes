@@ -40,7 +40,8 @@ header a:hover{
 
 header .menu-control-open, header .menu-control-close, header nav, header a {
     font-weight: 500;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    text-decoration: none;
     text-transform: uppercase;
     color: var(--text-color);
     font-size: 1rem;
@@ -86,7 +87,8 @@ header .menu-control-open {
     padding: 1.5rem 1.5rem 0 1.5rem;
 }
 #menuControlClose:hover, #menuControlClose:focus{
-    color: var(--highlight-color);
+    /* color: var(--highlight-color); */
+    color: var(--very-light-grey);
     cursor: 
     url("../img/cursor-close.svg") 9 9,
     pointer;
@@ -202,7 +204,7 @@ header nav {
     header .menu a {
         transform: none;
         transition: none;
-        text-decoration-color: var(--light-grey);
+        /* text-decoration-color: var(--light-grey); */
         border-left: var(--border);
     }
     header .menu .version, header .menu .madeIn {
@@ -236,7 +238,7 @@ header nav {
     }
     #nav-name{
         position: fixed;
-        padding: 1.5rem 5vw;
+        padding: 1.55rem 5vw;
         /* top: 0; */
     }
     #nav-name:hover{
@@ -252,8 +254,12 @@ header nav {
         padding: 0;
     }
 
-    .menu--active, .navButton:hover{
+    /* .menu--active, .navButton:hover{
         color: var(--highlight-color);
+    } */
+    .navButton:hover{
+        color: var(--light-grey);
+        color:var(--very-light-grey);
     }
     
     .menu--active{
