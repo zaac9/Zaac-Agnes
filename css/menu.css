@@ -20,6 +20,8 @@ header h1 {
 header a {
     text-decoration: none;
     padding: 1.5rem 2rem 1.5rem 2rem;
+    text-align: center;
+    /* min-width: 8rem; */
 }
 header a:hover{
     /* color: var(--text-color); */
@@ -206,6 +208,7 @@ header nav {
         transition: none;
         /* text-decoration-color: var(--light-grey); */
         border-left: var(--border);
+        min-width:8rem;
     }
     header .menu .version, header .menu .madeIn {
         bottom: -90.85vh;
