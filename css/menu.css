@@ -130,6 +130,7 @@ header nav {
     position: relative;
     height: 100%;
     width: 70vw;
+    width:100vw;
     /* Unnecessary styles for the menu footer */
 }
 .menu .version, .menu .madeIn {
@@ -155,6 +156,7 @@ header nav {
     /* Handles items within the slide-out to give them the delayed slide-in */
     text-decoration-color: var(--light-text-color);
     padding-left: 1rem;
+    text-align: left;
 }
 .menu--active nav a:first-child {
     transition-delay: 0.2s;
@@ -166,16 +168,7 @@ header nav {
     transition-delay: 0.4s;
 }
 
-@media screen and (max-width: 767px) {
-    .menu--active .menu {
-        width: 70%;
-    }
-    .navButton{
-        padding: 1.5rem 0 1.5rem 0;
-        font-size: 2.2rem;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 999px) {
+@media screen and (max-width: 999px) {
     .menu--active .menu {
         width: 40%;
     }
@@ -184,6 +177,22 @@ header nav {
     }
     .menu--active, .navButton{
         padding:1.5rem;
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .menu--active .menu {
+        width: 70%;
+    }
+    .menu--active .menu .menu-inner {
+        width: 70vw;
+    }
+    .menu--active, .navButton{
+        padding: 1.5rem;
+        font-size: 1.6rem;
+    }
+    .navButton{
+        padding: 1.5rem 0 1.5rem 0;
         font-size: 2.2rem;
     }
 }
