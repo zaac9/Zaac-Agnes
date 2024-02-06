@@ -18,6 +18,9 @@
     .banner-intro{
         font-size: 2rem;
     }
+    .page-title{
+        left: calc(50vw - 0.5rem);
+    }
 
     /* ABOUT PAGE CONTENT */
     .about-header{

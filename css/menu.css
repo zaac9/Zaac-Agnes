@@ -22,15 +22,20 @@ header a {
     padding: 1.5rem 2rem 1.5rem 2rem;
 }
 header a:hover{
-    color: var(--text-color);
+    /* color: var(--text-color); */
+    background-color: var(--text-color);
+    color: var(--background-color);
 }
 
 #nav-name{
     text-decoration-color: var(--light-text-color);
+    border-right: var(--border);
 }
 #nav-name:hover{
-    color: var(--light-text-color);
+    /* color: var(--light-text-color); */
     border-left: none;
+    background-color: var(--text-color);
+    color: var(--background-color);
 }
 
 header .menu-control-open, header .menu-control-close, header nav, header a {
@@ -44,7 +49,10 @@ header .menu-control-open, header .menu-control-close, header nav, header a {
 header .menu-control-open, header .menu-control-close, header nav a {
     color: var(--text-color);
 }
-.menu-control-close:hover, header nav a:hover {
+/* .menu-control-close:hover, header nav a:hover {
+    color: var(--light-text-color);
+} */
+.menu-control-close:hover{
     color: var(--light-text-color);
 }
 
@@ -64,9 +72,11 @@ header .menu-control-open {
 #menuControlOpen{
     color: var(--text-color);
     transform: none;
+    border-left: var(--border);
 }
 #menuControlOpen:hover, #menuControlOpen:focus {
-    color: var(--light-text-color);
+    /* color: var(--light-text-color); */
+    color:var(--background-color);
 }
 
 #menuControlClose{
@@ -109,8 +119,8 @@ header nav {
     transition: all 0.3s ease-in-out;
 }
 .menu a {
-transform: translate3d(-150px, 0, 0);
-transition: transform 0.15s ease-in;
+    transform: translate3d(-150px, 0, 0);
+    transition: transform 0.15s ease-in;
 }
 .menu .menu-inner {
     position: relative;
@@ -193,6 +203,7 @@ transition: transform 0.15s ease-in;
         transform: none;
         transition: none;
         text-decoration-color: var(--light-grey);
+        border-left: var(--border);
     }
     header .menu .version, header .menu .madeIn {
         bottom: -90.85vh;
@@ -204,10 +215,10 @@ transition: transform 0.15s ease-in;
         justify-content: flex-end;
     }
 
-    header a:hover{
+    /* header a:hover{
         border-left: var(--border);
         border-right: var(--border);
-    }
+    } */
     header a:last-child:hover{
         border-right: none;
     }
@@ -229,7 +240,9 @@ transition: transform 0.15s ease-in;
         /* top: 0; */
     }
     #nav-name:hover{
-        border-right: var(--border);
+        /* border-right: var(--border); */
+        background-color: var(--text-color);
+        color: var(--background-color);
     }
     header nav a {
         color: var(--background-color);

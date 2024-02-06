@@ -101,6 +101,18 @@ a:hover{
 /* CLASS TO ADD WHEN HOVER OVER ELEMENTS */
 
 /* BASE PAGE STYLING */
+.page-title{
+    position: fixed;
+    top: 1.5rem;
+    /* left: calc(50vw - 1rem); */
+    left: 40vw;
+    font-family: var(--serifs);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .flex-container{
     display: flex;
     flex-flow: row nowrap;
