@@ -94,6 +94,7 @@ h1.home-projects-title{
 	font-weight: 400;
     font-family: var(--sans);
 	padding-bottom: 0.3rem;
+    max-width: 42em;
 }
 
 .topic-container{
