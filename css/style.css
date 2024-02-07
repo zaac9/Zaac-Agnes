@@ -227,11 +227,14 @@ footer{
 
 #rain-text{
     color: var(--background-color);
-    display: block;
+    /* display: block; */
+    display:none;
 }
 .rain-main:hover #rain-text{
     color: var(--light-text-color);
+    display:block;
 }
+
 .display-img-adjust-rain{
     transform: translate(-40%, -80%);
 }
