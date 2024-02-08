@@ -89,7 +89,9 @@
 	text-decoration-color: var(--light-grey);
 	text-decoration-thickness: from-font;
 }
-
+#art-insta{
+	text-decoration-thickness: 0.1rem;
+}
 /* _______________________________________________________________________ */
 /*********** MEDIA QUERIES ***********/
 

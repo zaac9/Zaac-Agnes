@@ -147,7 +147,7 @@ h3.project-subtitle-number{
 .project-overview:hover, .project-overview:focus{
     border-bottom: var(--border);
     cursor:
-        url("../img/cursors/arrow-down2.svg") 6 12,
+        url("../img/cursors/arrow-down2.svg") 5 12,
         cell;
 }
 

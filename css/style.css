@@ -65,7 +65,7 @@ a:hover{
     /* letter-spacing: .035em; */
     letter-spacing: 0.03em;
     cursor: 
-        url("../img/cursors/arrow-right2.svg") 12 6,
+        url("../img/cursors/arrow-right2.svg") 12 5,
         pointer;
 
 }
