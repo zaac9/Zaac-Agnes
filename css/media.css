@@ -181,3 +181,10 @@
         display: none;
     }
 }
+
+@media (pointer:coarse){
+    .pointer{
+        display: none;
+    }
+}
+
