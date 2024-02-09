@@ -19,7 +19,7 @@
     /* TYPEFACES */
     --serifs: 'Cormorant Garamond', serif;
     /* --sans: 'Lato', sans-serif; */
-    --sans: "Proza Libre", sans-serif;
+    --sans: 'Proza Libre', sans-serif;
 }
 
 ::selection{
