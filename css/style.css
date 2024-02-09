@@ -17,9 +17,8 @@
     --border: 0.5px solid var(--text-color);
 
     /* TYPEFACES */
-    --serifs: 'Cormorant Garamond', serif;
-    /* --sans: 'Lato', sans-serif; */
-    --sans: 'Proza Libre', sans-serif;
+    --serifs: 'Cormorant Garamond', Garamond, serif;
+    --sans: 'Proza Libre', Trebuchet, Verdana, sans-serif;
 }
 
 ::selection{
@@ -63,8 +62,8 @@ a{
 
 a:hover{
 	font-style:italic;
-    /* letter-spacing: .035em; */
-    letter-spacing: 0.03em;
+    /* letter-spacing: 0.03em; */
+    letter-spacing: 0.01em;
     cursor: 
         url("../img/cursors/arrow-right2.svg") 12 5,
         pointer;
