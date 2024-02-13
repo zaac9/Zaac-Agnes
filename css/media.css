@@ -24,6 +24,9 @@
         left: 45vw;
     }
 
+    .footer-container{
+        padding: 0 5vw;
+    }
     /* ABOUT PAGE CONTENT */
 
     .about-header{
