@@ -121,6 +121,9 @@ h1.home-projects-title{
 	z-index: -10;
 	opacity: 0.3;
 }
+.project-display-img-border{
+    border: var(--border);
+}
 
 
 .display-img-adjust-1{
