@@ -24,6 +24,7 @@
     flex-flow: row nowrap;
 }
 
+/* MOVED BELOW TO STYLE.CSS */
 .content-gap-large{
     padding-top: 15%;
 }
@@ -87,13 +88,13 @@ h1.project-main-title{
 
 .project-details-content{
     flex-basis: 50%;
-    align-content: flex-end;
+    /* align-content: flex-end; */
 }
 .project-details-content li{
     list-style: none;;
 }
 .details-title{
-	font-weight: 400;
+	font-weight: 600;
 	color: var(--text-color);
 }
 .details-text{

@@ -238,4 +238,8 @@ footer{
     transform: translate(-40%, -80%);
 }
 
+.content-gap-tiny{
+    padding-top: 1%;
+}
+
 
