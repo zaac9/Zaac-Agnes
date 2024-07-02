@@ -17,8 +17,10 @@
     --border: 0.5px solid var(--text-color);
 
     /* TYPEFACES */
-    --serifs: 'Cormorant Garamond', Garamond, serif;
-    --sans: 'Proza Libre', Trebuchet, Verdana, sans-serif;
+    /* --serifs: 'Cormorant Garamond', Garamond, serif;
+    --sans: 'Proza Libre', Trebuchet, Verdana, sans-serif; */
+    --serifs: 'Proza Libre', 'Open Sans', san-serif;
+    --sans: 'Open Sans', Trebuchet, Verdana, sans-serif;
 }
 
 ::selection{
