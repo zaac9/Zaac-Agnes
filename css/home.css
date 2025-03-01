@@ -81,13 +81,7 @@ h1.home-projects-title{
 	font-family: var(--serifs);
     color: var(--text-color);
 }
-/* .project-display-subtitle{
-	text-align: left;
-	font-size: 1.4rem;
-	font-weight: 400;
-	font-family: var(--serifs);
-	padding-bottom: 0.3rem;
-} */
+
 .project-display-subtitle{
 	text-align: left;
 	font-size: 1rem;
