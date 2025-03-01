@@ -129,7 +129,7 @@ a:hover{
 }
 
 .banner-intro{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--text-color);
     font-family: var(--serifs);
     font-weight: 500;
@@ -137,11 +137,20 @@ a:hover{
 }
 
 .intro-paragraph{
-    padding-bottom: 1rem;
+    padding-bottom: .7rem;
     max-width: 30em;
 }
-.intro-subparagraph{
-    font-size: 1.5rem;
+.intro-sub-paragraph{
+    padding-bottom: 1rem;
+    max-width: 45em;
+    font-size: 1.2rem;
+    color:var(--light-text-color);
+}
+.intro-experience-containter{
+    padding-top: 5vw;
+}
+.intro-experience{
+    font-size: 1.3rem;
 }
 
 .intro-link{
