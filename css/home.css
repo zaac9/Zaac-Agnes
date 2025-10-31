@@ -68,7 +68,7 @@
     max-width: 45em;
     font-size: 2.2rem;
     font-weight: 600;
-    /* color:var(--light-text-color); */
+    color:var(--very-light-grey);
 }
 
 .home-about{
@@ -90,9 +90,10 @@
     padding-top: 2rem;
 }
 .home-paragraph{
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     padding-top: 0.75rem;
-    line-height: 135%;;
+    line-height: 155%;
+    color: var(--very-light-grey);
     /* padding-right:1rem; */
 }
 /* #left-paragraph-adjust{

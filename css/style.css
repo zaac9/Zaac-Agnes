@@ -31,6 +31,7 @@
     --background-color: #19313c;
     --light-text-color: #d7d7d7;
 
+
     /* BORDER */
     --border: 0.5px solid var(--text-color);
     --border-dark: 0.5px solid var(--background-color);
