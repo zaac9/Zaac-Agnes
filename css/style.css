@@ -2,29 +2,46 @@
 /* VARIABLES */
 :root {
     /* COLORS */
-    --text-color: rgb(56,56,56);
-    /* --text-color: #543a16; */
+    /* --main-color: #c43a2a; */
+    /* --main-color: #c43a2a; */
+    /* --main-color: #e33D01;
+    --text-color: #383838;
     --text-color: #292929;
     --light-text-color: #575757;
-    /* --light-grey: rgb(150, 150, 150); */
     --light-grey: #727272;
     --very-light-grey: #c9c9c9;
-    /* --background-color: #fffdf6; */
-    --background-color: #f4f4f4;
+    --background-color: #fdfbf4;
+    --highlight-color: #ffffad; */
+
+    /* --main-color: #032727; */
+    /* --text-color: #383838; */
+    /* --light-text-color: #575757; */
+    --light-grey: #727272;
+    --very-light-grey: #c9c9c9;
+    /* --background-color: #9dc996; */
+    --background-light: #eaeaea;
     --highlight-color: #ffffad;
+    --dark-text: #1b1b1b;
+    --medium-text: #3b3b3b;
+
+    /* --main-color: #fc9a11; */
+    --main-color: #fd8b0d;
+    --background-light: #f0f0f0;
+    --text-color: #f4f4f4;
+    --background-color: #19313c;
+    --light-text-color: #d7d7d7;
 
     /* BORDER */
     --border: 0.5px solid var(--text-color);
+    --border-dark: 0.5px solid var(--background-color);
 
     /* TYPEFACES */
-    /* --serifs: 'Cormorant Garamond', Garamond, serif;
-    --sans: 'Proza Libre', Trebuchet, Verdana, sans-serif; */
-    --serifs: 'Proza Libre', 'Open Sans', san-serif;
-    --sans: 'Open Sans', Trebuchet, Verdana, sans-serif;
+    --sans: 'Satoshi-Variable', 'Open Sans', sans-serif;
+    --sans-italic: 'Satoshi-VariableItalic', 'Open Sans', sans-serif;
 }
 
 ::selection{
-    background-color: var(--text-color);
+    background-color: var(--main-color);
     color: var(--background-color);
 }
 
@@ -42,7 +59,7 @@ html{
         cell;
 }
 body{
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     font-family: var(--sans);
     text-decoration-thickness: from-font;
     color: var(--text-color);
@@ -55,7 +72,22 @@ a{
 
 .text-em{
     /* background-color: var(--highlight-color); */
+    /* font-family: var(--sans-italic); */
     font-style: italic;
+}
+.text-color{
+    color: var(--main-color);
+}
+.text-highlight{
+    background-color: var(--main-color);
+    color: var(--background-color);
+}
+.text-light{
+    font-weight:400;
+    /* font-style: italic; */
+}
+.text-bold{
+    font-weight: 800;
 }
 
 .hide-show{
@@ -69,8 +101,13 @@ a:hover{
     cursor: 
         url("../img/cursors/arrow-right2.svg") 12 5,
         pointer;
-
 }
+#nav-name:hover{
+    cursor: 
+        url("../img/cursors/home.svg") 12 15,
+        pointer;
+}
+
 .text-hover{
     font-style: italic;
 }
@@ -99,7 +136,7 @@ a:hover{
 
 /* TEXT STYLE & EFFECT */
 .serifs{
-    font-family: var(--serifs);
+    font-family: var(--sans);
     font-weight: 400;
 }
 /* CLASS TO ADD WHEN HOVER OVER ELEMENTS */
@@ -109,11 +146,12 @@ a:hover{
     position: fixed;
     top: 1.5rem;
     left: 40vw;
-    font-family: var(--serifs);
+    font-family: var(--sans);
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    color: var(--main-color);
 }
 
 .flex-container{
@@ -121,30 +159,17 @@ a:hover{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: stretch;
-    gap: 1rem;
+    /* gap: 1rem; */
 }
 
 .content-container{
     padding-top: 5%;;
 }
 
-.banner-intro{
-    font-size: 2rem;
-    color: var(--text-color);
-    font-family: var(--serifs);
-    font-weight: 500;
-    padding: 8vw 5vw; /* get used to using vw instead of % with flexbox*/
-}
-
-.intro-paragraph{
-    padding-bottom: .7rem;
-    max-width: 30em;
-}
-.intro-sub-paragraph{
-    padding-bottom: 1rem;
-    max-width: 45em;
-    font-size: 1.2rem;
-    color:var(--light-text-color);
+h3.subheading{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 1.5rem;
 }
 .intro-experience-containter{
     padding-top: 5vw;
@@ -161,6 +186,8 @@ a:hover{
 }
 
 
+
+
 /* FOOTER STYLING */
 footer{
     margin-bottom: 3%;
@@ -168,6 +195,14 @@ footer{
     border-top: var(--border);
     color: var(--text-color);
 }
+
+.background-dark{
+    background-color: var(--background-color);
+}
+.background-project{
+    background-color: var(--background-light);
+}
+
 .footer-container{
     display: flex;
     flex-flow: row nowrap;
@@ -180,9 +215,10 @@ footer{
     width: 33%;
 }
 .footer-title{
-    font-family: var(--serifs);
+    font-family: var(--sans);
     font-size: 1.1rem;
-	color: var(--light-text-color);
+	/* color: var(--light-text-color); */
+    color: var(--main-color);
 	font-weight: 600;
     padding-bottom: 0.5rem;
 }
@@ -224,6 +260,9 @@ footer{
 .dossier-main:hover #hover-content-dossier{
 	display: block;
 }
+.momentus-main:hover #hover-content-momentus{
+	display: block;
+}
 .labatie-main:hover #hover-content-labatie{
 	display: block;
 }
@@ -249,8 +288,76 @@ footer{
     transform: translate(-40%, -80%);
 }
 
+/* CONTENT GAPS TO BE USED THROUGHOUT */
+.content-gap-large{
+    padding-top: 12%;
+}
+
+.content-gap-med-large{
+    padding-top: 8%;
+}
+
+.content-gap-medium{
+    padding-top: 5%;
+}
+.content-gap-small{
+    padding-top: 3%;
+}
 .content-gap-tiny{
     padding-top: 1%;
 }
 
 
+@view-transition {
+  navigation: auto;
+}
+
+/* Create a custom animation */
+@keyframes move-out {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes move-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Apply the custom animation to the old and new page states */
+::view-transition-old(root) {
+  animation: 0.6s ease-in both move-out;
+}
+
+::view-transition-new(root) {
+  animation: 0.6s ease-in both move-in;
+}
+
+/* .transition__div{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 10;
+    transition: 1s;
+    will-change: transform;
+}
+
+.transition__div.animate__in{
+    transform: translateX(100%);
+}
+
+.transition__div.animate__out{
+    transform: translateX(200%);
+} */

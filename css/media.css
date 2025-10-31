@@ -24,6 +24,18 @@
         left: 48vw;
     }
 
+    .home-about{
+        flex-flow: column nowrap;
+        gap:0;
+    }
+    .home-subheading{
+        padding-top:5rem;
+    }
+
+    .home-content{
+        padding-left: 0;
+    }
+
     .footer-container{
         padding: 0 5vw;
     }

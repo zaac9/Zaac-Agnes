@@ -1,15 +1,17 @@
 
 /* HOME FLEXBOX STYLING */
 .home-header{
-    flex-basis: 36%;
+    flex-basis: 25%;
 }
 .project-showcase{
-    flex-basis: 64%;
+    flex-basis: 75%;
 }
 
 .project-display-list{
     display: flex;
     flex-flow: column wrap;
+    /* gap: 1rem; */
+    padding-top: 3vw;
 }
 
 /* PROJECT DISPLAY ORDER */
@@ -19,7 +21,10 @@
 #summit {
 	order: 4;
 }
-#dossier {
+/* #dossier {
+	order: 1;
+} */
+#momentus {
 	order: 1;
 }
 #italist {
@@ -28,14 +33,75 @@
 
 /* MAIN SECTIONS ON HOME PAGE */
 /* no content in intro so far as nothing to add */
+#home{
+    padding: 8vw 5vw;
+    background-color: var(--background-color);
+}
+.home-intro{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-family: var(--sansserifs);
+    font-weight: 500;
+}
+.home-content{
+    padding-left:25%;
+    padding-bottom: 5rem;
+}
 #intro{ 
-    border-bottom: var(--border);
+    /* border-bottom: var(--border); */
     padding: 0;
-    padding-top: 4.25rem; 
+    padding-top: 10%; 
 }
 
+/* HOME TEXT STYLING */
+
+.intro-main{
+    font-weight: 900;
+    font-size: 7VW;
+    line-height: 125%;
+    padding-bottom: .7rem;
+    max-width: 30em;
+}
+.intro-sub-main{
+    padding-right: 10%;
+    padding-top: 1.2rem;
+    max-width: 45em;
+    font-size: 2.2rem;
+    font-weight: 600;
+    /* color:var(--light-text-color); */
+}
+
+.home-about{
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: space-between; */
+    /* align-items: stretch; */
+    gap: 2rem;
+}
+.home-about-container{
+    flex-basis: 50%;
+}
+.home-subheading{
+    padding-top: 7rem;
+}
+.home-em{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-top: 2rem;
+}
+.home-paragraph{
+    font-size: 1.25rem;
+    padding-top: 0.75rem;
+    line-height: 135%;;
+    /* padding-right:1rem; */
+}
+/* #left-paragraph-adjust{
+    padding-right:2rem;
+} */
+
+
 #projects{
-    padding-top: 1rem; /*adjustment for when clicking projects from menu */
+    padding-top: 5rem; /*adjustment for when clicking projects from menu */
 }
 
 #project-container-home {
@@ -44,19 +110,19 @@
 /* ****************************************************************** */
 /* PROJECT SHOWCASE HEADERS */
 h1.home-projects-title{
+    font-family: var(--sans);
     font-size: 2rem;
     font-weight: 600;
-    padding-left: 5vw;
-    font-family: var(--serifs);
+    /* padding-left: 5vw; */
     color: var(--text-color);
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 /* INDIVIDUAL PROJECT SHOWCASE */
 .project-display-container{
     margin-right: 5vw;
-    padding: 1rem 0;
-    padding-left: 1rem;
+    padding: 1.2rem 0;
+    /* padding-left: 1rem; */
     border-bottom: var(--border);
     /* min-height: 22vh; */
     /* height: 18vh; */
@@ -84,10 +150,11 @@ h1.home-projects-title{
 
 .project-display-subtitle{
 	text-align: left;
-	font-size: 1rem;
-	font-weight: 400;
+	font-size: 1.2rem;
+	font-weight: 500;
     font-family: var(--sans);
-	padding-bottom: 0.3rem;
+    padding: 0.5rem 0;
+	/* padding-bottom: 0.3rem; */
     max-width: 42em;
 }
 
@@ -114,6 +181,8 @@ h1.home-projects-title{
 	position: fixed;
 	z-index: -10;
 	opacity: 0.3;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 .project-display-img-border{
     border: var(--border);
@@ -131,4 +200,12 @@ h1.home-projects-title{
 }
 .display-img-adjust-4{
     transform: translate(-40%, -80%);
+}
+
+
+.home-projects-below:hover, .home-projects-below:focus{
+    /* border-bottom: var(--border); */
+    cursor:
+        url("../img/cursors/arrow-down2.svg") 5 12,
+        cell;
 }

@@ -1,44 +1,42 @@
 /* STYLING OF FLEX CONTAINERS AND DIV CONTAINERS */
 #project-banner{
-    margin-bottom: 30vh;
+    margin-bottom: 20vh;
 }
 .project-page-container{
     padding: 0 8vw;
     padding-top: 4.25rem;
+    background-color: var(--background-light);
 }
 
 .flex-container-project{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: stretch;
-    gap: 1rem;
+    /* gap: 1rem; */
+}
+#flex-container-snapshot{
+    flex-flow: column wrap;
+}
+.flex-container-gap{
+    justify-content: space-between;
+    gap: 1%;
+}
+.flex-image-text{
+    padding: 0 10%;
 }
 
-#flex-project-overview-adjust{
+
+
+/* #flex-project-overview-adjust{
     justify-content: flex-start;
-}
+} */
 
 .my-roles{
     display: flex;
     flex-flow: row nowrap;
 }
 
-/* MOVED BELOW TO STYLE.CSS */
-.content-gap-large{
-    padding-top: 15%;
-}
-
-.content-gap-med-large{
-    padding-top: 10%;
-}
-
-.content-gap-medium{
-    padding-top: 5%;
-}
-.content-gap-small{
-    padding-top: 3%;
-}
 
 /* 5-COLUMN LAYOUTS */
 div.col-5-of-5{
@@ -55,6 +53,10 @@ div.col-2-of-5{
 }
 div.col-1-of-5{
     flex-basis: 20%;
+}
+
+.col-image-text-adjust {
+    flex-basis: 17%;
 }
 
 /* 3-COLUMN LAYOUTS */
@@ -75,59 +77,81 @@ div.col-1-of-4:last-child{
     padding-right: 0;
 }
 
+div.col-1-of-2{
+    flex-basis: 50%;
+    gap: 3rem;
+}
+
 
 /* PROJECT BANNER STYLING */
 h1.project-main-title{
-    font-family: var(--serifs), serif;
+    font-family: var(--sans);
+    color: var(--main-color);
+    /* color: var(--background-color); */
     font-size: 8rem;
-    font-weight: 700;
+    font-weight: 900;
     max-width: 5em;
-    line-height: 90%;
+    line-height: 105%;
     letter-spacing: -0.1rem;
+}
+
+.project-subtitle{
+    font-family: var(--sans);
+    font-size: 3rem;
+    font-weight: 700;
+    /* color: var(--text-color); */
+    color: var(--background-color);
 }
 
 .project-details-content{
     flex-basis: 50%;
+    padding-top: 2.5rem;
     /* align-content: flex-end; */
+    color: var(--dark-text);
 }
 .project-details-content li{
     list-style: none;;
 }
 .details-title{
 	font-weight: 600;
-	color: var(--text-color);
+	/* color: var(--text-color); */
 }
 .details-text{
 	/* display: block; */
 	padding-top: 0.2rem;
 	padding-right: 1rem;
 	font-weight: 300;
-	color: var(--text-color);
+	/* color: var(--text-color); */
 }
-
-
 
 /* PROJECT CONTENT STYLING */
 h2.project-title{
     font-family: var(--sans);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 700;
-    color: var(--light-text-color);
-    padding-bottom: 1.5rem;
-
+    /* color: var(--main-color); */
+    color: var(--background-color);
+    background-color: var(--main-color);
+    margin-bottom: 1.5rem;
+    padding: 0.15rem 0;
 }
 h3.project-subtitle{
-    font-family: var(--serifs);
-    font-size: 1.8rem;
+    font-family: var(--sans);
+    font-size: 1.1rem;
+    text-transform: uppercase;
     font-weight: 600;
+    color: var(--main-color);
+    /* padding-left: 5%; */
+    padding-bottom:1%;
+    /* padding-bottom: 1.5rem; */
 }
 .project-subtitle-short{
     max-width: 9em;
 }
 h3.project-subtitle-number{
     display: inline-block;
-    font-family: var(--serifs);
+    font-family: var(--sans);
     font-size:2.2rem;
     font-weight: 600;
     font-style: italic;
@@ -135,32 +159,57 @@ h3.project-subtitle-number{
 
 .project-overview-list{
     flex-basis: auto;
+    padding: .5rem 0;
 }
 
 .project-overview{
     font-family: var(--sans);
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     text-transform: uppercase;
     font-weight: 500;
     color: var(--light-text-color);
     padding: 0 1rem 1rem 0;
 }
 .project-overview:hover, .project-overview:focus{
-    border-bottom: var(--border);
+    /* border-bottom: var(--border); */
     cursor:
         url("../img/cursors/arrow-down2.svg") 5 12,
         cell;
 }
 
 .primary-text{
-    font-family: var(--serifs);
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--text-color);
+    font-family: var(--sans);
+    font-size: 1.5rem;
+    line-height: 150%;
+    font-weight: 400;
+    /* color: var(--text-color); */
+    color: var(--dark-text);
 }
-span.primary-text-em{
-    font-style: italic;
+.image-text{
+    font-size: 1rem;
+    /* color: var(--light-text-color); */
+    color: var(--medium-text);
+    padding-top: 0.5rem;
 }
+
+.image-caption{
+    justify-content: flex-end;
+    font-size: 1rem;
+    color: var(--light-text-color);
+}
+
+.image-text-first{
+    padding-left: 17%;
+}
+.image-text-last{
+    padding-right: 17%;
+}
+
+
+/* .text-indent{
+    text-indent: -13.5rem;
+    padding-left: 13.5rem;
+} */
 
 .secondary-text{
     font-family: var(--sans);
@@ -172,7 +221,7 @@ span.primary-text-em{
 }
 
 #problem-statement{
-    font-family: var(--serifs);
+    font-family: var(--sans);
     font-size: 2.2rem;
     line-height: 150%;
     /* text-align: center; */
@@ -188,6 +237,11 @@ span.primary-text-em{
 .project-img {
 	max-width: 100%;
 }
+.project-img-small{
+    max-width: 70%;
+    display: block;
+    margin: auto
+}
 
 .project-video {
 	position: relative;
@@ -202,7 +256,7 @@ span.primary-text-em{
 figcaption{
     text-align:right;
     font-size: 0.9rem;
-    color: var(--light-grey);
+    color: var(--light-text-color);
     font-weight: 400;
 }
 
@@ -210,7 +264,7 @@ figcaption{
 	color: var(--main-text-color);
 	text-decoration: underline;
 	text-decoration-color: var(--light-grey);
-	text-decoration-thickness: from-font;
+	/* text-decoration-thickness: from-font; */
 }
 
 /* NEXT PROJECT BUTTONS */
@@ -229,26 +283,31 @@ figcaption{
 .next-project-link{
 	text-decoration: underline;
     text-decoration-thickness: from-font;
-	color: var(--text-color);
+	/* color: var(--text-color); */
+    color: var(--background-color);
 	align-items: baseline;
     padding: 10% 0;
 }
 
 .next-project-link:hover, .next-project-link:focus{
 	font-style: italic;
-	color: var(--light-text-color);
+	color: var(--main-color);
 }
 #next-project-arrow{
 	font-size: 2rem;
 }
 .next-project-title{
-	font-family: var(--serifs);
+	font-family: var(--sans);
 	font-size: 2rem;
 	font-weight: 500;
 
 }
 .next-project-subtitle{
-	font-family: var(--serifs);
+	font-family: var(--sans);
 	font-size: 1.2rem;
 	font-weight: 400;
+}
+
+.page-title{
+    color: var(--background-color);
 }

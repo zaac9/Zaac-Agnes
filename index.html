@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/satoshi.css">
+        
 
 
         <!-- LINKING TYPEFACES -->
@@ -22,16 +24,24 @@
         <!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <!-- Unique typeface -->
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Italiana&family=Yeseva+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
       
         <!-- IMPORT DOWNLOADED JQUERY -->
         <script src="jquery/jquery-3.6.0.min.js"></script>
 </head>
 
-<body>
+<body class="background-dark">
     <div class="pointer"></div> <!-- pointer -->
     <header id="hamburger">
         <!-- Took out id="navName from below:" -->
-        <a href="index.html" id="nav-name">Zaac Agnes</a>
+        <!-- <a href="index.html" id="nav-name">Zaac Agnes</a> -->
+        <!-- <div class="menu-logo"> -->
+            <a href="index.html" id="nav-name"><img class="nav-logo" src="img/logo/zaac-logo-colour-light.svg" alt=""></a>
+        <!-- </div> -->
+
         <h4 class="page-title">Home</h4>
         <a href="#" class="menu-control-open" id="menuControlOpen">Menu</a>
         <div class="menu">
@@ -46,144 +56,149 @@
         </div> <!-- menu -->
     </header>
 
-    <!-- INTRO TO ME -->
-    <!-- <section id="intro">
-        <div class="flex-container" id="main-banner">
-            <div class="banner-intro">
-                <p class="intro-paragraph">Hi, I'm <span class="text-em">Zaac</span>, a brand and visual designer adept at comprehending new problem spaces and empathizing with diverse perspectives to discover strategic solutions to design and business challenges. I excel at <span class="text-em">translating conceptual ideas into visually captivating user experiences</span> grounded by deep research and thoughtful insights.</p>
-                <p class="intro-paragraph">Previously at <a class="intro-link" href="https://www.dossiercreative.com/" target="_blank">Dossier Creative</a>.</p>
-            </div>
-        </div>
-    </section> -->
-    <section id="intro">
-        <div class="flex-container" id="main-banner">
-            <div class="banner-intro">
-                <p class="intro-paragraph">I'm <span class="text-em">Zaac</span>. I synthesize brand design and marketing strategy to tackle challenges at the intersection of design thinking and business strategy.</p>
-                <p class="intro-sub-paragraph">Working within teams, I excel at driving projects forward by combining research insights, empathetic decision-making, and creative energy to transform conceptual ideas into captivating experiences and designs.</p>
-                <!-- <p class="intro-sub-paragraph">I excel at bringing conceptual ideas to life and drive projects forward by infusing research insights with empathetic decisions and a creative energy that leads to lasting experiences.</p> -->
-                <!-- <p class="intro-sub-paragraph">I excel at bringing conceptual ideas to life with empathetic decisions that weave insightful analysis, and a creative splash that makes every experience visually captivating. </p> -->
-                <!-- <p class="intro-paragraph">I'm <span class="text-em">Zaac</span>. I combine brand design and marketing strategy experience to problems that bridge design thinking with business strategy and technology. </p>
-                    
-                <p class="intro-sub-paragraph">I excel at bringing conceptual ideas to life through visually captivating experiences, which are created by empathizing with others, providing thoughtful insights, and always adding a splash of creativity.</p> -->
-                <div class="intro-experience-containter">
-                    <!-- <p class="intro-experience">Currently working at <a class="intro-link" href="https://www.squamish.net/" target="_blank">Squamish Nation (Sḵwx̱wú7mesh Úxwumixw)</a> in a marketing and design role. </p> -->
-                    <p class="intro-experience">Currently working at <a class="intro-link" href="https://www.squamish.net/" target="_blank">Squamish Nation (Sḵwx̱wú7mesh Úxwumixw)</a></p>
-                    <p class="intro-experience content-gap-tiny">Previously at <a class="intro-link" href="https://www.dossiercreative.com/" target="_blank">Dossier Creative</a> as a brand design intern.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- PROJECT SHOWCASE -->
-    <section id="projects">
-        <div class="flex-container" id="project-container-home">
-            <div class="home-header">
-                <h1 class="home-projects-title">Select Case Studies</h1>
-            </div>
-    
-            <!-- PROJECT SHOWCASE -->
-            <div class="project-showcase">
+    <div id="home">
+        <section id="intro">
+            <div class="home-intro">
+                <h1 class="intro-main text-color">I'm Zaac, I design brands people connect with.</h1>
 
-                <div class="project-display-list">
-                    <!-- ITALIST -->
-                    <div class="italist-main" id="italist">
-                        <div class="project-display-container">
-                            <a class="project-display-link" id="italist-display" href="italist.html">
-                                <h2 class="project-display-title">Italist Website Rebrand</h2>
-                                <h3 class="project-display-subtitle">Gathered research and insights to define a problem space and propose a content-driven rebrand for a fashion retailer.</h3>
+                <div class="home-content">
+                    <!-- <h2 class="intro-sub-main">I'm skilled in user interface (UI), user experience (UX), content, branding, and graphic design.</h2> -->
+                     <h2 class="intro-sub-main">Bringing ideas to life through design that tells stories and creates experiences people remember.</h2>
 
-                                <div class="topic-container">
-                                    <p class="topic-card">Content Design</p>
-                                    <!-- <p class="topic-card">UX Research</p> -->
-                                    <p class="topic-card">Art Direction</p>
-                                    <p class="topic-card">Visual Design</p>
-                                </div>
-                            </a>
+                    <div class="home-about">
+                        <div class="home-about-container">
+                            <h3 class="subheading home-subheading">My design process</h3>
+                            <p class="home-paragraph">I design with purpose, bridging creativity with brand and business goals. I translate complexity into clear visual stories, with a sharp eye for the small details that shape strong brands.</p>
+
+                            <p class="home-paragraph"><span class="text-bold">My process begins with asking why</span> — grounding every decision with deep research and understanding to make empathetic decisions throughout the design process.</p>
+
+                            <p class="home-paragraph">Check out some of <a span class="text-color home-projects-below" href="#projects">my work below:</a></p>
                         </div>
-                        <div id="hover-content-italist">
-                            <img class="project-display-img project-display-img-border display-img-adjust-3" id="italist_img" src="img/home/italist-home-colour.png" alt="" width="360">
-                        </div>
-                    </div>
+                        <div class="home-about-container">
+                            <h3 class="subheading home-subheading">What I'm looking for</h3>
+                            <p class="home-paragraph">I love working with people who bring creativity and care into what they do. For me, the most exciting projects happen when different perspectives and ideas come together.</p>
+                             <!-- to create experiences that connect with people in meaningful ways -->
 
-                    <!-- LABATIE -->
-                    <div class="labatie-main" id="labatie" >
-                        <!-- <a href="labatie.com"> -->
-                            <div class="project-display-container" id="project-display-last">
-                                <a class="project-display-link" id="labatie-display" href="labatie.html">
-                                    <h2 class="project-display-title">La Batie Festival</h2>
-                                    <h3 class="project-display-subtitle">Explored creative strategy directions and produced a rebranded website prototype to support performers of the La Batie Festival.</h3>
+                            <p class="home-paragraph">Currently based in Vancouver, BC — open to relocating for the right people and projects.</p>
+
+                            <!-- <h3 class="home-em">Skills</h3>
+                            <p class="home-paragraph">Brand Identity | UX/UI Design | Content Design | Visual Storytelling</p> -->
+
+                            <!-- <p class="home-paragraph">Currently working at <a class="intro-link" href="https://www.squamish.net/" target="_blank">Squamish Nation (Sḵwx̱wú7mesh Úxwumixw)</a> </p>
+                            <p class="home-paragraph">Previously at <a class="intro-link" href="https://www.dossiercreative.com/" target="_blank">Dossier Creative</a> as a brand design intern. </p> -->
+                        </div>
+                    </div>  
+                </div>              
+            </div>
+        </section>
+
+        <!-- PROJECT SHOWCASE -->
+        <section id="projects">
+            <div class="home-intro">
+                <h1 class="intro-main"><span class="text-color">Select Case Studies</span></h1>
+            </div>
+            <div class="flex-container" id="project-container-home">
+                
+                <div class="home-header">
+                    <!-- <h2 class="intro-sub-main">Select Case Studies</h1> -->
+                </div>
+        
+                <!-- PROJECT SHOWCASE -->
+                <div class="project-showcase">
+
+                    <div class="project-display-list">
+                        <!-- ITALIST -->
+                        <div class="italist-main" id="italist">
+                            <div class="project-display-container">
+                                <a class="project-display-link" id="italist-display" href="italist.html">
+                                    <h3 class="subheading"> Italist Website Rebrand</h3>
+                                    <h4 class="project-display-subtitle">Gathered research and insights to define a problem space and propose a content-driven rebrand for a fashion retailer.</h4>
 
                                     <div class="topic-container">
+                                        <p class="topic-card">Content Design</p>
+                                        <!-- <p class="topic-card">UX Research</p> -->
+                                        <p class="topic-card">Art Direction</p>
                                         <p class="topic-card">Visual Design</p>
-                                        <p class="topic-card">UX Design</p>
-                                        <!-- <p class="topic-card">Content Design</p> -->
-                                        <!-- <p class="topic-card">Prototyping</p> -->
-                                        <p class="topic-card">Photo Manipulation</p>
                                     </div>
                                 </a>
-
                             </div>
-                        <!-- </a> -->
-                        <div id="hover-content-labatie">
-                            <img class="project-display-img project-display-img-border display-img-adjust-2" id="labatie_img" src="img/home/labatie-home-colour.png" alt="" width="360">
+                            <div id="hover-content-italist">
+                                <img class="project-display-img project-display-img-border display-img-adjust-3" id="italist_img" src="img/home/italist-home-colour.png" alt="" width="360">
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- DOSSIER -->
-                    <div class="dossier-main" id="dossier">
-                        <div class="project-display-container">
-                            <a class="project-display-link" id="dossier-display" href="dossier.html">
-                                <h2 class="project-display-title">Dossier Design Internship</h2>
-                                <h3 class="project-display-subtitle">Created extensive brand identities and naming strategies for two clients involved in the social impact space.</h3>
-                                <div class="topic-container">
-                                    <p class="topic-card">Brand Strategy</p>
-                                    <p class="topic-card">Creative Strategy</p>
-                                    <p class="topic-card">Logo Design</p>
-                                    <!-- <p class="topic-card">UX Research</p> -->
-                                    <!-- <p class="topic-card">Photo Editing</p> -->
+                        <!-- LABATIE -->
+                        <div class="labatie-main" id="labatie" >
+                            <!-- <a href="labatie.com"> -->
+                                <div class="project-display-container" id="project-display-last">
+                                    <a class="project-display-link" id="labatie-display" href="labatie.html">
+                                        <h3 class="subheading">La Batie Festival</h3>
+                                        <h4 class="project-display-subtitle">Explored creative strategy directions and produced a rebranded website prototype to support performers of the La Batie Festival.</h4>
+
+                                        <div class="topic-container">
+                                            <p class="topic-card">Visual Design</p>
+                                            <p class="topic-card">UX Design</p>
+                                            <p class="topic-card">Content Design</p>
+                                            <p class="topic-card">Photo Manipulation</p>
+                                        </div>
+                                    </a>
+
                                 </div>
-                            </a>
+                            <!-- </a> -->
+                            <div id="hover-content-labatie">
+                                <img class="project-display-img project-display-img-border display-img-adjust-2" id="labatie_img" src="img/home/labatie-home-colour.png" alt="" width="360">
+                            </div>
                         </div>
-                        <div id="hover-content-dossier">
-                            <img class="project-display-img project-display-img-border display-img-adjust-4" id="dossier_img" src="img/home/railyard-home-colour.png" alt="" width="360">
-                        </div>
-                    </div> <!-- dossier-main -->
-<!-- 
-                    <div class="summit-main" id="summit">
-                        <div class="project-display-container" id="project-display-last">
-                            <a class="project-display-link" id="summit-display" href="summit.html">
-                                <h2 class="project-display-title">Summit Application</h2>
-                                <h3 class="project-display-subtitle">Prototyped and user tested a mobile application for skiers and snowboarders.</h3>
-                                <div class="topic-container">
-                                    <p class="topic-card">UI Design</p>
-                                    <p class="topic-card">UX Design</p>
-                                    <p class="topic-card">Video Editing</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div id="hover-content-summit">
-                            <img class="project-display-img display-img-adjust-1" id="summit_img" src="img/home/home-summit.png" alt="" width="360">
-                        </div>
-                    </div>  -->
+
+                        <!-- DOSSIER -->
+                        <div class="momentus-main" id="momentus">
+                            <div class="project-display-container">
+                                <a class="project-display-link" id="momentus-display" href="momentus.html">
+                                    <h3 class="subheading">Momentus Global</h3>
+                                    <h4 class="project-display-subtitle">Complete rebrand for a global leader in sustainable development finance.</h4>
+                                    <div class="topic-container">
+                                        <p class="topic-card">Brand Strategy</p>
+                                        <p class="topic-card">Creative Strategy</p>
+                                        <p class="topic-card">Logo Design</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="hover-content-momentus">
+                                <img class="project-display-img project-display-img-border display-img-adjust-4" id="momentus_img" src="img/momentus/momentus-home.png" alt="" width="360">
+                            </div>
+<!-- ********* -->
+
+                        </div> <!-- dossier-main -->
+
+                        <!-- DOSSIER -->
+                        <!-- <div class="dossier-main" id="dossier">
+
+                            <div class="project-display-container">
+                                <a class="project-display-link" id="dossier-display" href="dossier.html">
+                                    <h3 class="subheading">Dossier Design Internship</h3>
+                                    <h4 class="project-display-subtitle">Created extensive brand identities and naming strategies for two clients involved in the social impact space.</h4>
+                                    <div class="topic-container">
+                                        <p class="topic-card">Brand Strategy</p>
+                                        <p class="topic-card">Creative Strategy</p>
+                                        <p class="topic-card">Logo Design</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="hover-content-dossier">
+                                <img class="project-display-img project-display-img-border display-img-adjust-4" id="dossier_img" src="img/home/railyard-home-colour.png" alt="" width="360">
+                            </div>
+                        </div> dossier-main -->
+                  
+                        <!-- **HIDDEN ABOVE -->
                     
-                    <!-- SUMMIT -->
-                    <!-- <div class="summit-main" id="summit" >
-                        <div class="project-display-container" id="project-display-last">
-                            <a class="project-display-link" id="summit-display" href="summit.html">
-                                <p class="project-display-title">Summit Mobile Application</p>
-                                <p class="project-display-subtitle">Prototyped a smartphone application to enhance the experience of skiers and snowboarders on the mountain.</p>
-                            </a>
-                        </div>
-                        <div id="hover-content-summit">
-                            <img class="project-display-img display-img-adjust-4" id="summit_img" src="img/home/home-summit.png" alt="" width="360">
-                        </div>
-                    </div>  -->
-                    <!-- summit-main -->
-                </div> <!-- project-display-list -->
-            </div> <!-- project showcase-->
-        </div> <!-- flex-container -->
-    </section> <!-- projects -->
+                    </div> <!-- project-display-list -->
+                </div> <!-- project showcase-->
+            </div> <!-- flex-container -->
+        </section> <!-- projects -->
+    </div><!--home-->
 
-    <footer>
+    <footer class="background-dark">
         <div class="footer-container">
             <!-- <div class="footer-flex" id="footer-empty">
 
@@ -194,13 +209,13 @@
                     <a href="mailto:zaacagnes9@gmail.com">zaacagnes9@gmail.com</a>
                 </p>
                 <p class="footer-content">
-                    <a href="https://www.linkedin.com/in/zaac-agnes">View my LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/zaac-agnes" target="_blank">View my LinkedIn</a>
                 </p>
             </div>
             <div class="footer-flex footer-width rain-main" id="footer-location">
                 <p class="footer-title">Whereabouts</p>
                 <p class="footer-content" id="footer-adjust">Currently living in </p>
-                <p class="footer-content">Vancouver, Canada <span id="rain-text">(it rains a lot)</span></p>
+                <p class="footer-content">Vancouver, Canada</p>
                 <div id="hover-content-rain">
                     <img class="img-hover display-img-adjust-rain" id="rain_img" src="img/home/rain-2.gif" alt="" width="120">
                 </div>
@@ -215,5 +230,6 @@
     <script src="script/imageMove.js"></script>
     <script src="script/main.js"></script>
     <script src="script/currentYear.js"></script>
+    <script src="script/pagetransition.js"></script>
 	</body>
 </html>
