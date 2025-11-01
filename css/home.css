@@ -210,3 +210,7 @@ h1.home-projects-title{
         url("../img/cursors/arrow-down2.svg") 5 12,
         cell;
 }
+
+#footer-link-color{
+    color: var(--text-color);
+}

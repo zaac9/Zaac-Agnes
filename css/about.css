@@ -1,7 +1,8 @@
 
 #about-banner{
-	padding-top: 4.25rem;
+	/* padding-top: 4.25rem; */
 	border-bottom: var(--border);
+	padding-bottom: 5%;
 }
 
 #about-banner-content{
@@ -16,13 +17,34 @@
     flex-basis: 64%;
 }
 
+.about-content-text{
+	padding-left: 5%;
+} 
+
 .about-title{
+	padding-left: 5%;
+	padding-top: 15%
+}
+
+/* .about-subtitle{
     font-size: 2rem;
     font-weight: 500;
     padding-left: 5vw;
     font-family: var(--serifs);
-    color: var(--text-color);
+    color: var(--main-color);
 	font-style: italic;
+} */
+
+.about-subtitle{
+    font-family: var(--sans);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* color: var(--main-color); */
+    color: var(--main-color);
+    /* background-color: var(--main-color); */
+    /* margin-bottom: 1.5rem; */
+    /* padding: 0.15rem 0; */
 }
 
 #about-container-adjust{
@@ -44,7 +66,7 @@
 	border-bottom: var(--border);
 }
 
-.about-display-title{
+/* .about-display-title{
     text-align: left;
 	font-size: 2rem;
 	font-weight: 500;
@@ -60,7 +82,7 @@
 	max-width: 45em;
 	line-height: 1.5em;
 	color: var(--light-text-color);
-}
+} */
 
 
 .about-img{
@@ -69,13 +91,21 @@
 	padding-left: 5vw;
     padding-top: 25%;
 	padding-right: 1rem;
+	opacity: 0.7;
+}
+
+.about-main-intro {
+	font-size: 2.0rem;
+	color: var(--background-color);
+	font-weight: 600;
 }
 
 .about-intro {
 	font-weight: 500;
 	/* font-size: 2rem; */
-	font-size: 1.7rem;
-	padding-left: 0;
+	font-size: 1.2rem;
+	color: var(--dark-text);
+	max-width: 45rem;
 	/* padding-bottom: 2rem; */
 }
 
@@ -86,11 +116,11 @@
 .about-link{
 	color: var(--main-text-color);
 	text-decoration: underline;
-	text-decoration-color: var(--light-grey);
+	text-decoration-color: var(--main-color);
 	text-decoration-thickness: from-font;
 }
 #art-insta{
-	text-decoration-thickness: 0.1rem;
+	text-decoration-thickness: 0.15rem;
 }
 /* _______________________________________________________________________ */
 /*********** MEDIA QUERIES ***********/
@@ -108,10 +138,10 @@
 	div.about-container{
 		display: block;
 	}
-	.about-title{
+	/* .about-title{
 		margin-bottom: 1.5rem;
 		margin-left: 10%;
-	}
+	} */
 	.about-img{
 		max-width: 100%;
 		padding: 0;
@@ -128,11 +158,12 @@
 		padding-bottom: 1rem;
 		margin: 0 5%;
 	}
-	.about-title{
+	/* .about-title{
 		padding: 0;
+		padding-top: 5%;
 		margin: 0 5%;
 		margin-bottom: 1.5rem;
-	}
+	} */
 
 
 }

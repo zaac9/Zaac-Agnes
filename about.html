@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/about.css">
 		<!-- <link rel="stylesheet" href="css/style-min.css"> -->
-		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/menulight.css">
 		<link rel="stylesheet" href="css/home.css">
 		<link rel="stylesheet" href="css/media.css">
 	
@@ -27,13 +27,14 @@
 
 	</head>
 
-	<body class="background-dark">
+	<body class="background-light">
 		<div class="pointer"></div>
 
 		<header id="hamburger">
-			<!-- Took out id="navName from below:" -->
-			<a href="index.html" id="nav-name">Zaac Agnes</a>
-			<h4 class="page-title">About</h4>
+			<a href="index.html" id="nav-name"><img class="nav-logo" src="img/logo/zaac-logo-colour-light.svg" alt=""></a>
+
+			<h4 class="page-title">Home</h4>
+
 			<a href="#" class="menu-control-open" id="menuControlOpen">Menu</a>
 			<div class="menu">
 				<div class="menu-inner">
@@ -46,26 +47,72 @@
 				</div> <!-- menu-inner -->
 			</div> <!-- menu -->
 		</header>
+
+		<div class="flex-container">
+			<h1 class="intro-main text-color about-title">More about me.</h1>
+		</div>
 		
 		<!-- <section id="intro"> -->
-			<div class="flex-container" id="about-banner">
-				<div class="about-header">
-					<img class="about-img" src="img/about/zaac-portrait.png" alt="Portrait of Zaac Agnes">
-				</div>
-
-				<div class="about-content banner-intro" id="about-banner-content">
-					<p class="intro-paragraph about-intro">I'm a graduate from SFU's Interactive Arts and Technology program with a concentration in design. I thrive in teams by being a versatile designer adept at comprehending new problem spaces and distilling diverse perspectives to surface strategic decision making for design, business, and technology challenges. 
-					</p>	
-					<p class="intro-paragraph about-intro about-gap">I excel at translating conceptual ideas into visually captivating user-centric experiences grounded by strong decision making processes as well utilizing various Adobe and design software to create comprehensive design solutions.</p>
-					<p class="intro-paragraph about-intro about-gap">Feel free to take a peak at <a class="about-link text-underline" href="https://drive.google.com/file/d/1O2zf1WkR_-7Xp7iME0Ahn0TDxcSaBR5n/view?usp=sharing" target="_blank">my resume</a> or contact me via email at <a class="about-link text-underline" href="mailto:zaacagnes9@gmail.com" target="_blank">zaacagnes9@gmail.com.</a> I am always happy to chat.</p>
-				</div>
+		<div class="flex-container" id="about-banner">
+			<div class="about-header">
+				<img class="about-img" src="img/about/zaac-portrait.png" alt="Portrait of Zaac Agnes">
 			</div>
 
-		<!-- </section> -->
 
+			<div class="about-content" id="about-banner-content">
+
+				<div class="about-content-text">
+					<h2 class="about-main-intro">I'm a designer with a focus on branding, UI/UX, and visual storytelling, always aiming to bring clarity, connection, and meaning to the work.</h2>
+
+					<p class="about-intro content-gap-small">
+						I studied Interactive Arts & Technology at SFU, with a design concentration, and have experience helping brands tell their stories through thoughtful design rooted in strategy and empathy. I thrive in teams through strong collaboration, the ability to pivot on ideas, and draw connections across design, marketing, and business.
+					</p>
+
+					<h3 class="about-subtitle content-gap-medium">Where design meets strategy</h3>
+					<p class="about-intro content-gap-tiny">
+						I thrive where design and communication meet, turning insights into visuals that solve real problems. My work blends brand strategy, storytelling, and design systems that adapt across platforms. I care about details, but always design with the bigger picture in mind: how a brand feels, why it matters, and how it connects with people.
+					</p>
+				</div>
+
+				<div class="about-content-text">
+					<!-- <h2 class="about-main-intro content-gap-large">Outside of work</h2>
+
+					<div class="col-1-of-2">
+						<h3 class="about-subtitle content-gap-medium">Personal Pixels</h3>
+					</div>
+					<div class="col-1-of-2">
+						<h3 class="about-subtitle content-gap-medium">Outdoor Obsessed</h3>
+					</div>
+					<div class="col-1-of-2">
+						<h3 class="about-subtitle content-gap-medium">Leading By Listening</h3>
+					</div>
+					<div class="col-1-of-2">
+						<h3 class="about-subtitle content-gap-medium">What drives me</h3>
+					</div> -->
+
+					<h2 class="about-main-intro content-gap-large">Outside of work</h2>
+					
+					<h3 class="about-subtitle content-gap-medium">Personal Pixels</h3>
+					<p class="about-intro content-gap-tiny">I’m also an artist — sketching and painting with both traditional and digital tools. People and nature are my go-to subjects. I post some personal work on my <a class="about-link text-underline" id="art-insta" href="https://www.instagram.com/zaacdesignsart/?hl=en" target="_blank">art Instragram account</a></p>
+
+
+					<h3 class="about-subtitle content-gap-medium">Outdoor Obsessed</h3>
+					<p class="about-intro content-gap-tiny">I grew up skiing and in recent years have gotten into backcountry skiing. Doing anything outside on a sunny day has me interested, and sometimes even when its not. The outdoors keep me grounded, curious, and always up for a challenge.</p>
+
+					<h3 class="about-subtitle content-gap-medium">Leading By Listening</h3>
+					<p class="about-intro content-gap-tiny">I’ve coached lacrosse, been a TA, and led summer programs. Whether in design or leadership, I try to lead with humility, empathy, and support — helping others bring their best forward.</p>
+
+					<h3 class="about-subtitle content-gap-medium">What drives me</h3>
+					<p class="about-intro content-gap-tiny">Curiosity, honesty, and impact. I care about doing work that means something and being someone others enjoy working with.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- </section> -->
+<!-- 
 		<div class="flex-container" id="about-container-adjust">
             <div class="about-header">
-                <h1 class="about-title">My Interests</h1>
+                <h1 class="about-subtitle">My Interests</h1>
             </div>
 
             <div class="about-content">
@@ -84,14 +131,14 @@
 						<h3 class="about-display-subtitle">I love the outdoors, especially winter sports. I've been skiing since I was three years old and have always enjoyed skiing with friends and family. Recently I've started backcountry skiing as a way of staying active and exploring the outdoors.</h3>
 					</div>
 
-                </div> <!-- about-display-list -->
-            </div> <!-- project showcase-->
-        </div> <!-- flex-container -->
-
+                </div> 
+            </div>
+        </div> -->
+<!-- 
 		<div class="border-about"></div>
 		<div class="flex-container" id="about-container-adjust">
             <div class="about-header">
-                <h1 class="about-title">My Ethics</h1>
+                <h1 class="about-subtitle">My Ethics</h1>
             </div>
 
             <div class="about-content">
@@ -109,11 +156,11 @@
 						<h3 class="about-display-subtitle">Leaders and mentors I have the utmost respect for are those who have an inherent quality of self awareness and generosity.</h3>
 					</div>
 
-                </div> <!-- about-display-list -->
-            </div> <!-- project showcase-->
-        </div> <!-- flex-container -->
+                </div>
+            </div> 
+        </div>  -->
 
-        <footer class="background-dark">
+        <footer class="background-light">
             <div class="footer-container">
                 <div class="footer-flex footer-width" id="footer-connect">
                     <p class="footer-title">Reach Out</p>

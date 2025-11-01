@@ -33,7 +33,7 @@
 
 
     /* BORDER */
-    --border: 0.5px solid var(--text-color);
+    --border: 0.5px solid var(--very-light-grey);
     --border-dark: 0.5px solid var(--background-color);
 
     /* TYPEFACES */
@@ -65,6 +65,50 @@ body{
     text-decoration-thickness: from-font;
     color: var(--text-color);
     overflow-x: hidden;
+}
+
+/* 5-COLUMN LAYOUTS */
+div.col-5-of-5{
+    flex-basis: 100%;
+}
+div.col-4-of-5{
+    flex-basis: 80%;
+}
+div.col-3-of-5{
+    flex-basis: 60%;
+}
+div.col-2-of-5{
+    flex-basis: 40%;
+}
+div.col-1-of-5{
+    flex-basis: 20%;
+}
+
+.col-image-text-adjust {
+    flex-basis: 17%;
+}
+
+/* 3-COLUMN LAYOUTS */
+div.col-1-of-3{
+    flex-basis: 33.33%;
+    padding-right:1rem;
+}
+div.col-1-of-3:last-child{
+    padding-right: 0;
+}
+
+/* 4-COLUMN-OUTFIT */
+div.col-1-of-4{
+    flex-basis: 25%;
+    padding-right:1rem;
+}
+div.col-1-of-4:last-child{
+    padding-right: 0;
+}
+
+div.col-1-of-2{
+    flex-basis: 50%;
+    gap: 3rem;
 }
 
 a{
@@ -113,6 +157,19 @@ a:hover{
     font-style: italic;
 }
 
+.background-dark{
+    background-color: var(--background-color);
+}
+.background-light{
+    background-color: var(--background-light);
+}
+
+.text-light{
+    color: var(--text-color);
+}
+.text-dark{
+    color: var(--dark-text);
+}
 
 
 /* CUSTOM POINTER */
@@ -194,15 +251,9 @@ footer{
     margin-bottom: 3%;
     padding-top: 3%;
     border-top: var(--border);
-    color: var(--text-color);
+    color: var(--dark-text);
 }
 
-.background-dark{
-    background-color: var(--background-color);
-}
-.background-project{
-    background-color: var(--background-light);
-}
 
 .footer-container{
     display: flex;
@@ -232,7 +283,8 @@ footer{
 .footer-content a {
 	/* font-size: 1rem; */
 	font-weight: 400;
-	color: var(--text-color);
+	/* color: var(--text-color); */
+    color: var(--dark-text);
 	text-decoration: underline;
     text-decoration-thickness: from-font;
 }
@@ -277,7 +329,6 @@ footer{
 
 #rain-text{
     color: var(--background-color);
-    /* display: block; */
     display:none;
 }
 .rain-main:hover #rain-text{
