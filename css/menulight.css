@@ -266,10 +266,13 @@ header nav {
 
 @media screen and (max-width: 999px){
     header{
-        padding: 0;
+        padding-bottom: 5.5%;
     }
     #menuControlOpen{
         padding: 1.5rem 5vw;
+        position: absolute;
+        top:0;
+        right:0;
     }
     #menuControlOpen:hover{
         border-left: var(--border-dark);
