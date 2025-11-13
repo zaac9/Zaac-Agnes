@@ -46,7 +46,8 @@ h1.project-main-title{
     font-family: var(--sans);
     color: var(--main-color);
     /* color: var(--background-color); */
-    font-size: 8rem;
+    /* font-size: 8rem; */
+    font-size: 10vw;
     font-weight: 900;
     max-width: 5em;
     line-height: 105%;
@@ -153,7 +154,7 @@ h3.project-subtitle-number{
 .image-caption{
     justify-content: flex-end;
     font-size: 1rem;
-    color: var(--light-text-color);
+    color: var(--medium-text);
 }
 
 .image-text-first{

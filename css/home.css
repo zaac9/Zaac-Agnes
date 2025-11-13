@@ -1,4 +1,3 @@
-
 /* HOME FLEXBOX STYLING */
 .home-header{
     flex-basis: 25%;
@@ -179,16 +178,34 @@ h1.home-projects-title{
 
 
 .project-display-img{
-	position: fixed;
-	z-index: -1;
-	/* opacity: 0.3; */
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-.project-display-img-border{
-    border: var(--border);
+    position: fixed;
+    pointer-events: none;
+    -webkit-filter: grayscale(80%) brightness(1.15);
+    filter: grayscale(80%) brightness(1.15);
+    /* background-blend-mode removed */
 }
 
+.img-hover{
+    position: fixed;
+    z-index: 0;
+    -webkit-filter: grayscale(80%) brightness(1.25);
+    filter: grayscale(80%) brightness(1.25);
+    pointer-events: none;
+    will-change: transform, left, top, opacity;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 200ms ease, transform 220ms ease;
+    /* try a lightening blend mode */
+    mix-blend-mode: lighten;
+    /* alternative you can test: mix-blend-mode: screen; */
+}
+
+/* show on hover — increase opacity a little so it reads on dark BG */
+.italist-main:hover #hover-content-italist .img-hover,
+.labatie-main:hover #hover-content-labatie .img-hover,
+.momentus-main:hover #hover-content-momentus .img-hover {
+    opacity: 0.65; /* tweak between 0.45 - 0.8 as you prefer */
+}
 
 .display-img-adjust-1{
     transform: translate(-70%, -70%);
@@ -213,4 +230,34 @@ h1.home-projects-title{
 
 #footer-link-color{
     color: var(--text-color);
+}
+
+h3.subheading{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.project-display-container,
+.project-display-link,
+.project-display-title,
+.project-display-subtitle {
+    position: relative;
+    z-index: 3; /* higher than .img-hover z-index:0 */
+}
+
+/* restore sticky header */
+header#hamburger {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000; /* high so it stays above .img-hover (z-index:0) but below pointer if needed */
+    background: var(--background-color); /* keep previous visual behaviour */
+}
+
+/* footer keeps normal flow */
+footer {
+    position: relative;
+    z-index: 3;
 }

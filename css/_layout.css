@@ -1,0 +1,37 @@
+/* 5-COLUMN LAYOUTS */
+div.col-5-of-5{ flex-basis: 100%; }
+div.col-4-of-5{ flex-basis: 80%; }
+div.col-3-of-5{ flex-basis: 60%; }
+div.col-2-of-5{ flex-basis: 40%; }
+div.col-1-of-5{ flex-basis: 20%; }
+.col-image-text-adjust { flex-basis: 17%; }
+
+/* 3-COLUMN LAYOUTS */
+div.col-1-of-3{ flex-basis: 33.33%; padding-right:1rem; }
+div.col-1-of-3:last-child{ padding-right: 0; }
+
+/* 4-COLUMN-OUTFIT */
+div.col-1-of-4{ flex-basis: 25%; padding-right:1rem; }
+div.col-1-of-4:last-child{ padding-right: 0; }
+
+div.col-1-of-2{ flex-basis: 50%; gap: 3rem; }
+
+/* Core flex container */
+.flex-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+/* page content container */
+.content-container{
+    padding-top: 5%;
+}
+
+/* CONTENT GAPS TO BE USED THROUGHOUT */
+.content-gap-large{ padding-top: 12%; }
+.content-gap-med-large{ padding-top: 8%; }
+.content-gap-medium{ padding-top: 5%; }
+.content-gap-small{ padding-top: 3%; }
+.content-gap-tiny{ padding-top: 1%; }

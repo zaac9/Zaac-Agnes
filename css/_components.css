@@ -1,0 +1,108 @@
+/* CUSTOM POINTER */
+.pointer{
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    mix-blend-mode: difference;
+    transition: transform 0.2s ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: none;
+    z-index: 1000;
+}
+.scale-pointer{
+    transition: transform 0.15s ease-in-out;
+    transform: translate(-50%, -50%) scale(2);
+}
+
+/* BASE PAGE STYLING */
+.page-title{
+    position: fixed;
+    top: 1.5rem;
+    left: 40vw;
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color);
+}
+
+/* Footer */
+footer{
+    margin-bottom: 3%;
+    padding-top: 3%;
+    border-top: var(--border);
+    color: var(--dark-text);
+}
+.footer-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+.footer-width{ width: 33%; }
+.footer-title{
+    font-family: var(--sans);
+    font-size: 1.1rem;
+    color: var(--main-color);
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+.footer-content{
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-bottom: .7rem;
+    color: var(--dark-text);
+}
+.footer-content a{
+    color: var(--dark-text);
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+}
+
+/* hover images used on home page (kept as component-level rules) */
+.img-hover{
+    position: fixed;
+    z-index: 0;                     /* behind content */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    pointer-events: none;
+    will-change: transform, left, top, opacity;
+    transform: translate(-50%, -50%);
+    opacity: 0;                     /* default hidden */
+    transition: opacity 160ms ease, transform 220ms ease;
+    mix-blend-mode: lighten;       /* blend image with page content */
+}
+
+/* keep generic hidden rule but use visibility so we can animate opacity */
+[id *="hover-content-"]{
+    display: block;
+    visibility: hidden;
+}
+
+/* show on hover (make this specific) */
+.italist-main:hover #hover-content-italist,
+.labatie-main:hover #hover-content-labatie,
+.momentus-main:hover #hover-content-momentus {
+    visibility: visible;
+}
+
+/* fade image in when its container is hovered */
+.italist-main:hover #hover-content-italist .img-hover,
+.labatie-main:hover #hover-content-labatie .img-hover,
+.momentus-main:hover #hover-content-momentus .img-hover {
+    opacity: 0.35;                  /* visible but subtle */
+}
+
+/* view transition / page animations */
+@view-transition { navigation: auto; }
+
+@keyframes move-out { from { transform: translateX(0%); } to { transform: translateX(-100%); } }
+@keyframes move-in  { from { transform: translateX(100%); } to { transform: translateX(0%); } }
+
+::view-transition-old(root) { animation: 0.6s ease-in both move-out; }
+::view-transition-new(root) { animation: 0.6s ease-in both move-in; }
