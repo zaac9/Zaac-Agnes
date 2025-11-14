@@ -1,0 +1,11 @@
+/* Manifest — core CSS pieces loaded in correct order:
+   1) variables
+   2) base (reset + globals)
+   3) layout (columns / gaps)
+   4) components (header, footer, pointer, animations)
+   Page-level styles (home.css, projects.css, about.css, media.css) remain linked from HTML.
+*/
+@import url("_variables.css");
+@import url("_base.css");
+@import url("_layout.css");
+@import url("_components.css");
