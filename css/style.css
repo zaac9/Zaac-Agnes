@@ -163,18 +163,23 @@ a:hover{
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    /* background-color: #fff; */
+
+    /* SET BACKGROUND COLOR TO WHITE WITH OPACITY: */
     background-color: rgba(255, 255, 255, 0.8);
+
+    /* SETS BG COLOR TO YELLOW, WHEN DIFFERENCE BLEND MODE IS APPLIED */
+    /* background-color: #F4D528; */
     mix-blend-mode: difference;
     transition: transform 0.2s ease-in-out;
     transform: translate(-50%, -50%) scale(1);
     pointer-events: none;
-    z-index: 1000;
+    z-index: 100000;
 }
 
 .scale-pointer{
     transition: transform 0.15s ease-in-out;
     transform: translate(-50%, -50%) scale(2);
+    /* background-color: rgba(0, 0, 0, 0.8);  */
 }
 
 /* TEXT STYLE & EFFECT */
