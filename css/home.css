@@ -253,7 +253,9 @@ header#hamburger {
     left: 0;
     width: 100%;
     z-index: 10000; /* high so it stays above .img-hover (z-index:0) but below pointer if needed */
-    background: var(--background-color); /* keep previous visual behaviour */
+
+    /* TOOK THIS OUT AS IT WAS MESSING ABOUT PAGE */
+    /* background: var(--background-color);  */
 }
 
 /* footer keeps normal flow */
