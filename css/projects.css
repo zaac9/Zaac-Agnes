@@ -136,6 +136,13 @@ h3.project-subtitle-number{
         cell;
 }
 
+.rebrand-link{
+    color: var(--main-text-color);
+    text-decoration: underline;
+    text-decoration-color: var(--main-color);
+    text-decoration-thickness: from-font;
+}
+
 .primary-text{
     font-family: var(--sans);
     font-size: 1.5rem;
