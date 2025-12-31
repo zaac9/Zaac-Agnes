@@ -26,6 +26,20 @@
         left: 48vw;
     }
 
+    .image-text-first{
+        padding-left: 0;
+    }
+    .image-text-last{
+        padding-right: 0;
+    }
+
+    .project-img-small {
+        max-width: 100%;
+    }
+    .flex-image-text{
+        padding: 0;
+    }
+
     .home-about{
         flex-flow: column nowrap;
         gap:0;
@@ -108,9 +122,6 @@
     #project-banner{
         margin-bottom: 15vh;
     }
-    .secondary-text, .primary-text{
-        margin-right: 25%;
-    }
     #problem-statement {
         text-align: left;
         margin: 0 5vw;
@@ -126,7 +137,6 @@
         /* padding-top: 0.5rem; */
     }
     .primary-text{
-        margin-right: 10%;
         font-size: 1.5rem;
     }
     .banner-intro{
