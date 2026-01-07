@@ -1,0 +1,389 @@
+/* ========================================
+   RESPONSIVE BREAKPOINTS
+   ======================================== */
+
+/* ========================================
+   TABLET AND BELOW (max-width: 999px)
+   ======================================== */
+@media screen and (max-width: 999px){
+    /* HOME PAGE ADJUSTMENTS */
+    .home-header{
+        flex-basis: 100%;
+    }
+    .project-showcase{
+        flex-basis: 100%;
+    }
+    .flex-container{
+        flex-flow: row wrap;
+    }
+    .project-display-container{
+        padding: 1rem 0;
+        margin: 0;
+        padding-right: 5vw;
+        min-height: 18vh;
+    }
+    .project-subtitle{
+        font-size: 2.4rem;
+    }
+    .banner-intro{
+        font-size: 2rem;
+    }
+    .page-title{
+        left: 48vw;
+    }
+    .image-text-first{
+        padding-left: 0;
+    }
+    .image-text-last{
+        padding-right: 0;
+    }
+    .project-img-small {
+        max-width: 100%;
+    }
+    .flex-image-text{
+        padding: 0;
+    }
+    .home-about{
+        flex-flow: column nowrap;
+        gap: 0;
+    }
+    .home-subheading{
+        padding-top: 5rem;
+    }
+    .home-content{
+        padding-left: 0;
+    }
+
+    /* ABOUT PAGE ADJUSTMENTS */
+    .about-header{
+        flex-basis: 100%;
+        padding-left: 0vw;
+        padding-right: 5vw;
+        padding-top: 5vw;
+    }
+    .about-content{
+        flex-basis: 100%;
+        padding-left: 0vw;
+        padding-bottom: 5vw;
+    }
+    .about-img{
+        padding: 0 25vw;
+    }
+    .about-intro{
+        padding-top: 2vw;
+        padding-bottom: 0;
+    }
+    .about-display-container {
+        padding-left: 0;
+    }
+    .about-title {
+        padding-left: 5%;
+        margin-left: 0;
+    }
+    #about-banner-content {
+        padding: 0 5vw;
+        padding-bottom: 5vw;
+    }
+    .about-main-intro{
+        padding-top: 1rem;
+    }
+    .about-content-text{
+        padding-left: 0;
+    }
+    #about-container-adjust{
+        padding-left: 25vw;
+    }
+
+    /* PROJECT PAGE ADJUSTMENTS */
+    h1.project-main-title {
+        padding-bottom: 1rem;
+        font-size: 15vw;
+    }
+    div.col-3-of-5-adjust{
+        flex-basis: 75%;
+    }
+    .flex-container-project{
+        flex-flow: column nowrap;
+    }
+    .my-roles  {
+        padding-right: 50%;
+    }
+    #project-banner{
+        margin-bottom: 15vh;
+    }
+    #problem-statement {
+        text-align: left;
+        margin: 0 5vw;
+    }
+
+    /* FOOTER ADJUSTMENTS */
+    .footer-container{
+        padding: 0 5vw;
+    }
+
+    /* MENU ADJUSTMENTS */
+    .menu--active .menu {
+        width: 40%;
+        background-color: var(--main-color);
+    }
+    
+    .menu--active .menu .menu-inner {
+        width: 40vw;
+    }
+    
+    .menu--active, .navButton{
+        padding:1.5rem;
+        font-size: 2.2rem;
+    }
+    
+    header{
+        padding: 1.5rem 0rem 3rem 0rem;
+    }
+    
+    #menuControlOpen{
+        padding: 1.5rem 5vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    #menuControlOpen:hover{
+        border-left: var(--border);
+    }
+    
+    #nav-name{
+        position: fixed;
+        border:none;
+    }
+    
+    #nav-name:hover{
+        background-color: var(--main-color);
+    }
+    
+    header nav a {
+        color: var(--background-color);
+        padding: 1.5rem 5vw;
+    }
+    
+    header a {
+        padding: 0;
+    }
+    
+    .navButton:hover{
+        color: var(--medium-text);
+        border-top: 0.5px solid var(--background-color);
+        border-bottom: 0.5px solid var(--background-color);
+    }
+    
+    .menu--active{
+        padding:0;
+    }
+    
+    /* Light theme mobile menu adjustments */
+    .background-light .menu--active .menu .menu-inner {
+        border-left: 0.5px solid var(--background-color);
+        background-color: var(--main-color);
+    }
+    
+    .background-light .navButton:hover{
+        color: var(--very-light-grey);
+    }
+}
+
+/* ========================================
+   MOBILE (max-width: 699px)
+   ======================================== */
+@media screen and (max-width: 699px){
+    .intro-sub-main{
+        font-size: 1.5rem;
+    }
+    .secondary-text{
+        margin-right: 10%;
+    }
+    .primary-text{
+        font-size: 1.5rem;
+    }
+    .banner-intro{
+        font-size: 1.7rem;
+    }
+    .my-roles{
+        padding-right: 0;
+    }
+    .project-subtitle{
+        font-size: 1.8rem;
+    }
+    #problem-statement {
+        margin: 0;
+        font-size: 1.7rem;
+    }
+    .about-intro{
+        font-size: 1.4rem;
+    }
+    #about-container-adjust {
+        padding-left: 5vw;
+    }
+    #about-banner-content{
+        padding-left: 5vw;
+    }
+    .home-subheading{
+        padding-top: 3rem;
+    }
+    #project-banner{
+        margin-bottom: 10vh;
+    }
+
+    /* MOBILE MENU ADJUSTMENTS */
+    .menu--active .menu {
+        width: 70%;
+    }
+    
+    .menu--active .menu .menu-inner {
+        width: 70vw;
+    }
+    
+    .menu--active, .navButton{
+        padding: 1.5rem;
+        font-size: 1.6rem;
+    }
+    
+    .navButton{
+        padding: 1.5rem 0 1.5rem 0;
+        font-size: 2.2rem;
+    }
+}
+
+/* ========================================
+   SMALL MOBILE (max-width: 499px)
+   ======================================== */
+@media screen and (max-width: 499px){
+    /* Remove pointer class on mobile as not necessary */
+    .pointer{
+        display: none;
+    }
+
+    .secondary-text{
+        margin-right: 0;
+        padding-top: 0.5rem;
+    }
+    .primary-text{
+        margin-right: 0;
+        font-size: 1.4rem;
+    }
+
+    #problem-statement {
+        font-size: 1.4rem;
+    }
+
+    figcaption{
+        text-align: left;
+    }
+
+    .banner-intro{
+        font-size: 1.5rem;
+    }
+
+    .content-gap-small{
+        padding-top: 2%;
+    }
+    .content-gap-medium{
+        padding-top: 10%;
+    }
+
+    .project-display-img{
+        display: none;
+    }
+    
+    .footer-container{
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .footer-width{
+        width: 100%;
+    }
+    .footer-content{
+        padding-bottom: 1rem;
+    }
+    .img-hover{
+        display: none;
+    }
+    #rain-text{
+        display: none;
+    }
+}
+
+/* ========================================
+   TOUCH DEVICES
+   ======================================== */
+@media (pointer: coarse){
+    .pointer{
+        display: none;
+    }
+}
+
+/* ========================================
+   DESKTOP (min-width: 1000px)
+   ======================================== */
+@media screen and (min-width: 1000px) {
+    header .menu-control-open, 
+    header .menu-control-close {
+        display: none;
+    }
+    
+    header .menu {
+        overflow: visible;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+    }
+    
+    header .menu .menu-inner {
+        width: 100%;
+    }
+    
+    header .menu a {
+        transform: none;
+        transition: none;
+        border-left: var(--border);
+        min-width: 9rem;
+    }
+    
+    header .menu .version, 
+    header .menu .madeIn {
+        bottom: -90.85vh;
+        letter-spacing: 1px;
+        font-size: 1.3rem;
+    }
+    
+    header nav {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    header a:last-child:hover{
+        border-right: none;
+    }
+
+    /* ABOUT PAGE ADJUSTMENTS */
+    div.about-container{
+        display: block;
+    }
+
+    .about-img{
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .zaac-about-intro{
+        font-size: 1.2rem;
+        padding: 5% 0;
+        margin: 0 5%;
+        line-height: 150%;
+    }
+
+    .about-subcontainer {
+        padding: 0;
+        padding-bottom: 1rem;
+        margin: 0 5%;
+    }
+}

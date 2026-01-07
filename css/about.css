@@ -1,0 +1,105 @@
+/* ========================================
+   ABOUT PAGE LAYOUT
+   ======================================== */
+#about-banner{
+	border-bottom: var(--border);
+	padding-bottom: 5%;
+}
+
+#about-banner-content{
+	padding-left: 0;
+	padding-right: 5vw;
+	padding-top: 8.5vw;
+}
+
+.about-header{
+    flex-basis: 36%;
+}
+
+.about-content{
+    flex-basis: 64%;
+}
+
+.about-content-text{
+	padding-left: 5%;
+}
+
+.about-title{
+	padding-left: 5%;
+	padding-top: 15%;
+}
+
+#about-container-adjust{
+	padding: 2rem 0;
+}
+
+/* ========================================
+   ABOUT PAGE TYPOGRAPHY
+   ======================================== */
+.about-subtitle{
+    font-family: var(--sans);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.about-main-intro {
+	font-size: 2.0rem;
+	color: var(--background-color);
+	font-weight: 600;
+	max-width: 60rem;
+}
+
+.about-intro {
+	font-weight: 500;
+	font-size: 1.2rem;
+	color: var(--dark-text);
+	max-width: 45rem;
+}
+
+.about-gap{
+	padding-top: 0;
+}
+
+/* ========================================
+   ABOUT PAGE COMPONENTS
+   ======================================== */
+.about-display-list{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.about-display-container{
+    margin-right: 5vw;
+    padding-bottom: 1rem;
+}
+
+.border-about{
+	border-bottom: var(--border);
+}
+
+/* ========================================
+   ABOUT PAGE MEDIA
+   ======================================== */
+.about-img{
+	max-width: 100%;
+	padding-left: 5vw;
+    padding-top: 25%;
+	padding-right: 1rem;
+	opacity: 0.7;
+}
+
+/* ========================================
+   ABOUT PAGE INTERACTIONS
+   ======================================== */
+.about-link{
+	color: var(--main-text-color);
+	text-decoration: underline;
+	text-decoration-color: var(--main-color);
+	text-decoration-thickness: from-font;
+}
+
+#art-insta{
+	text-decoration-thickness: 0.15rem;
+}

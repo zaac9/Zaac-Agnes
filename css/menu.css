@@ -1,0 +1,233 @@
+/* ========================================
+   HEADER COMPONENT
+   ======================================== */
+header {
+    position: fixed;
+    overflow: visible;
+    z-index: 100;
+    width: 100%;
+    padding: 1.5rem 0rem 1.5rem 0rem;
+    border-bottom: var(--border);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    float: left;
+    margin-top: 5px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    text-align: center;
+}
+
+header a:hover{
+    background-color: var(--main-color);
+    color: var(--background-color);
+}
+
+/* ========================================
+   NAVIGATION ELEMENTS
+   ======================================== */
+#nav-name{
+    border-right: var(--border);
+    padding-right: 2.5rem;
+}
+
+#nav-name:hover .nav-logo{
+    filter: grayscale(100%) contrast(300%);
+}
+
+.nav-logo{
+    width: 50px;
+    height: 50px;
+    position:fixed;
+    top: 10px;
+    left: 10px;
+}
+
+header .menu-control-open, 
+header .menu-control-close, 
+header nav, 
+header a {
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transform: none;
+}
+
+header .menu-control-open, 
+header .menu-control-close, 
+header nav a {
+    color: var(--main-color);
+}
+
+.menu-control-close:hover{
+    color: var(--light-text-color);
+}
+
+header .menu-control-open, 
+header .menu-control-close {
+    display: block;
+}
+
+header .menu-control-open {
+    position: relative;
+    float: right;
+}
+
+.menu-control-open:hover{
+    color: var(--light-text-color);
+}
+
+#menuControlOpen{
+    color: var(--main-color);
+    transform: none;
+    border-left: var(--border);
+}
+
+#menuControlOpen:hover, 
+#menuControlOpen:focus {
+    color: var(--background-color);
+}
+
+#menuControlClose{
+    color: var(--background-color);
+    transform: none;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+#menuControlClose:hover, 
+#menuControlClose:focus{
+    color: var(--medium-text);
+    border-bottom: 0.5px solid var(--background-color);
+    cursor: 
+        url("../img/cursors/close2.svg") 9 9,
+        pointer;
+}
+
+header .menu-control-open:before {
+    padding-top: 1px;
+}
+
+header .menu-control-open:before, 
+header .menu-control-open:after {
+    content: '';
+    display: block;
+    width: 100%;
+}
+
+header .menu-control-close {
+    text-align: right;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================================
+   MOBILE MENU COMPONENT
+   ======================================== */
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--text-color);
+    color: var(--main-color);
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu a {
+    transform: translate3d(-150px, 0, 0);
+    transition: transform 0.15s ease-in;
+}
+
+.menu .menu-inner {
+    position: relative;
+    height: 100%;
+    width: 70vw;
+    width:100vw;
+}
+
+.menu .version, 
+.menu .madeIn {
+    position: absolute;
+    bottom: 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .version {
+    right: 1.5rem;
+}
+
+.menu--active {
+    height: 100vh;
+}
+
+.menu--active header a {
+    display: block;
+}
+
+.menu--active nav a {
+    transform: translate3d(0, 0, 0);
+    transition: transform 500ms ease-out;
+    text-decoration-color: var(--light-text-color);
+    padding-left: 1rem;
+    text-align: left;
+}
+
+.menu--active nav a:first-child {
+    transition-delay: 0.2s;
+}
+
+.menu--active nav a:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.menu--active nav a:last-child {
+    transition-delay: 0.4s;
+}
+
+/* ========================================
+   THEME VARIATIONS
+   ======================================== */
+
+/* DARK THEME */
+.background-dark header {
+    background-color: var(--background-color);
+    border-top: none;
+}
+
+.background-dark #menuControlClose {
+    margin-bottom: 1.5rem;
+}
+
+/* LIGHT THEME */
+.background-light header {
+    background-color: var(--background-light);
+    border-top: var(--border);
+    color: var(--background-color);
+}
+
+.background-light header .menu-control-open, 
+.background-light header .menu-control-close, 
+.background-light header nav a {
+    color: var(--background-color);
+}
+
+.background-light #menuControlClose:hover, 
+.background-light #menuControlClose:focus{
+    color: var(--very-light-grey);
+    border-bottom: none;
+    cursor: 
+        url("../img/cursors/close2.svg") 9 9,
+        pointer;
+}
